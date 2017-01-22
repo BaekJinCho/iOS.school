@@ -15,7 +15,7 @@
 - [소프트웨어 공학 / 객체지향 프로그래밍](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170113)
 
 
-####------------------------------------------------------- Objective-C ----------------------------------------------------
+####------------------------------------------------------ Objective-C -----------------------------------------------------
 
 ###[2week]
 - [xcode 시작하기 & 구조잡기](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170116)
