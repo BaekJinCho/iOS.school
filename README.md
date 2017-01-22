@@ -1,4 +1,4 @@
-#- 조백진(Cho Baek Jin)
+#조백진(Cho Baek Jin)
 
 ##- Content
 
@@ -9,7 +9,7 @@
 ###2. iOS School
 
 - [1week]  
-**------------------------------------------------------- 컴퓨터 개론 ------------------------------------------------------<br>**
+**--------------------------------------------------- 컴퓨터 개론 ------------------------------------------------------<br>**
 	- [Git](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170109)
 	- [프로그램 / 컴퓨터 역사,구성,구조 / 데이터 표현방식](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170110)
 	- [운영체제 & 프로세스 / 자료구조 / 알고리즘](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170111)
