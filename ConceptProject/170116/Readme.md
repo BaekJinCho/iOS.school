@@ -2,7 +2,7 @@
 ##- Xcode
 - 템플릿 선택 & 프로젝트 생성
 - Xcode Main Window<br><br>
-![Alt text](/Users/CHOBAEKJIN/Desktop/iOS.school/ConceptProject/170116/Xcode4_overview.png)
+![Alt text](/Users/CHOBAEKJIN/Desktop/iOS.school/ConceptProject/170116/MyFirstApp/Xcode4_overview.png)
 
 - Break Point<br>
 : debug를 위한 방법 -> 여기서 실행을 멈춰라!
