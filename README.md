@@ -9,7 +9,8 @@
 ###2. iOS School
 ####- 컴퓨터 개론
 
-- [1 week]  
+- [1 week]
+  
 	- [Git](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170109)
 	- [프로그램 / 컴퓨터 역사, 구성, 구조 / 데이터 표현방식](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170110)
 	- [운영체제 & 프로세스 / 자료구조 / 알고리즘](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170111)
