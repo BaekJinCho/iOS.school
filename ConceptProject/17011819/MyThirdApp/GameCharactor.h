@@ -12,7 +12,7 @@
 
 //@property NSString* name;
 //@property NSInteger level;
-@property (readwrite) NSInteger hp;
+@property (readonly) NSInteger hp;
 //@property NSInteger mp;
 //@property NSInteger attackPower;
 
@@ -20,5 +20,10 @@
 - (void)jump;
 - (void)jump : (NSInteger)num;
 - (void)attackSelf:(NSInteger)num1;
+
+- (void)setterHp:(NSUInteger)에이치피;
+
+- (instancetype)initWithName:(NSString *)name gender:(NSString *)gender level:(NSInteger)level;
+
 
 @end

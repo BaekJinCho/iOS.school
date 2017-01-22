@@ -8,12 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		013821471E2DB2E000238A7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 013821461E2DB2E000238A7C /* main.m */; };
-		01BD55021E30BF43007FC311 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BD54F81E30BF43007FC311 /* Car.m */; };
-		01BD55031E30BF43007FC311 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BD54FA1E30BF43007FC311 /* Dog.m */; };
-		01BD55041E30BF43007FC311 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BD54FB1E30BF43007FC311 /* main.m */; };
-		01BD55051E30BF43007FC311 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BD54FD1E30BF43007FC311 /* Person.m */; };
-		01BD55061E30BF43007FC311 /* Warrior.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BD54FF1E30BF43007FC311 /* Warrior.m */; };
-		01BD55071E30BF43007FC311 /* Wizard.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BD55011E30BF43007FC311 /* Wizard.m */; };
+		015136351E30CA5700857A7A /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 0151362C1E30CA5700857A7A /* Car.m */; };
+		015136361E30CA5700857A7A /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 0151362E1E30CA5700857A7A /* Dog.m */; };
+		015136371E30CA5700857A7A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 015136301E30CA5700857A7A /* Person.m */; };
+		015136381E30CA5700857A7A /* Warrior.m in Sources */ = {isa = PBXBuildFile; fileRef = 015136321E30CA5700857A7A /* Warrior.m */; };
+		015136391E30CA5700857A7A /* Wizard.m in Sources */ = {isa = PBXBuildFile; fileRef = 015136341E30CA5700857A7A /* Wizard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,19 +28,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		013821431E2DB2E000238A7C /* 170117 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 170117; sourceTree = BUILT_PRODUCTS_DIR; };
+		013821431E2DB2E000238A7C /* TwoProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TwoProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		013821461E2DB2E000238A7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		01BD54F71E30BF43007FC311 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Car.h; path = "MySecondApp 18.28.58/Car.h"; sourceTree = SOURCE_ROOT; };
-		01BD54F81E30BF43007FC311 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Car.m; path = "MySecondApp 18.28.58/Car.m"; sourceTree = SOURCE_ROOT; };
-		01BD54F91E30BF43007FC311 /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dog.h; path = "MySecondApp 18.28.58/Dog.h"; sourceTree = SOURCE_ROOT; };
-		01BD54FA1E30BF43007FC311 /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Dog.m; path = "MySecondApp 18.28.58/Dog.m"; sourceTree = SOURCE_ROOT; };
-		01BD54FB1E30BF43007FC311 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "MySecondApp 18.28.58/main.m"; sourceTree = SOURCE_ROOT; };
-		01BD54FC1E30BF43007FC311 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = "MySecondApp 18.28.58/Person.h"; sourceTree = SOURCE_ROOT; };
-		01BD54FD1E30BF43007FC311 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = "MySecondApp 18.28.58/Person.m"; sourceTree = SOURCE_ROOT; };
-		01BD54FE1E30BF43007FC311 /* Warrior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Warrior.h; path = "MySecondApp 18.28.58/Warrior.h"; sourceTree = SOURCE_ROOT; };
-		01BD54FF1E30BF43007FC311 /* Warrior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Warrior.m; path = "MySecondApp 18.28.58/Warrior.m"; sourceTree = SOURCE_ROOT; };
-		01BD55001E30BF43007FC311 /* Wizard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Wizard.h; path = "MySecondApp 18.28.58/Wizard.h"; sourceTree = SOURCE_ROOT; };
-		01BD55011E30BF43007FC311 /* Wizard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Wizard.m; path = "MySecondApp 18.28.58/Wizard.m"; sourceTree = SOURCE_ROOT; };
+		0151362B1E30CA5700857A7A /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		0151362C1E30CA5700857A7A /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		0151362D1E30CA5700857A7A /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		0151362E1E30CA5700857A7A /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		0151362F1E30CA5700857A7A /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		015136301E30CA5700857A7A /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		015136311E30CA5700857A7A /* Warrior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Warrior.h; sourceTree = "<group>"; };
+		015136321E30CA5700857A7A /* Warrior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Warrior.m; sourceTree = "<group>"; };
+		015136331E30CA5700857A7A /* Wizard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wizard.h; sourceTree = "<group>"; };
+		015136341E30CA5700857A7A /* Wizard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wizard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +64,7 @@
 		013821441E2DB2E000238A7C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				013821431E2DB2E000238A7C /* 170117 */,
+				013821431E2DB2E000238A7C /* TwoProject */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,18 +72,17 @@
 		013821451E2DB2E000238A7C /* MySecondApp */ = {
 			isa = PBXGroup;
 			children = (
+				0151362B1E30CA5700857A7A /* Car.h */,
+				0151362C1E30CA5700857A7A /* Car.m */,
+				0151362D1E30CA5700857A7A /* Dog.h */,
+				0151362E1E30CA5700857A7A /* Dog.m */,
+				0151362F1E30CA5700857A7A /* Person.h */,
+				015136301E30CA5700857A7A /* Person.m */,
+				015136311E30CA5700857A7A /* Warrior.h */,
+				015136321E30CA5700857A7A /* Warrior.m */,
+				015136331E30CA5700857A7A /* Wizard.h */,
+				015136341E30CA5700857A7A /* Wizard.m */,
 				013821461E2DB2E000238A7C /* main.m */,
-				01BD54F71E30BF43007FC311 /* Car.h */,
-				01BD54F81E30BF43007FC311 /* Car.m */,
-				01BD54F91E30BF43007FC311 /* Dog.h */,
-				01BD54FA1E30BF43007FC311 /* Dog.m */,
-				01BD54FB1E30BF43007FC311 /* main.m */,
-				01BD54FC1E30BF43007FC311 /* Person.h */,
-				01BD54FD1E30BF43007FC311 /* Person.m */,
-				01BD54FE1E30BF43007FC311 /* Warrior.h */,
-				01BD54FF1E30BF43007FC311 /* Warrior.m */,
-				01BD55001E30BF43007FC311 /* Wizard.h */,
-				01BD55011E30BF43007FC311 /* Wizard.m */,
 			);
 			path = MySecondApp;
 			sourceTree = "<group>";
@@ -93,9 +90,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		013821421E2DB2E000238A7C /* 170117 */ = {
+		013821421E2DB2E000238A7C /* TwoProject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0138214A1E2DB2E000238A7C /* Build configuration list for PBXNativeTarget "170117" */;
+			buildConfigurationList = 0138214A1E2DB2E000238A7C /* Build configuration list for PBXNativeTarget "TwoProject" */;
 			buildPhases = (
 				0138213F1E2DB2E000238A7C /* Sources */,
 				013821401E2DB2E000238A7C /* Frameworks */,
@@ -105,9 +102,9 @@
 			);
 			dependencies = (
 			);
-			name = 170117;
+			name = TwoProject;
 			productName = MySecondApp;
-			productReference = 013821431E2DB2E000238A7C /* 170117 */;
+			productReference = 013821431E2DB2E000238A7C /* TwoProject */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -125,7 +122,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0138213E1E2DB2E000238A7C /* Build configuration list for PBXProject "170117" */;
+			buildConfigurationList = 0138213E1E2DB2E000238A7C /* Build configuration list for PBXProject "TwoProject" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -137,7 +134,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				013821421E2DB2E000238A7C /* 170117 */,
+				013821421E2DB2E000238A7C /* TwoProject */,
 			);
 		};
 /* End PBXProject section */
@@ -147,12 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01BD55051E30BF43007FC311 /* Person.m in Sources */,
-				01BD55031E30BF43007FC311 /* Dog.m in Sources */,
-				01BD55071E30BF43007FC311 /* Wizard.m in Sources */,
-				01BD55061E30BF43007FC311 /* Warrior.m in Sources */,
-				01BD55021E30BF43007FC311 /* Car.m in Sources */,
-				01BD55041E30BF43007FC311 /* main.m in Sources */,
+				015136361E30CA5700857A7A /* Dog.m in Sources */,
+				015136371E30CA5700857A7A /* Person.m in Sources */,
+				015136391E30CA5700857A7A /* Wizard.m in Sources */,
+				015136381E30CA5700857A7A /* Warrior.m in Sources */,
+				015136351E30CA5700857A7A /* Car.m in Sources */,
 				013821471E2DB2E000238A7C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,7 +260,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0138213E1E2DB2E000238A7C /* Build configuration list for PBXProject "170117" */ = {
+		0138213E1E2DB2E000238A7C /* Build configuration list for PBXProject "TwoProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				013821481E2DB2E000238A7C /* Debug */,
@@ -273,7 +269,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0138214A1E2DB2E000238A7C /* Build configuration list for PBXNativeTarget "170117" */ = {
+		0138214A1E2DB2E000238A7C /* Build configuration list for PBXNativeTarget "TwoProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0138214B1E2DB2E000238A7C /* Debug */,

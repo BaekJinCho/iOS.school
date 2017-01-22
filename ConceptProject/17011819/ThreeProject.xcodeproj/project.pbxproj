@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01BD55231E30BFF7007FC311 /* Elf.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BD55171E30BFF7007FC311 /* Elf.m */; };
-		01BD55241E30BFF7007FC311 /* GameCharactor.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BD55191E30BFF7007FC311 /* GameCharactor.m */; };
-		01BD55251E30BFF7007FC311 /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BD551B1E30BFF7007FC311 /* Human.m */; };
-		01BD55261E30BFF7007FC311 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BD551C1E30BFF7007FC311 /* main.m */; };
-		01BD55271E30BFF7007FC311 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BD551E1E30BFF7007FC311 /* Person.m */; };
-		01BD55281E30BFF7007FC311 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BD55201E30BFF7007FC311 /* Student.m */; };
-		01BD55291E30BFF7007FC311 /* UniversityStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BD55221E30BFF7007FC311 /* UniversityStudent.m */; };
+		01BD55391E30C9DC007FC311 /* Elf.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BD552D1E30C9DC007FC311 /* Elf.m */; };
+		01BD553A1E30C9DC007FC311 /* GameCharactor.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BD552F1E30C9DC007FC311 /* GameCharactor.m */; };
+		01BD553B1E30C9DC007FC311 /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BD55311E30C9DC007FC311 /* Human.m */; };
+		01BD553C1E30C9DC007FC311 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BD55321E30C9DC007FC311 /* main.m */; };
+		01BD553D1E30C9DC007FC311 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BD55341E30C9DC007FC311 /* Person.m */; };
+		01BD553E1E30C9DC007FC311 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BD55361E30C9DC007FC311 /* Student.m */; };
+		01BD553F1E30C9DC007FC311 /* UniversityStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BD55381E30C9DC007FC311 /* UniversityStudent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,20 +29,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		01BD546F1E2F4FC5007FC311 /* 17011819 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 17011819; sourceTree = BUILT_PRODUCTS_DIR; };
-		01BD55161E30BFF7007FC311 /* Elf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Elf.h; path = "MyThirdApp 18.28.58/Elf.h"; sourceTree = SOURCE_ROOT; };
-		01BD55171E30BFF7007FC311 /* Elf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Elf.m; path = "MyThirdApp 18.28.58/Elf.m"; sourceTree = SOURCE_ROOT; };
-		01BD55181E30BFF7007FC311 /* GameCharactor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameCharactor.h; path = "MyThirdApp 18.28.58/GameCharactor.h"; sourceTree = SOURCE_ROOT; };
-		01BD55191E30BFF7007FC311 /* GameCharactor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameCharactor.m; path = "MyThirdApp 18.28.58/GameCharactor.m"; sourceTree = SOURCE_ROOT; };
-		01BD551A1E30BFF7007FC311 /* Human.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Human.h; path = "MyThirdApp 18.28.58/Human.h"; sourceTree = SOURCE_ROOT; };
-		01BD551B1E30BFF7007FC311 /* Human.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Human.m; path = "MyThirdApp 18.28.58/Human.m"; sourceTree = SOURCE_ROOT; };
-		01BD551C1E30BFF7007FC311 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "MyThirdApp 18.28.58/main.m"; sourceTree = SOURCE_ROOT; };
-		01BD551D1E30BFF7007FC311 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = "MyThirdApp 18.28.58/Person.h"; sourceTree = SOURCE_ROOT; };
-		01BD551E1E30BFF7007FC311 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = "MyThirdApp 18.28.58/Person.m"; sourceTree = SOURCE_ROOT; };
-		01BD551F1E30BFF7007FC311 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Student.h; path = "MyThirdApp 18.28.58/Student.h"; sourceTree = SOURCE_ROOT; };
-		01BD55201E30BFF7007FC311 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Student.m; path = "MyThirdApp 18.28.58/Student.m"; sourceTree = SOURCE_ROOT; };
-		01BD55211E30BFF7007FC311 /* UniversityStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UniversityStudent.h; path = "MyThirdApp 18.28.58/UniversityStudent.h"; sourceTree = SOURCE_ROOT; };
-		01BD55221E30BFF7007FC311 /* UniversityStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UniversityStudent.m; path = "MyThirdApp 18.28.58/UniversityStudent.m"; sourceTree = SOURCE_ROOT; };
+		01BD546F1E2F4FC5007FC311 /* ThreeProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ThreeProject; sourceTree = BUILT_PRODUCTS_DIR; };
+		01BD552C1E30C9DC007FC311 /* Elf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Elf.h; sourceTree = "<group>"; };
+		01BD552D1E30C9DC007FC311 /* Elf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Elf.m; sourceTree = "<group>"; };
+		01BD552E1E30C9DC007FC311 /* GameCharactor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCharactor.h; sourceTree = "<group>"; };
+		01BD552F1E30C9DC007FC311 /* GameCharactor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCharactor.m; sourceTree = "<group>"; };
+		01BD55301E30C9DC007FC311 /* Human.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Human.h; sourceTree = "<group>"; };
+		01BD55311E30C9DC007FC311 /* Human.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Human.m; sourceTree = "<group>"; };
+		01BD55321E30C9DC007FC311 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		01BD55331E30C9DC007FC311 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		01BD55341E30C9DC007FC311 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		01BD55351E30C9DC007FC311 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		01BD55361E30C9DC007FC311 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		01BD55371E30C9DC007FC311 /* UniversityStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UniversityStudent.h; sourceTree = "<group>"; };
+		01BD55381E30C9DC007FC311 /* UniversityStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UniversityStudent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +67,7 @@
 		01BD54701E2F4FC5007FC311 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				01BD546F1E2F4FC5007FC311 /* 17011819 */,
+				01BD546F1E2F4FC5007FC311 /* ThreeProject */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,19 +75,19 @@
 		01BD54711E2F4FC5007FC311 /* MyThirdApp */ = {
 			isa = PBXGroup;
 			children = (
-				01BD551C1E30BFF7007FC311 /* main.m */,
-				01BD55161E30BFF7007FC311 /* Elf.h */,
-				01BD55171E30BFF7007FC311 /* Elf.m */,
-				01BD55181E30BFF7007FC311 /* GameCharactor.h */,
-				01BD55191E30BFF7007FC311 /* GameCharactor.m */,
-				01BD551A1E30BFF7007FC311 /* Human.h */,
-				01BD551B1E30BFF7007FC311 /* Human.m */,
-				01BD551D1E30BFF7007FC311 /* Person.h */,
-				01BD551E1E30BFF7007FC311 /* Person.m */,
-				01BD551F1E30BFF7007FC311 /* Student.h */,
-				01BD55201E30BFF7007FC311 /* Student.m */,
-				01BD55211E30BFF7007FC311 /* UniversityStudent.h */,
-				01BD55221E30BFF7007FC311 /* UniversityStudent.m */,
+				01BD55321E30C9DC007FC311 /* main.m */,
+				01BD552C1E30C9DC007FC311 /* Elf.h */,
+				01BD552D1E30C9DC007FC311 /* Elf.m */,
+				01BD552E1E30C9DC007FC311 /* GameCharactor.h */,
+				01BD552F1E30C9DC007FC311 /* GameCharactor.m */,
+				01BD55301E30C9DC007FC311 /* Human.h */,
+				01BD55311E30C9DC007FC311 /* Human.m */,
+				01BD55331E30C9DC007FC311 /* Person.h */,
+				01BD55341E30C9DC007FC311 /* Person.m */,
+				01BD55351E30C9DC007FC311 /* Student.h */,
+				01BD55361E30C9DC007FC311 /* Student.m */,
+				01BD55371E30C9DC007FC311 /* UniversityStudent.h */,
+				01BD55381E30C9DC007FC311 /* UniversityStudent.m */,
 			);
 			path = MyThirdApp;
 			sourceTree = "<group>";
@@ -95,9 +95,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		01BD546E1E2F4FC5007FC311 /* 17011819 */ = {
+		01BD546E1E2F4FC5007FC311 /* ThreeProject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 01BD54761E2F4FC5007FC311 /* Build configuration list for PBXNativeTarget "17011819" */;
+			buildConfigurationList = 01BD54761E2F4FC5007FC311 /* Build configuration list for PBXNativeTarget "ThreeProject" */;
 			buildPhases = (
 				01BD546B1E2F4FC5007FC311 /* Sources */,
 				01BD546C1E2F4FC5007FC311 /* Frameworks */,
@@ -107,9 +107,9 @@
 			);
 			dependencies = (
 			);
-			name = 17011819;
+			name = ThreeProject;
 			productName = MyThirdApp;
-			productReference = 01BD546F1E2F4FC5007FC311 /* 17011819 */;
+			productReference = 01BD546F1E2F4FC5007FC311 /* ThreeProject */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -127,7 +127,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 01BD546A1E2F4FC5007FC311 /* Build configuration list for PBXProject "17011819" */;
+			buildConfigurationList = 01BD546A1E2F4FC5007FC311 /* Build configuration list for PBXProject "ThreeProject" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -139,7 +139,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				01BD546E1E2F4FC5007FC311 /* 17011819 */,
+				01BD546E1E2F4FC5007FC311 /* ThreeProject */,
 			);
 		};
 /* End PBXProject section */
@@ -149,13 +149,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01BD55241E30BFF7007FC311 /* GameCharactor.m in Sources */,
-				01BD55291E30BFF7007FC311 /* UniversityStudent.m in Sources */,
-				01BD55281E30BFF7007FC311 /* Student.m in Sources */,
-				01BD55271E30BFF7007FC311 /* Person.m in Sources */,
-				01BD55251E30BFF7007FC311 /* Human.m in Sources */,
-				01BD55261E30BFF7007FC311 /* main.m in Sources */,
-				01BD55231E30BFF7007FC311 /* Elf.m in Sources */,
+				01BD553A1E30C9DC007FC311 /* GameCharactor.m in Sources */,
+				01BD553F1E30C9DC007FC311 /* UniversityStudent.m in Sources */,
+				01BD553E1E30C9DC007FC311 /* Student.m in Sources */,
+				01BD553D1E30C9DC007FC311 /* Person.m in Sources */,
+				01BD553B1E30C9DC007FC311 /* Human.m in Sources */,
+				01BD553C1E30C9DC007FC311 /* main.m in Sources */,
+				01BD55391E30C9DC007FC311 /* Elf.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +266,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		01BD546A1E2F4FC5007FC311 /* Build configuration list for PBXProject "17011819" */ = {
+		01BD546A1E2F4FC5007FC311 /* Build configuration list for PBXProject "ThreeProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				01BD54741E2F4FC5007FC311 /* Debug */,
@@ -275,7 +275,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		01BD54761E2F4FC5007FC311 /* Build configuration list for PBXNativeTarget "17011819" */ = {
+		01BD54761E2F4FC5007FC311 /* Build configuration list for PBXNativeTarget "ThreeProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				01BD54771E2F4FC5007FC311 /* Debug */,

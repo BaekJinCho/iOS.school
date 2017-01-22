@@ -14,6 +14,7 @@
 
 int main(int argc, const char * argv[]) {
     Elf *e1 = [[Elf alloc] init];
+    [e1 setterHp:500];
 //    e1.name = @"cho";
 //    e1.level = 99;
 //    e1.hp = 500;
@@ -25,6 +26,7 @@ int main(int argc, const char * argv[]) {
     
     
     Human *h1 = [[Human alloc] init];
+    [h1 setterHp:500];
 //    h1.name = @"jin";
 //    h1.level = 98;
 //    h1.hp = 200;
@@ -32,11 +34,12 @@ int main(int argc, const char * argv[]) {
 //    h1.attackPower = 300;
     
     GameCharactor *g1 =[[GameCharactor alloc] init];
+    [g1 setterHp:500];
 //    g1.level = 99;
     
     
-    g1.hp = 100;
-    NSLog(@"캐릭터의 피는?", g1.hp);
+//    g1.hp = 100;
+    NSLog(@"캐릭터의 피는? %lu", g1.hp);
     
     [e1 attackTo:h1];
     [e1 jumpTo:h1];
