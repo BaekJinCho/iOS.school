@@ -9,7 +9,7 @@
 ###2. iOS School
 ####- 컴퓨터 개론
 
-- [1week]  
+- [1 week]  
 	- [Git](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170109)
 	- [프로그램 / 컴퓨터 역사, 구성, 구조 / 데이터 표현방식](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170110)
 	- [운영체제 & 프로세스 / 자료구조 / 알고리즘](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170111)
@@ -19,30 +19,30 @@
 <br>
 ####- Objective-C
 
-- [2week]
+- [2 week]
 	- [xcode 시작하기 & 구조잡기](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170116)
 	-  [객체화 / property 접근 / Class / property / method / 퀵헬프](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170117)
 	- [매개변수 / 데이터 타입 / self](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/17011819)
 	- [재정의(Override) / super / 은닉화](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170119)
 	- [초기화 메서드](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170120)
 
-- [3week]
+- [3 week]
 
 
-- [4week]
+- [4 week]
 
-- [5week]
+- [5 week]
 
-- [6week]
+- [6 week]
 
-- [7week]
+- [7 week]
 
-- [8week]
+- [8 week]
 
-- [9week]
+- [9 week]
 
-- [10week]
+- [10 week]
 
-- [11week]
+- [11 week]
 
-- [12week]
+- [12 week]
