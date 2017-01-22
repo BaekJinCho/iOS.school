@@ -20,7 +20,7 @@ ex) @interface Warrior : ``NSObject``(부모 클래스)
 - Objective-C에서 가장 기본이 되는 클래스
 - alloc, init 메서드가  NSObject에 정의되어 있다.
 - Objective-C의 모든 클래스는 NSObject를 상속받아햐 한다.<br><br>
-![Alt text](/Users/CHOBAEKJIN/Desktop/a0037268_4b6b91c3db151.jpg)
+![a0037268_4b6b91c3db151](https://cloud.githubusercontent.com/assets/24997656/22183129/0b89e8f0-e0fa-11e6-9adf-a80df1a3a8c1.jpg)
 
 <br><br>
 ##- 재정의(Override)
