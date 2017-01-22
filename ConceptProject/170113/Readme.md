@@ -53,7 +53,7 @@ ex) 주먹구구식, 폭포수, 프로토타이핑, 나선형<br>
 *(Sw 개발 방법론 + 모델 + 클래스 다이어그램)*
 
 <br>
-3. **tdd(Test Driven Development)**<br>
+3. **TDD(Test Driven Development)**<br>
 : 테스트 주도 개발<br>
 : 매우 짧은 개발 사이클을 개발하는 소프트웨어 개발 프로세스<br>
 : 코드 품질을 관리하며 개발을 하는 방법<br>
