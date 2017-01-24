@@ -21,14 +21,16 @@
 ####- Objective-C
 
 - [2 week]
-	- [xcode 시작하기 & 구조잡기](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170116)
+	- [Xcode 시작하기 & 구조잡기](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170116)
 	-  [객체화 / property 접근 / Class / property / method / 퀵헬프](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170117)
 	- [매개변수 / 데이터 타입 / self](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/17011819)
 	- [재정의(Override) / super / 은닉화](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170119)
 	- [초기화 메서드](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170120)
 
 - [3 week]
-
+	- 변수, 메소드(클래스, 인스턴스) / 조건문
+	- 자료구조
+	- 자료구조 
 
 - [4 week]
 
