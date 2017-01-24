@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Rectangle.h"
 
-@interface RectangularSolid : NSObject
+
+@interface RectangularSolid : Rectangle
 
 @end

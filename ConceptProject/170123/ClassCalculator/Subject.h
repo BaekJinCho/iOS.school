@@ -10,16 +10,18 @@
 
 @interface Subject : NSObject
 
+//은닉화
+@property (readonly)NSUInteger koreanScore;
+@property (readonly)NSUInteger mathScore;
+@property (readonly)NSUInteger englishScore;
+@property (readonly)NSUInteger scienceScore;
 
-@property NSUInteger koreanScore;
-@property NSUInteger mathScore;
-@property NSUInteger englishScore;
-@property NSUInteger scienceScore;
+@property (readonly)NSUInteger grade;
 
-@property NSUInteger grade;
-
-
-
-
+//초기화 메서드 선언
+- (instancetype)initWithKoreanScore:(NSUInteger)korean
+                          mathScore:(NSUInteger)math
+                       englishScore:(NSUInteger)eng
+                          mathScore:(NSUInteger)science;
 
 @end

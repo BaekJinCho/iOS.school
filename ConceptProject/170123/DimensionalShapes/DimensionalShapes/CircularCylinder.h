@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Circle.h"
 
-@interface CircularCylinder : NSObject
+@interface CircularCylinder : Circle
 
 @end

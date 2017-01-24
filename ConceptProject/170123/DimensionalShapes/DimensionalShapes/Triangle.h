@@ -10,4 +10,7 @@
 
 @interface Triangle : NSObject
 
+@property CGFloat height;
+@property CGFloat base;
+
 @end

@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Square.h"
 
-@interface Cube : NSObject
+@interface Cube : Square
 
 @end

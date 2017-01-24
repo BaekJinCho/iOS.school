@@ -10,4 +10,8 @@
 
 @interface Trapezoid : NSObject
 
+@property CGFloat height;
+@property CGFloat aaa;
+@property CGFloat bbb;
+
 @end

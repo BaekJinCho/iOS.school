@@ -10,4 +10,7 @@
 
 @interface Rectangle : NSObject
 
+@property CGFloat lenth;
+@property CGFloat width;
+
 @end

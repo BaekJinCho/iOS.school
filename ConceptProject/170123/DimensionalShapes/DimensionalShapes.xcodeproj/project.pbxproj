@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		014099631E35D4C0001A99CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 014099621E35D4C0001A99CC /* main.m */; };
+		0140996B1E35D4E2001A99CC /* DimensionalShapes.m in Sources */ = {isa = PBXBuildFile; fileRef = 0140996A1E35D4E2001A99CC /* DimensionalShapes.m */; };
+		0140996E1E35D5BA001A99CC /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = 0140996D1E35D5BA001A99CC /* Square.m */; };
+		014099711E363832001A99CC /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 014099701E363832001A99CC /* Rectangle.m */; };
+		014099741E363842001A99CC /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 014099731E363842001A99CC /* Circle.m */; };
+		014099771E363852001A99CC /* Triangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 014099761E363852001A99CC /* Triangle.m */; };
+		0140997A1E363881001A99CC /* Trapezoid.m in Sources */ = {isa = PBXBuildFile; fileRef = 014099791E363881001A99CC /* Trapezoid.m */; };
+		0140997D1E36388C001A99CC /* Cube.m in Sources */ = {isa = PBXBuildFile; fileRef = 0140997C1E36388C001A99CC /* Cube.m */; };
+		014099801E3638A9001A99CC /* RectangularSolid.m in Sources */ = {isa = PBXBuildFile; fileRef = 0140997F1E3638A9001A99CC /* RectangularSolid.m */; };
+		014099831E3638BA001A99CC /* CircularCylinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 014099821E3638BA001A99CC /* CircularCylinder.m */; };
+		014099861E3638C7001A99CC /* Sphere.m in Sources */ = {isa = PBXBuildFile; fileRef = 014099851E3638C7001A99CC /* Sphere.m */; };
+		014099891E3638CF001A99CC /* Cone.m in Sources */ = {isa = PBXBuildFile; fileRef = 014099881E3638CF001A99CC /* Cone.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +36,28 @@
 /* Begin PBXFileReference section */
 		0140995F1E35D4C0001A99CC /* DimensionalShapes */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DimensionalShapes; sourceTree = BUILT_PRODUCTS_DIR; };
 		014099621E35D4C0001A99CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		014099691E35D4E2001A99CC /* DimensionalShapes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DimensionalShapes.h; sourceTree = "<group>"; };
+		0140996A1E35D4E2001A99CC /* DimensionalShapes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DimensionalShapes.m; sourceTree = "<group>"; };
+		0140996C1E35D5BA001A99CC /* Square.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Square.h; sourceTree = "<group>"; };
+		0140996D1E35D5BA001A99CC /* Square.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Square.m; sourceTree = "<group>"; };
+		0140996F1E363832001A99CC /* Rectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
+		014099701E363832001A99CC /* Rectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rectangle.m; sourceTree = "<group>"; };
+		014099721E363842001A99CC /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
+		014099731E363842001A99CC /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
+		014099751E363852001A99CC /* Triangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Triangle.h; sourceTree = "<group>"; };
+		014099761E363852001A99CC /* Triangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Triangle.m; sourceTree = "<group>"; };
+		014099781E363881001A99CC /* Trapezoid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trapezoid.h; sourceTree = "<group>"; };
+		014099791E363881001A99CC /* Trapezoid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trapezoid.m; sourceTree = "<group>"; };
+		0140997B1E36388C001A99CC /* Cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cube.h; sourceTree = "<group>"; };
+		0140997C1E36388C001A99CC /* Cube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cube.m; sourceTree = "<group>"; };
+		0140997E1E3638A9001A99CC /* RectangularSolid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RectangularSolid.h; sourceTree = "<group>"; };
+		0140997F1E3638A9001A99CC /* RectangularSolid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RectangularSolid.m; sourceTree = "<group>"; };
+		014099811E3638BA001A99CC /* CircularCylinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularCylinder.h; sourceTree = "<group>"; };
+		014099821E3638BA001A99CC /* CircularCylinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircularCylinder.m; sourceTree = "<group>"; };
+		014099841E3638C7001A99CC /* Sphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sphere.h; sourceTree = "<group>"; };
+		014099851E3638C7001A99CC /* Sphere.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sphere.m; sourceTree = "<group>"; };
+		014099871E3638CF001A99CC /* Cone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cone.h; sourceTree = "<group>"; };
+		014099881E3638CF001A99CC /* Cone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cone.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +91,28 @@
 			isa = PBXGroup;
 			children = (
 				014099621E35D4C0001A99CC /* main.m */,
+				014099691E35D4E2001A99CC /* DimensionalShapes.h */,
+				0140996A1E35D4E2001A99CC /* DimensionalShapes.m */,
+				0140996C1E35D5BA001A99CC /* Square.h */,
+				0140996D1E35D5BA001A99CC /* Square.m */,
+				0140996F1E363832001A99CC /* Rectangle.h */,
+				014099701E363832001A99CC /* Rectangle.m */,
+				014099721E363842001A99CC /* Circle.h */,
+				014099731E363842001A99CC /* Circle.m */,
+				014099751E363852001A99CC /* Triangle.h */,
+				014099761E363852001A99CC /* Triangle.m */,
+				014099781E363881001A99CC /* Trapezoid.h */,
+				014099791E363881001A99CC /* Trapezoid.m */,
+				0140997B1E36388C001A99CC /* Cube.h */,
+				0140997C1E36388C001A99CC /* Cube.m */,
+				0140997E1E3638A9001A99CC /* RectangularSolid.h */,
+				0140997F1E3638A9001A99CC /* RectangularSolid.m */,
+				014099811E3638BA001A99CC /* CircularCylinder.h */,
+				014099821E3638BA001A99CC /* CircularCylinder.m */,
+				014099841E3638C7001A99CC /* Sphere.h */,
+				014099851E3638C7001A99CC /* Sphere.m */,
+				014099871E3638CF001A99CC /* Cone.h */,
+				014099881E3638CF001A99CC /* Cone.m */,
 			);
 			path = DimensionalShapes;
 			sourceTree = "<group>";
@@ -119,7 +174,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0140997D1E36388C001A99CC /* Cube.m in Sources */,
+				0140996E1E35D5BA001A99CC /* Square.m in Sources */,
+				014099831E3638BA001A99CC /* CircularCylinder.m in Sources */,
+				014099801E3638A9001A99CC /* RectangularSolid.m in Sources */,
 				014099631E35D4C0001A99CC /* main.m in Sources */,
+				014099861E3638C7001A99CC /* Sphere.m in Sources */,
+				014099741E363842001A99CC /* Circle.m in Sources */,
+				0140997A1E363881001A99CC /* Trapezoid.m in Sources */,
+				0140996B1E35D4E2001A99CC /* DimensionalShapes.m in Sources */,
+				014099711E363832001A99CC /* Rectangle.m in Sources */,
+				014099891E3638CF001A99CC /* Cone.m in Sources */,
+				014099771E363852001A99CC /* Triangle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +312,7 @@
 				014099681E35D4C0001A99CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,23 +10,6 @@
 
 @interface Square : NSObject
 
-@property NSUInteger squareArea;
-@property NSUInteger squarePerimeter;
-@property NSUInteger rectangleArea;
-@property NSUInteger rectanglePerimeter;
-@property NSUInteger circleArea;
-@property NSUInteger circleCircumfernece;
-@property NSUInteger triangleArea;
-@property NSUInteger trapezoldArea;
-@property NSUInteger cubeVolume;
-@property NSUInteger rectangularSolidVolume;
-@property NSUInteger circularCylinderVolume;
-@property NSUInteger sphereVolume;
-@property NSUInteger coneVolume;
-
-
-@property CGFloat width;
-@property CGFloat height;
-
+@property CGFloat base;
 
 @end

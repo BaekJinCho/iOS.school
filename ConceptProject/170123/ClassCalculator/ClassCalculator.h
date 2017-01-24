@@ -19,9 +19,11 @@
 @property NSUInteger totalGrade;
 
 //과목 점수 더하는 메서드
-- (void)addToSubject:(Subject *)subjectName;
+- (NSUInteger)addToSubject:(Subject *)subjectName;
 
 //평균 구하는 메서드
-- (void)divisionTotalSubject:(Subject *)totalScore;
+- (CGFloat)divisionTotalSubject:(Subject *)totalScore;
+
+// - (void)getLanguagePointKorean:(NSUInteger)korean andEng:(NSUInteger)eng;
 
 @end

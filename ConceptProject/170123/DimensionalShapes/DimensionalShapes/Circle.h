@@ -10,4 +10,7 @@
 
 @interface Circle : NSObject
 
+@property CGFloat pie;
+@property CGFloat Radius;
+
 @end
