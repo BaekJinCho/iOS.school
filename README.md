@@ -1,4 +1,4 @@
-#조백진(Cho Baek Jin)<a href="url"><img src="Image/ios.jpg" align="right" height="48" ></a>
+#조백진(Cho Baek Jin)<a href="url"><img src="/http://www.tech-myanmar.com/wp-content/uploads/2015/04/apple-logo.png" align="right" height="48" ></a>
 
 
 ##- Content
@@ -37,7 +37,8 @@
 
 - [3 week]
 	- [Objective-C 특징 / 클래스 / 객체 / 메소드(클래스, 인스턴스)](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170123)
-	- 조건문 / 계산기 알고리즘  
+	- [조건문(if / else if) / 비교연산자 / 논리연산자](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170124) 
+	- [계산기 알고리즘](https://github.com/BaekJinCho/iOS.school/tree/master/Study/Study5)  
 
 - [4 week]
 
