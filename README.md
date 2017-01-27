@@ -1,4 +1,5 @@
-#조백진(Cho Baek Jin)
+#조백진(Cho Baek Jin)<a href="url"><img src="/Users/CHOBAEKJIN/Desktop/iOS.school/Study/Image/ios.jpg" align="right" height="48" ></a>
+
 
 ##- Content
 
@@ -6,7 +7,7 @@
 - resume : 이력서< >
 
 <br><br>
-###2. iOS School
+###2. iOS School🍎
 ####- 컴퓨터 개론
 
 - [1 week]
@@ -18,11 +19,11 @@
 	- [소프트웨어 공학 / 객체지향 프로그래밍](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170113)
 
 #####※ Study
-※ RAM / Encoding<br>
-※ Actice X / 기술적 부채<br>
-※ 공인인증서 / 앱 접근성<br>
-※ 객체지향 프로그래밍 특징<br>
-※ Framework / Library
+※ [RAM / Encoding](https://github.com/BaekJinCho/iOS.school/tree/master/Study/Study)<br>
+※ [Actice X / 기술적 부채](https://github.com/BaekJinCho/iOS.school/tree/master/Study/Study1)<br>
+※ [공인인증서 / 앱 접근성](https://github.com/BaekJinCho/iOS.school/tree/master/Study/Study2)<br>
+※ [객체지향 프로그래밍 특징](https://github.com/BaekJinCho/iOS.school/tree/master/Study/Study3)<br>
+※ [Framework / Library](https://github.com/BaekJinCho/iOS.school/tree/master/Study/Study4)
 
 <br>
 ####- Objective-C
@@ -35,9 +36,8 @@
 	- [초기화 메서드](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170120)
 
 - [3 week]
-	- Objective-C 특징 / 클래스 / 객체 / 메소드(클래스, 인스턴스)
-	- 조건문 / 
-	- 자료구조 
+	- [Objective-C 특징 / 클래스 / 객체 / 메소드(클래스, 인스턴스)](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170123)
+	- 조건문 / 계산기 알고리즘  
 
 - [4 week]
 
