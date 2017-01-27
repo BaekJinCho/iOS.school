@@ -1,4 +1,4 @@
-#조백진(Cho Baek Jin)<a href="url"><img src="/Users/CHOBAEKJIN/Desktop/iOS.school/Study/Image/ios.jpg" align="right" height="48" ></a>
+#조백진(Cho Baek Jin)<a href="url"><img src="Image/ios.jpg" align="right" height="48" ></a>
 
 
 ##- Content
