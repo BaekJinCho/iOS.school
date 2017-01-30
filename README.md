@@ -1,4 +1,4 @@
-#조백진(Cho Baek Jin)<a href="url"><img src="/http://www.tech-myanmar.com/wp-content/uploads/2015/04/apple-logo.png" align="right" height="48" ></a>
+#조백진(Cho Baek Jin)<a href="url"><img src="Image/apple-logo.png" align="right" height="48" ></a>
 
 
 ##- Content
@@ -17,6 +17,7 @@
 	- [운영체제 & 프로세스 / 자료구조 / 알고리즘](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170111)
 	- [데이터베이스 / 네트워크 / 암호화](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170112)
 	- [소프트웨어 공학 / 객체지향 프로그래밍](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170113)
+
 
 #####※ Study
 ※ [RAM / Encoding](https://github.com/BaekJinCho/iOS.school/tree/master/Study/Study)<br>
@@ -41,6 +42,8 @@
 	- [계산기 알고리즘](https://github.com/BaekJinCho/iOS.school/tree/master/Study/Study5)  
 
 - [4 week]
+	- 조건문(Switch) / 
+	- 반복문 / 
 
 - [5 week]
 
