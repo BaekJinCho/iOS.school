@@ -9,7 +9,7 @@
 #import "Person.h"
 
 @implementation Person
-- (void)eatDinner{
+//- (void)eatDinner{
     NSLog(@"내가 %@");
 
 }

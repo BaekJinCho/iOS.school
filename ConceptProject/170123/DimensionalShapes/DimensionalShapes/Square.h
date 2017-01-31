@@ -10,6 +10,7 @@
 
 @interface Square : NSObject
 
-@property CGFloat base;
+@property NSUInteger squareBase;
+
 
 @end

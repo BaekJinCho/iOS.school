@@ -7,24 +7,25 @@
 //
 
 #import <Foundation/Foundation.h>
-@class Shapes;
+@class Square;
+@class Rectangle;
+@class Circle;
+@class Triangle;
+@class Trapezoid;
 
 @interface DimensionalShapes : NSObject
 
 //도형 치수 property 설정
-@property NSUInteger area;
-@property NSUInteger perimeter;
-@property NSUInteger circumference;
-@property NSUInteger volume;
-
-//@property CGFloat bottom;
-//@property CGFloat height;
+@property CGFloat area;
+@property CGFloat perimeter;
+@property CGFloat circumference;
+@property CGFloat volume;
 
 
-- (CGFloat)area:(Shapes *)shapes;
-- (CGFloat)perimeter:(Shapes *)shapes;
-- (CGFloat)circumference:(Shapes *)shapes;
-- (CGFloat)volume:(Shapes *)shapes;
+- (CGFloat)area:(Square *)base rectangle:(Rectangle *)rectangle circle:(Circle *)circle triangle:(Triangle *)triangle trapezoid:(Trapezoid *)trapezoid; // 도형 넓이 메서드 정의
+- (CGFloat)perimeter:(Square *)base rectangle:(Rectangle *)rectangle;
+- (CGFloat)circumference;
+- (CGFloat)volume;
 
 
 

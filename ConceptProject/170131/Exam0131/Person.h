@@ -1,8 +1,8 @@
 //
 //  Person.h
-//  MyThirdApp
+//  Exam0131
 //
-//  Created by 조백진 on 2017. 1. 19..
+//  Created by 조백진 on 2017. 1. 31..
 //  Copyright © 2017년 BaekJin.Cho. All rights reserved.
 //
 
@@ -16,9 +16,10 @@
 @property NSUInteger tall;
 @property NSUInteger weight;
 @property NSString* job;
+@property NSString* birthday;
 
-
-
-- (id)eatDinner;
+- (instancetype)initWithName:(NSString *)name;
+- (void)settingJob:(NSString *)job;
+- (BOOL)checkBirthday;
 
 @end

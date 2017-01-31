@@ -7,7 +7,17 @@
 //
 
 #import "DimensionalShapes.h"
-#import "Shapes.h"
+#import "Square.h"
+#import "Rectangle.h"
+#import "Circle.h"
+#import "Triangle.h"
+#import "Trapezoid.h"
+#import "Cube.h"
+#import "RectangularSolid.h"
+#import "CircularCylinder.h"
+#import "Sphere.h"
+#import "Cone.h"
+
 
 //넓이, 직사각형, 원의 둘레, 부피 구해야 함
 
@@ -15,29 +25,36 @@
 @implementation DimensionalShapes
 
 //넓이 구하는 것
-- (CGFloat)area:(Shapes *)shapes{
-    shapes.squareArea = 
-    
+- (CGFloat)area:(Square *)base rectangle:(Rectangle *)rectangle circle:(Circle *)circle triangle:(Triangle *)triangle trapezoid:(Trapezoid *)trapezoid{
+    self.area = base.squareBase * base.squareBase; //Square 넓이 구하는 공식
+    self.area = rectangle.lenth * rectangle.width; //Rectangle 넓이 구하는 공식
+    self.area = circle.pie * (circle.radius * circle.radius); //Circle 넓이 구하는 공식
+    self.area = (triangle.base * triangle.height) / 2; //Triangle 넓이 구하는 공식
+    self.area = (trapezoid.aaa + trapezoid.bbb) * trapezoid.height / 2; //Trapezoid 넓이 구하는 공식
+
 }
 
 
 
 //직사각형 둘레 구하는 것
-- (CGFloat)perimeter:(Shapes *)shapes{
+- (CGFloat)perimeter:(Square *)base rectangle:(Rectangle *)rectangle{
+    self.perimeter = (base.squareBase) * 4; //Square perimeter
+    self.perimeter = (rectangle.lenth) * 2 + (rectangle.width) * 2;
+}
     
 }
 
 
 
 //원의 둘레 구하는 것
-- (CGFloat)circumference:(Shapes *)shapes{
+- (CGFloat)circumference{
     
 }
 
 
 
 //부피 구하는 것
-- (CGFloat)volume:(Shapes *)shapes;{
+- (CGFloat)volume{
 
 
 
