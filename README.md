@@ -42,7 +42,7 @@
 	- [계산기 알고리즘](https://github.com/BaekJinCho/iOS.school/tree/master/Study/Study5)  
 
 - [4 week]
-	- 기억 끄집어 내기 / 조건문(Switch) / 
+	- 기억 끄집어 내기 / 조건문(Switch)
 	- 반복문 / 
 
 - [5 week]

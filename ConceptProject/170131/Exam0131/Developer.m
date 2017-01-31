@@ -10,6 +10,16 @@
 
 @implementation Developer
 
+//Developer의 직업 초기화 메서드 구현
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.job = @"developer";
+    }
+    return self;
+}
+
 - (void)settingJob:(NSString *)job{
     
 }

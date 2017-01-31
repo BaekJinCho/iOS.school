@@ -13,7 +13,7 @@
 
 //부모 클래스 재정의(Override)
 - (void)settingJob:(NSString *)job;
-- (BOOL)checkBirthday;
+//- (BOOL)checkBirthday;
 
 //Developer 메소드 정의
 - (void)seeTheComputer;
