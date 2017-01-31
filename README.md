@@ -1,4 +1,4 @@
-#조백진(Cho Baek Jin)<a href="url"><img src="Study/Image/apple-logo.png" align="right" height="48" ></a>
+#조백진(Cho Baek Jin)<a href="url"><img src="Study/Image/apple-logo.png" align="right" height="52" ></a>
 
 
 ##- Content
@@ -42,7 +42,7 @@
 	- [계산기 알고리즘](https://github.com/BaekJinCho/iOS.school/tree/master/Study/Study5)  
 
 - [4 week]
-	- 기억 끄집어 내기 / 조건문(Switch)
+	- [기억 끄집어 내기 / 조건문(Switch)](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170131)
 	- 반복문 / 
 
 - [5 week]
