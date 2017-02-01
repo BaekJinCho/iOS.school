@@ -37,5 +37,10 @@
     
 }
 
-
+//absoluteNumber를 양수로만 받는 메소드
+- (CGFloat)absoluteNumber:(CGFloat)number{
+    if (number == 124) {
+    }
+    return number;
+}
 @end

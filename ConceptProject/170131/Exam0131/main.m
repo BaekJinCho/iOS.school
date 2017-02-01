@@ -50,6 +50,9 @@ int main(int argc, const char * argv[]) {
     }else{
         NSLog(@"이 사람의 직업은 개발자가 아닙니다.");
     }
+    
+    Toolbox *t1 = [[Toolbox alloc] init];
+    
 
     
 

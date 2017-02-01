@@ -1,4 +1,4 @@
-#조백진(Cho Baek Jin)<a href="url"><img src="Study/Image/apple-logo.png" align="right" height="52" ></a>
+#조백진(Cho Baek Jin)<a href="url"><img src="Study/Image/apple-logo.png" align="right" height="48" ></a>
 
 
 ##- Content

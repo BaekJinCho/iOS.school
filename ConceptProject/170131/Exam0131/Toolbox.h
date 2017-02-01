@@ -14,4 +14,5 @@
 + (BOOL)checkDeveloper:(Person *)p1;
 + (BOOL)checkDesigner:(Person *)p1;
 
+
 @end
