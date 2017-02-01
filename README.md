@@ -42,8 +42,10 @@
 	- [계산기 알고리즘](https://github.com/BaekJinCho/iOS.school/tree/master/Study/Study5)  
 
 - [4 week]
-	- [기억 끄집어 내기 / 조건문(Switch)](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170131)
-	- 반복문 / 
+	- [기억 끄집어 내기 / 조건문(Switch)](ConceptProject/170131)
+	- [반복문(While문 / for문)](ConceptProject/170201)
+	- [반복문(While문 / for문)을 활용하여 구구단 / 팩토리얼 / 삼각수 만들어보기](ConceptProject/170201Exam)
+	- 구조익히기(UI) / UIView / UILabel / UIImageView
 
 - [5 week]
 
