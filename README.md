@@ -1,14 +1,14 @@
 #조백진(Cho Baek Jin)<a href="url"><img src="Study/Image/apple-logo.png" align="right" height="48" ></a>
 
 
-##- Content
+#- Content
 
-###1. Profile
+##1. Profile
 - resume : 이력서< >
 
 <br><br>
-###2. iOS School🍎
-####- 컴퓨터 개론
+##2. iOS School🍎
+###- 컴퓨터 개론
 
 - [1 week]
   
@@ -27,7 +27,7 @@
 ※ [Framework / Library](https://github.com/BaekJinCho/iOS.school/tree/master/Study/Study4)
 
 <br>
-####- Objective-C
+###- Objective-C
 
 - [2 week]
 	- [Xcode 시작하기 & 구조잡기](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170116)
@@ -45,7 +45,9 @@
 	- [기억 끄집어 내기 / 조건문(Switch)](ConceptProject/170131)
 	- [반복문(While문 / for문)](ConceptProject/170201)
 	- [반복문(While문 / for문)을 활용하여 구구단 / 팩토리얼 / 삼각수 만들어보기](ConceptProject/170201Exam)
-	- 구조익히기(UI) / UIView / UILabel / UIImageView
+	- [for문을 이용하여 *로 트리 만들기](ConceptProject/170202StarTree)
+	- [iOS 구조 파악 / UI Base Guide / UIView](ConceptProject/170202)
+	- [UILabel / UIImageView / UIButton](ConceptProject/170203)
 
 - [5 week]
 

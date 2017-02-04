@@ -13,18 +13,16 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-//        AbsoluteNum *testNumber1 = [[AbsoluteNum alloc]init];
-//        
-//        NSInteger resultNumber = [testNumber1 absoluteNum:-30];
-//        NSLog(@"-30의 절대값은 %lu",resultNumber);
-//        
-//        
-//        
-//        [GuGuDan gugudan:199]; // while문으로 구현한 것 호출
-//        
-//        [GuGuDan gudan:28]; // for문으로 구현한 것 호출
+        AbsoluteNum *testNumber1 = [[AbsoluteNum alloc]init];
         
-        [GuGuDan factorial:3];
+        NSInteger resultNumber = [testNumber1 absoluteNum:-30];
+        NSLog(@"-30의 절대값은 %lu",resultNumber);
+        
+        [GuGuDan gugudan:199]; // while문으로 구현한 구구단 클래스 메소드 호출
+        
+        [GuGuDan gudan:28]; // for문으로 구현한 구구단 클래스 메소드 호출
+        
+        [GuGuDan factorial:3]; //for문으로 구현한 팩토리얼 클래스 메소드 호출
         
 
         
