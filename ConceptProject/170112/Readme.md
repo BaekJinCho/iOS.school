@@ -1,4 +1,9 @@
 #2017. 01. 12
+- 데이터베이스
+- 네트워크
+- 암호화
+
+<br>
 ##- 데이터베이스(Database)
 : 통합된 데이터들의 집합<br>
 
@@ -12,10 +17,14 @@
 
 - 관계형(RDB)<br>
 : SQL(Structured Query Language)을 사용하여 질의
+
 - NoSQL<br>
 : 키-값형, 객체형, 문서형, 컬럼형
 
-- SQL(Structured Query Language): 구조화된 질의어<br>:DBMS를 통해 데이터를 관리하기 위한 구조화된 질의문을 작성하기 위한 언어. <br>관계형 데이터베이스 관리 시스템에서 사용<br>
+- SQL(Structured Query Language)<br>
+: 구조화 된 질의어<br>
+: DBMS를 통해 데이터를 관리하기 위한 구조화된 질의문을 작성하기 위한 언어 <br>
+: 관계형 데이터베이스 관리 시스템에서 사용<br>
  - 학습링크 : <https://goo.gl/tjPqqq>, <https://goo.gl/qNF8XH>
 	
 <br><br>
