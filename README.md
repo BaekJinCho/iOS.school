@@ -3,6 +3,7 @@
 
 #- Content
 
+<br>
 ##1. Profile
 - resume : 이력서< >
 
@@ -18,13 +19,6 @@
 	>- [데이터베이스 / 네트워크 / 암호화](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170112)
 	>- [소프트웨어 공학 / 객체지향 프로그래밍](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170113)
 
-
-#####**※ Study**
->※ [RAM / Encoding](https://github.com/BaekJinCho/iOS.school/tree/master/Study/Study)<br>
-※ [Actice X / 기술적 부채](https://github.com/BaekJinCho/iOS.school/tree/master/Study/Study1)<br>
-※ [공인인증서 / 앱 접근성](https://github.com/BaekJinCho/iOS.school/tree/master/Study/Study2)<br>
-※ [객체지향 프로그래밍 특징](https://github.com/BaekJinCho/iOS.school/tree/master/Study/Study3)<br>
-※ [Framework / Library](https://github.com/BaekJinCho/iOS.school/tree/master/Study/Study4)
 
 <br>
 ###- Objective-C
@@ -67,3 +61,14 @@
 - **[11 week]**
 
 - **[12 week]**
+
+<br><br>
+##3. Study
+
+|[Git 명령어 정리](Study/Study6)|
+|:--:||:--:||:--:|
+|[RAM / Encoding](https://github.com/BaekJinCho/iOS.school/tree/master/Study/Study)|
+|[Actice X / 기술적 부채](https://github.com/BaekJinCho/iOS.school/tree/master/Study/Study1)|
+|[공인인증서 / 앱 접근성](https://github.com/BaekJinCho/iOS.school/tree/master/Study/Study2)|
+|[객체지향 프로그래밍 특징](https://github.com/BaekJinCho/iOS.school/tree/master/Study/Study3)|
+|[Framework / Library](https://github.com/BaekJinCho/iOS.school/tree/master/Study/Study4)|

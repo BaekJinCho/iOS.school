@@ -78,20 +78,23 @@
     titleView3.text = @"즐거운 수업시간!";
     titleView3.font = [UIFont systemFontOfSize:14];
     titleView3.textColor = [UIColor whiteColor];
-    
-    
     [titleView addSubview:titleView3];
     
     UIView *titleView4 = [[UIView alloc] initWithFrame:CGRectMake(80, 60, self.view.frame.size.width-90, 10)];
     titleView4.backgroundColor = [UIColor blackColor];
     [titleView addSubview:titleView4];
     
-    UIControl
+    //UIButton 만들어보기
+    UIButton *testBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    testBtn.frame = CGRectMake(80, 60, self.view.frame.size.width - 30, 10);
+    [testBtn addTarget:self action:@selector(action) forControlEvents:UIControlEventTouchUpInside];
+    [testBtn setTitle:@"버튼 테스트" forState:UIControlStateNormal];
+    [testBtn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+    [testBtn setTitle:@"테스트 완료" forState:UIControlStateHighlighted];
+    [testBtn setTitleColor:[UIColor brownColor] forState:UIControlStateHighlighted];
+    [titleView4 addSubview:testBtn];
     
     
-    //UIButton 만들기
-//    UIButton *testbtn = [UIButton buttonWithType:UI]
-   
     
     
 }
