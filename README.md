@@ -45,9 +45,11 @@
 	>- [for문을 이용하여 *로 트리 만들기](ConceptProject/170202StarTree)
 	>- [iOS 구조 파악 / UI Base Guide / UIView](ConceptProject/170202)
 	>- [UILabel / UIImageView / UIButton](ConceptProject/170203)
-	>- [자판기 만들기](ConceptProject/170205(VendingMachine))
+	>- [자동차 자판기 만들어보기](ConceptProject/170205(VendingMachine))
 
 - **[5 week]**
+
+	>- [Delegate / TextField / UIButton, UITextField(코드 연습)](ConceptProject/170206) 
 
 - **[6 week]**
 
