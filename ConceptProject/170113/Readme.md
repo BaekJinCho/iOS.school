@@ -20,6 +20,9 @@ ex) 주먹구구식, 폭포수, 프로토타이핑, 나선형<br>
 2) **폭포수**<br>
 : 요구사항 분석 -> 구조 설계 -> 구현 시작 -> 검증 -> 유지 보수<br> 
 	
+<br>
+![](https://github.com/projectlife724/i.wonsuk.choi/blob/master/Notes/Images/DAY%205/WaterfallModel.png?raw=true)
+	
 	- 단점 -
 	1. 앞에 단계가 진행이 되야지만 뒤에 단계가 진행된다. 
 	2. 요구사항 분석 제대로 못하면 안됨 
@@ -30,8 +33,14 @@ ex) 주먹구구식, 폭포수, 프로토타이핑, 나선형<br>
 : 요구 분석 -> 프로토타입 설계 -> 프로토타입 개발 -> 프로토타입 평가 -> 구현 -> 인수 및 설치<br>
 
 <br>
+![](https://github.com/projectlife724/i.wonsuk.choi/blob/master/Notes/Images/DAY%205/Prototyping.png?raw=true)
+
+<br>
 4) **나선형** (양질의 소프트웨어를 만들 수 있다.)<br>
-: 고객과의 의사소통 -> 계획 및 정의 -> 위험 분석 -> 구축 -> 고객 평가<br>
+: 고객과의 의사소통 -> 계획 및 정의 -> 위험 분석 -> 구축 -> 고객 평가
+
+<br>
+![](https://github.com/projectlife724/i.wonsuk.choi/blob/master/Notes/Images/DAY%205/Spiral.png?raw=true)
 
 	- 문제점 -
 	1. 전체적인 시간이 늘어난다. 
@@ -69,6 +78,8 @@ ex) 주먹구구식, 폭포수, 프로토타이핑, 나선형<br>
 	2) 결함을 점검하는 자동화된 테스트 케이스를 작성<br>
 	3) 케이스를 통과하기 위한 최소한의 양의 코드(테스트 코드)를 생성
 
+<br>
+![](https://github.com/projectlife724/i.wonsuk.choi/blob/master/Notes/Images/DAY%205/PowerPoint_Slide_Show_-__TDD_and_REST-assured_ppt__2.png?raw=true)
 
 **※ 테스트 코드를 작성하는 것은 중요!!!!**<br>(코드를 간결하고 좋게 만드는 것)<br>
 	- 테스트 후 다음 개발로 넘어가는 것
@@ -161,9 +172,19 @@ ex) 바바리안, 소서리스<br>
 : 서버 : 데이터를 제공해주는 주체<br>
 : 클라이언트 : 데이터를 제공받는 주체
 
+<br>
+![](https://github.com/projectlife724/i.wonsuk.choi/blob/master/Notes/Images/DAY%205/%25EC%258A%25AC%25EB%259D%25BC%25EC%259D%25B4%25EB%2593%259C5.jpg?raw=true)
+
+<br>
+
 - Front-end / Back-end<br>
 : 프로그램에서 보이는 부분(사용자에게 보이는 부분)<br>
 : 프로그램에서 보이지 않는 부분(뒤에서 데이터를 가져오고 삽입하고 삭제하고 등)
+
+<br>
+![](https://github.com/projectlife724/i.wonsuk.choi/blob/master/Notes/Images/DAY%205/20151207_21.jpg?raw=true)
+
+<br>
 
 - Thread<br>
  : 프로세스 내에서 작업이 실행되는 흐름의 단위

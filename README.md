@@ -50,6 +50,8 @@
 - **[5 week]**
 
 	>- [Delegate / TextField / UIButton, UITextField(코드 연습)](ConceptProject/170206) 
+	>- [UIScrollView / UIPageControl](ConceptProject/170207)
+	>- [UI를 이용하여 로그인 페이지 만들어 보기](ConceptProject/170207(Login))
 
 - **[6 week]**
 

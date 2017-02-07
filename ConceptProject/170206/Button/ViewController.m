@@ -18,6 +18,7 @@
 //버튼 변수 선언
 @property UIButton* btn1;
 @property UIButton* btn2;
+//버튼이 클릭되었을 때 그 색을 저장해주는 프로퍼티 선언
 @property UIButton* beforeBtnColor;
 
 @end

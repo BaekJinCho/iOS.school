@@ -20,6 +20,11 @@
 - Remote Repository<br>
 : 저장소의 위치가 서버에 존재.<br>
 
+<br>
+![](https://github.com/projectlife724/i.wonsuk.choi/blob/master/Notes/Images/DAY%201/Git%20Structure.png?raw=true)
+
+<br>
+
 |Working Dircetory -> Stage Area : Add|
 |:--:||:--:||:--:|
 |Stage area -> Local Repository : Commit|

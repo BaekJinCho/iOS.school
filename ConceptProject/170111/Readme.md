@@ -51,6 +51,9 @@ ex) 실제로는 0,1 밖에 없는데 어떤 공간(가상의 공간)을 제공�
 **대기 -> 준비 ↔ 실행**<br>
 이 과정을 반복하게 됩니다!
 
+<br>
+![](https://github.com/projectlife724/i.wonsuk.choi/blob/master/Notes/Images/DAY%203/ProcessGraph.png?raw=true)
+
 <br><br>
 프로세스 안에도 여러가지 작업 방식이 있습니다.
 ###- 프로세스 스케줄링
@@ -116,6 +119,9 @@ ex) 실제로는 0,1 밖에 없는데 어떤 공간(가상의 공간)을 제공�
 ex) 배열은 쉽게 초등학교 때, 신발장이라고 생각하시면 됩니다.
 신발장 크기와 위치가 정해져있죠?
 
+<br>
+![](https://github.com/projectlife724/i.wonsuk.choi/blob/master/Notes/Images/DAY%203/SingleLinkedList.png?raw=true)
+
 배열도 크기가 정해져 있습니다.<br>
 
 - 장점
@@ -128,6 +134,9 @@ ex) 배열은 쉽게 초등학교 때, 신발장이라고 생각하시면 됩니
 
 2) **연결 리스트(Linked List)**<br>
 : 각 노드가 데이터와 포인터를 가지고 한 줄로 연결되어 있는 방식으로 데이터를 저장하는 자료 구조입니다.
+
+<br>
+![](https://github.com/projectlife724/i.wonsuk.choi/blob/master/Notes/Images/DAY%203/DoubleLinkedList.png?raw=true)
 
 - 장점
  - 한 줄로 연결되어 있다 보니 잘못된 것이 있으면 되돌아 와 수정 가능!<br>
@@ -177,7 +186,11 @@ ex) 뒤로 가기
 <br><br><br>
 **- 트리 vs 그래프 차이점?**<br>
 : '부모 노드(The Root Node), 자식 노드(A Child Node)의 유무' 입니다.
-<br><br><br><br><br>
+
+<br>
+![](https://github.com/projectlife724/i.wonsuk.choi/blob/master/Notes/Images/DAY%203/Tree,%20Graph.png?raw=true)
+
+<br><br>
 ##- 알고리즘
 ###알고리즘이란?
 - 문제 해결을 위한 절차/방법

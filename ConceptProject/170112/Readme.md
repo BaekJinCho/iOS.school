@@ -56,6 +56,7 @@
 - HTTP(Hyper Text Transfer Protocol)<br>
 : 링크를 누르면 해당되는 곳으로 이동할 수 있도록 만든 문서
 	
+	<br>
 	- HTTP Method<br>
 	- 
 	> 1) **GET** : 요청할 때 추가 정보를 붙여주는 방식<br>
