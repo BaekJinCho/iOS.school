@@ -127,3 +127,6 @@
 	- self.view.frame.origin.(x, y) - 숫자
 	: 내가 원하는 사이즈(x, y)를 계산하는 것 
 
+<br>
+####- UIView 구현해보기1
+![](https://github.com/BaekJinCho/iOS.school/blob/master/Study/Image/uiview.png?raw=true)

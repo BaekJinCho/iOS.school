@@ -41,8 +41,8 @@
 
 	>- [기억 끄집어 내기 / 조건문(Switch)](ConceptProject/170131)
 	>- [반복문(While문 / for문)](ConceptProject/170201)
-	>- [반복문(While문 / for문)을 활용하여 구구단 / 팩토리얼 / 삼각수 만들어보기](ConceptProject/170201Exam)
-	>- [for문을 이용하여 *로 트리 만들기](ConceptProject/170202StarTree)
+	>- [반복문(While문 / for문)을 활용하여 구구단 / 팩토리얼 / 삼각수 만들어보기](ConceptProject/170201(Exam))
+	>- [for문을 이용하여 *로 트리 만들기](ConceptProject/170202(StarTree))
 	>- [iOS 구조 파악 / UI Base Guide / UIView](ConceptProject/170202)
 	>- [UILabel / UIImageView / UIButton](ConceptProject/170203)
 	>- [자동차 자판기 만들어보기](ConceptProject/170205(VendingMachine))

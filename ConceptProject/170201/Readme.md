@@ -48,4 +48,7 @@
 ※ counting 변수명은 보통 알파벳으로 짓는다.<br>
 ※ 세미콜론(;)으로 구분한다.
 
-예제 : 구구한 구현 / 팩토리얼(1~n까지 수의 곱) 구현
+<br>
+**- 예제 : 구구한 구현 / 팩토리얼(1~n까지 수의 곱) 구현**
+
+![](https://github.com/BaekJinCho/iOS.school/blob/master/Study/Image/gugudan.png?raw=true)
