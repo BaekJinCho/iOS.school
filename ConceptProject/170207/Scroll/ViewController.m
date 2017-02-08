@@ -22,7 +22,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    
     CGSize frameSize = self.view.frame.size;
     
     //UIScrollView 구현해보기

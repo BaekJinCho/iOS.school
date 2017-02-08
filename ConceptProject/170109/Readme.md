@@ -48,4 +48,3 @@
 
 <br>
 ![구글 로고](http://www.google.co.kr/images/srpr/logo11w.png)<br>
-
