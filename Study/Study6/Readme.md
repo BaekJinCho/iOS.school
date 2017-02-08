@@ -40,6 +40,22 @@
 
 >**: 아직 스테이징이나 커밋을 하지 않은 파일의 변경내용을 취소하고 이전 커밋상태로 돌립니다. svn에서 revert와 동일합니다.**
 
+- **git config user.name**
+
+>**: 현재 git 유저 이름 확인**
+
+- **git config user.email**
+
+>**: 현재 git이 이메일 확인**
+
+- **git config --global user.email (이메일 주소)**
+
+>**: 현재 git에 이메일 등록하기(등록이 안 되어 있는 경우 사용)**
+
+
+
+
+
 <br><br>
 ##- Branch와 Tag
 - **git branch**
