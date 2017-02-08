@@ -52,7 +52,8 @@
 	>- [Delegate / TextField / UIButton, UITextField(코드 연습)](ConceptProject/170206) 
 	>- [UIScrollView / UIPageControl](ConceptProject/170207)
 	>- [UI를 이용하여 로그인 페이지 만들어 보기](ConceptProject/170207(Login))
-	>- [포인터 / 구조체 / typedef / 배열(Array, Linked List) / Dictionaries](ConceptProject/170208)
+	>- [자료구조 (포인터 / 구조체 / typedef / 배열(Array, Linked List)) / Dictionaries](ConceptProject/170208)
+	>- ARC
 
 - **[6 week]**
 
