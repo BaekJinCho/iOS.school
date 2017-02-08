@@ -66,6 +66,8 @@
     self.tf2.tag = 200;
     self.tf2.delegate = self; //델리게이트
     [contentView addSubview:self.tf2];
+    
+
      
     //ID를 만드는 UILabel
      UILabel *idLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.tf.frame.origin.x-40, self.tf.frame.origin.y, self.view.frame.size.width*20/100, 30)];
@@ -112,9 +114,17 @@
         } else if(self.tf2.isFirstResponder){ //textField2 포커스 여부 확인(isFisrstResponder)
             NSLog(@"tf2");
           [self.tf2 resignFirstResponder]; //textField2 포커스 제거(resignFirstResponder)
+            
         }
+        
+        if (self.tf.text == self.tf2.text) {
+            NSLog(@"로그인 성공!");
+        }else
+            NSLog(@"로그인 실패!!!");
     }
 }
+
+
 
 -(void)textFieldDidBeginEditing:(UITextField *)textField {
     [self.sc setContentOffset:CGPointMake(0, 20) animated:YES];
