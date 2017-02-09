@@ -18,6 +18,10 @@
 	{
 		NSLog(@"%@", number);
 	}
+	
+예제)
+
+![](https://github.com/BaekJinCho/iOS.school/blob/master/Study/Image/for-in.png?raw=true)
 
 <br>
 ##- Stack
