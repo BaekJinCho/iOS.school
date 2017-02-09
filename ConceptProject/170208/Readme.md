@@ -106,7 +106,7 @@
 		<tagName> -> Tag
 		<value type> <name>; -> 항목
 
-<br>
+<br>
 ##- typedef
 : 타입에 별명을 지어주는 키워드
 

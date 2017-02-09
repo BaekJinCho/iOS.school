@@ -53,6 +53,28 @@
     self.pageControl.numberOfPages = 3;
     [self.view addSubview:self.pageControl];
     [self.pageControl addTarget:self action:@selector(changePage:) forControlEvents:UIControlEventValueChanged];
+    
+
+    
+    NSDictionary *dic = @{@"key":@"value",@"key2":@"value2",@"key3":@"value3"};
+    for (NSString *q in dic) {
+        NSLog(@"%@",q);
+    }
+    
+   
+    //for-in을 사용하여 중복되는 것 뺴고 결과값 출력하기
+      NSArray *arr = @[@"1",@"4",@"2",@"3",@"6",@"7",@"8"]; //NSArray를 리터럴 문법으로 사용
+    NSMutableArray *result = [[NSMutableArray alloc] init]; //NSMutableArrary를 객체화 -> NSMutableArrary은 리터럴 문법 사용 불가능!!
+
+    for (NSString *k in arr) { //for - in문
+        
+        if (![result containsObject:k]) { //not[result 안에 arr 값들이 들어있다면] = result 안에 arrary 값들이 들어있지 않다면
+            [result addObject:k]; //result에 arrary 값을 넣어라.
+            NSLog(@"%@ ", k);
+        }
+        
+    }
+    
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
