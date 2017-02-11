@@ -54,6 +54,7 @@
 	>- [UI를 이용하여 로그인 페이지 만들어 보기](ConceptProject/170207(Login))
 	>- [자료구조 (포인터 / 구조체 / typedef / 배열(Array, Linked List)) / Dictionaries](ConceptProject/170208)
 	>- [for - in / 자료구조 (Stack, Queue, 정렬 알고리즘(selection, insert, bubble), 복잡 효율 정렬 알고리즘) ](ConceptProject/170209)
+	>- property / ARC
 
 - **[6 week]**
 
