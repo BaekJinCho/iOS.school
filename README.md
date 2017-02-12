@@ -43,7 +43,7 @@
 	>- [반복문(While문 / for문)](ConceptProject/170201)
 	>- [반복문(While문 / for문)을 활용하여 구구단 / 팩토리얼 / 삼각수 만들어보기](ConceptProject/170201(Exam))
 	>- [for문을 이용하여 *로 트리 만들기](ConceptProject/170202(StarTree))
-	>- [iOS 구조 파악 / UI Base Guide / UIView](ConceptProject/170202)
+	>- [iOS 구조 파악 / UI Base Guide / UIView / App UI 분석해보기](ConceptProject/170202)
 	>- [UILabel / UIImageView / UIButton](ConceptProject/170203)
 	>- [자동차 자판기 만들어보기](ConceptProject/170205(VendingMachine))
 
@@ -54,7 +54,7 @@
 	>- [UI를 이용하여 로그인 페이지 만들어 보기](ConceptProject/170207(Login))
 	>- [자료구조 (포인터 / 구조체 / typedef / 배열(Array, Linked List)) / Dictionaries](ConceptProject/170208)
 	>- [for - in / 자료구조 (Stack, Queue, 정렬 알고리즘(selection, insert, bubble), 복잡 효율 정렬 알고리즘) ](ConceptProject/170209)
-	>- property / ARC
+	>- [property / ARC](ConceptProject/170210)
 
 - **[6 week]**
 
