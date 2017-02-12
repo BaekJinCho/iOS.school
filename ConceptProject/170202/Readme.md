@@ -117,6 +117,11 @@
 <br>
 **- 앱 UI 분석해보기**
 
+![](https://github.com/BaekJinCho/iOS.school/blob/master/Study/Image/UIAnalysis.png?raw=true)
+
+<br>
+![](https://github.com/BaekJinCho/iOS.school/blob/master/Study/Image/UIAnalysisCell.png?raw=true)
+
 **- view 만들기 연습(아이폰 사이즈에 맞춰서 만들어 보기)**
 
 ![](https://soulpark.files.wordpress.com/2012/11/ec8aa4ed81aceba6b0ec83b7-2012-11-30-ec98a4ed9b84-3-57-11.png?w=600&h=313)
