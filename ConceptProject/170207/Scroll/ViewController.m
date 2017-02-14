@@ -47,7 +47,6 @@
     [self.scrollView addSubview:image2];
 
     
-
     //UIPageControl 구현해보기(어려움)
     self.pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, self.scrollView.frame.size.height - 30, self.scrollView.frame.size.width, 30)];
     [self.pageControl setBackgroundColor:[UIColor redColor]];
@@ -60,7 +59,6 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     CGFloat position = [scrollView contentOffset].x / self.view.frame.size.width;
-    
     self.pageControl.currentPage = position;
     
 }
