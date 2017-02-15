@@ -59,11 +59,11 @@
 - **[6 week]**
 
 	>- [Application State Change / Application Life Cycle / View Controller Life Cycle](ConceptProject/170213)
-	>- UITableView
+	>- [Delegate / UITableView](ConceptProject/170215)
 
 - **[7 week]**
 
-- **[8 week]**
+- **[8 week]**
 
 - **[9 week]**
 
