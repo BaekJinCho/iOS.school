@@ -10,7 +10,7 @@
 
 @interface ViewController ()
 <UITableViewDelegate, UITableViewDataSource>
-
+@property NSMutableArray *data;
 @end
 
 @implementation ViewController
@@ -23,6 +23,8 @@
     table.delegate = self;
     table.dataSource = self;
     [self.view addSubview:table];
+    
+    self.data = [[NSMutableArray alloc] initWithObjects:@"김철수",@"김철수",@"김철수",@"김철수",@"김철수",@"김철수",nil];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -31,21 +33,23 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    switch (section) {
-        case 0:
-            return 10;
-            break;
-        case 1:
-            return 5;
-            break;
-        case 2:
-            return 3;
-            break;
-        default:
-            return 0;
-            break;
-    }
-    return 100;
+    return self.data.count;
+
+//    switch (section) {
+//        case 0:
+//            return 10;
+//            break;
+//        case 1:
+//            return 5;
+//            break;
+//        case 2:
+//            return 3;
+//            break;
+//        default:
+//            return 0;
+//            break;
+//    }
+//    return 100;
 }
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
     
@@ -72,13 +76,13 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"]; // 화면을 올림과 동시에 사라지는 뷰는 큐로 들어가서 다시 아래로 들어가서 재사용된다.
     
     if( cell == nil ){
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"]; //cell이 nil일 때만실
     }
     
-    cell.textLabel.text = [NSString stringWithFormat:@"test %ld", indexPath.row];
+    cell.textLabel.text = [self.data objectAtIndex:indexPath.row];
     
     NSLog(@"test");
     return cell;
