@@ -7,10 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "MycustomView.h"
 
 @interface ViewController ()
 
-<UITableViewDelegate, UITableViewDataSource>
+<UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate>
 @property NSMutableArray *data;
 @property NSMutableArray *data2;
 @end
@@ -20,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
+
     UITableView *tv = [[UITableView alloc] initWithFrame:CGRectMake(0, 30, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
     tv.delegate = self;
     tv.dataSource = self;
@@ -50,6 +51,8 @@
     
 }
 
+
+
 //열의 개수를 만들는 메소드
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if (section == 0) {
@@ -57,7 +60,6 @@
     }else{
         return self.data2.count;
     }
-    
 }
 
 //셀을 만들고 그 안에 내용(데이터, 이미지)을 만드는 메소드
@@ -69,8 +71,8 @@
         
     }
     
-//    cell.textLabel.text = [self.data objectAtIndex:indexPath.row]; // 데이터를 셀의
-//    [cell.imageView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"image/%ld.jpeg",indexPath.row+1]]];
+    cell.textLabel.text = [self.data objectAtIndex:indexPath.row]; // 데이터를 셀의
+    [cell.imageView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"image/%ld.jpeg",indexPath.row+1]]];
     
     switch (indexPath.section) {
         case 0:
@@ -86,7 +88,7 @@
         default:
             break;
     }
-    
+
     //UITableViewCell Accessory 테스트
 //    switch (indexPath.row % 5) {
 //        case UITableViewCellAccessoryNone:
@@ -116,7 +118,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     NSLog(@"%@",cell.textLabel.text);
-    
+
 }
 
 - (void)didReceiveMemoryWarning {
