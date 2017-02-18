@@ -20,6 +20,8 @@
 
 //자기소개 레이블
 @property (nonatomic, weak) UILabel *profileLB;
+//nonatomic은 다중 쓰레드가 아닐시 사용 / 기본은 atomic으로 되어 있다.
+//기본은 strong으로 되어 있고 메모리에 무리가 갈 수 있기 때문에 필요한 건weak으로 쓴다.
 
 @end
 
@@ -39,7 +41,7 @@
     return self;
 }
 
-//- (void)awakeFromNib {
+//- (void)awakeFromNib { storboard 이용할 때 사용하는 메소드!
 //    [super awakeFromNib];
 //    // Initialization code
 //    //for interface builder >> storyboard
@@ -56,10 +58,10 @@
 - (void)createSubViews{
     //*****************profile UI**************************//
     UIImageView *profileImgView = [[UIImageView alloc] init];
-    
     [self addSubview:profileImgView];
     self.profileImgView = profileImgView;
     self.profileImgView.clipsToBounds = YES;
+    
     //*****************Name UI**************************//
     UIView *profileTextContainer = [[UIView alloc] init];
     [self addSubview:profileTextContainer];
@@ -68,15 +70,16 @@
     UILabel *titleLB = [[UILabel alloc] init];
     titleLB.text = @"Profile";
     titleLB.textColor = [UIColor lightGrayColor];
-    titleLB.textAlignment = NSTextAlignmentRight;
-    titleLB.font = [UIFont systemFontOfSize:9];
+    //titleLB.textAlignment = NSTextAlignmentRight;
+    titleLB.font = [UIFont systemFontOfSize:25];
     [profileTextContainer addSubview:titleLB];
     self.titleLB = titleLB;
     
     UILabel *nameLB = [[UILabel alloc] init]; //객체와 생성함과 동시에 reference count가 증가해서 1이된다.
     nameLB.textColor = [UIColor blackColor];
-    nameLB.textAlignment = NSTextAlignmentCenter;
-    nameLB.font = [UIFont boldSystemFontOfSize:20];
+    //nameLB.textAlignment = NSTextAlignmentCenter;
+    nameLB.text = @"Cho";
+    nameLB.font = [UIFont boldSystemFontOfSize:12];
     [profileTextContainer addSubview:nameLB]; // addsubview를 함과 동시에 reference count가 1이 유지된다.
     self.nameLB = nameLB;
     
@@ -98,13 +101,13 @@
     self.profileImgView.frame = CGRectMake(offsetX, offsetY, 100, 100);
     self.profileImgView.layer.cornerRadius = self.profileImgView.frame.size.width / 2 ;
     offsetX += self.profileImgView.frame.size.width;
-    //    self.titleLB
-    //    self.nameLB
-    
-    
+
     self.profileTextContainer.frame = CGRectMake(offsetX, offsetY, self.frame.size.width-offsetX - MARGIN, 100);
     offsetX = MARGIN;
+    self.titleLB.frame = CGRectMake(offsetX, offsetY, 100, 20);
+    self.nameLB.frame = CGRectMake(offsetX, offsetY+30, 200, 20);
     offsetY += self.profileImgView.frame.size.height;
+    
     
     self.profileLB.frame = CGRectMake(offsetX, offsetY, self.frame.size.width - (MARGIN *2), self.frame.size.height - offsetY - MARGIN);
     
@@ -116,7 +119,7 @@
 
 - (void)test{
     
-    self.backgroundColor = [UIColor blackColor];
+    self.backgroundColor = [UIColor whiteColor];
     self.profileImgView.backgroundColor = [UIColor yellowColor];
     self.profileTextContainer.backgroundColor = [UIColor whiteColor];
     self.profileLB.backgroundColor = [UIColor lightGrayColor];
@@ -130,7 +133,5 @@
     self.profileLB.text = msgStr;
     
 }
-
-
 
 @end
