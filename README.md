@@ -62,6 +62,7 @@
 	>- [Delegate / UITableView](ConceptProject/170215)
 	>- [TableView 만들어보기](ConceptProject/170216)
 	>- [Custom UI / UX 특강](ConceptProject/170217)
+	>- [카카오톡 친구 목록 Custom UI 따라해보기](ConceptProject/170219(CustomUI))
 
 - **[7 week]**
 

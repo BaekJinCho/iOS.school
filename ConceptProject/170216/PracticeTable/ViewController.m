@@ -52,7 +52,6 @@
 }
 
 
-
 //열의 개수를 만들는 메소드
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if (section == 0) {
@@ -76,12 +75,12 @@
     
     switch (indexPath.section) {
         case 0:
-            cell.textLabel.text=[self.data objectAtIndex:indexPath.row];
+            //cell.textLabel.text=[self.data objectAtIndex:indexPath.row];
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             [cell.imageView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"image/%ld.jpeg",indexPath.row+1]]];
             break;
         case 1:
-            cell.textLabel.text=[self.data2 objectAtIndex:indexPath.row];
+            //cell.textLabel.text=[self.data2 objectAtIndex:indexPath.row];
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             [cell.imageView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"image/%ld.jpeg",indexPath.row+6]]];
             
