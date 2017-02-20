@@ -66,8 +66,8 @@
 
 - **[7 week]**
 
-	>- [화면전환 / UIViewController / Stroyboard 이용하지 않고 화면전환 해보기 / NavigationController](ConceptProject/170220(UIViewController)) 
-	>- Login 화면에서 회원가입으로 화면 전환해보기
+	>- [화면전환 / UIViewController / Stroyboard 이용하지 않고 화면전환 해보기 / NavigationController](ConceptProject/170220(UIViewcontroller)) 
+	>- [Login 화면에서 회원가입으로 화면 전환해보기](ConceptProject/170220)
 
 - **[8 week]**
 
