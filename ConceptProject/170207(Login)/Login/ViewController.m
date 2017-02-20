@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SecondViewController.h"
 
 @interface ViewController ()
 <UIScrollViewDelegate, UITextFieldDelegate>
@@ -25,17 +26,13 @@
     //로그인 페이지 만들기 변수
     CGSize frameSize = self.view.frame.size;
     
-    
-//    self.view.backgroundColor=[UIColor orangeColor];
-    
-    
     //login text 타이틀 출력하는 label
     UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, frameSize.width, (frameSize.height/3))];
     title.text = @"Login Page";
-    title.textColor = [UIColor whiteColor];
+    title.textColor = [UIColor blackColor];
     title.font = [UIFont systemFontOfSize:50];
     title.textAlignment = NSTextAlignmentCenter;
-    title.backgroundColor = [UIColor colorWithRed: 37/255.0 green: 150/255.0 blue: 204/255.0 alpha:0.7];
+    //title.backgroundColor = [UIColor colorWithRed: 37/255.0 green: 150/255.0 blue: 204/255.0 alpha:0.7];
     [self.view addSubview:title];
     
     //Login Page UIScrollView
@@ -51,7 +48,7 @@
     //[contentView setBackgroundColor:[UIColor orangeColor]];
     
     //Id를 만드는 textField
-    self.tf = [[UITextField alloc] initWithFrame:CGRectMake(contentView.frame.size.width/3,(contentView.frame.size.width/2)-100,self.view.frame.size.width*45/100,35)];
+    self.tf = [[UITextField alloc] initWithFrame:CGRectMake(contentView.frame.size.width/4,(contentView.frame.size.width/2)-100,self.view.frame.size.width*55/100,35)];
     self.tf.borderStyle = UITextBorderStyleBezel;
     self.tf.placeholder = @"ID";
     self.tf.tag = 100;
@@ -59,7 +56,7 @@
     [contentView addSubview:self.tf];
     
     //Pw를 만드는 textField
-    self.tf2 = [[UITextField alloc] initWithFrame:CGRectMake(self.tf.frame.origin.x,(self.tf.frame.origin.y+self.tf.frame.size.height+10), self.view.frame.size.width*45/100,35)];
+    self.tf2 = [[UITextField alloc] initWithFrame:CGRectMake(self.tf.frame.origin.x,(self.tf.frame.origin.y+self.tf.frame.size.height+10), self.view.frame.size.width*55/100,35)];
     self.tf2.borderStyle = UITextBorderStyleBezel;
     self.tf2.placeholder = @"Password!";
     self.tf2.secureTextEntry = YES;
@@ -70,7 +67,7 @@
 
      
     //ID를 만드는 UILabel
-     UILabel *idLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.tf.frame.origin.x-40, self.tf.frame.origin.y, self.view.frame.size.width*20/100, 30)];
+     UILabel *idLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.tf.frame.origin.x-70, self.tf.frame.origin.y, self.view.frame.size.width*20/100, 30)];
     
     idLabel.text = @"ID";
     idLabel.textColor = [UIColor blackColor];
@@ -78,7 +75,7 @@
     [contentView addSubview:idLabel];
     
     //PW를 만드는 UILabel
-    UILabel *pwLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.tf2.frame.origin.x-40, self.tf2.frame.origin.y, self.view.frame.size.width*20/100, 30)];
+    UILabel *pwLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.tf2.frame.origin.x-70, self.tf2.frame.origin.y, self.view.frame.size.width*20/100, 30)];
     pwLabel.text = @"PW";
     pwLabel.textColor = [UIColor blackColor];
     pwLabel.font = [UIFont systemFontOfSize:20];
@@ -86,22 +83,33 @@
     
     //회원가입을 만들어주는 UIButton
     UIButton *signupButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    signupButton.frame = CGRectMake((self.tf2.frame.origin.x), (self.tf2.frame.origin.x+self.tf2.frame.size.height+20), self.view.frame.size.width*20/100, 35);
+    signupButton.frame = CGRectMake(self.tf2.frame.origin.x+20, (self.tf2.frame.origin.x+self.tf2.frame.size.height+65), self.view.frame.size.width*20/100, 35);
     signupButton.tag = 400;
     [signupButton setTitle:@"회원가입" forState:UIControlStateNormal];
     [signupButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [signupButton addTarget:self action:@selector(clickBtn:) forControlEvents:UIControlEventTouchUpInside];
+    [signupButton addTarget:self action:@selector(clickBtn2:) forControlEvents:UIControlEventTouchUpInside];
     [contentView addSubview:signupButton];
     
     //확인을 만들어주는 UIButton
     UIButton *checkButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    checkButton.frame = CGRectMake((self.tf2.frame.origin.x+100), (self.tf2.frame.origin.x+self.tf2.frame.size.height+20), self.view.frame.size.width*20/100, 35);
+    checkButton.frame = CGRectMake((self.tf2.frame.origin.x+120), (self.tf2.frame.origin.x+self.tf2.frame.size.height+65), self.view.frame.size.width*20/100, 35);
     checkButton.tag = 300;
     [checkButton setTitle:@"로그인" forState:UIControlStateNormal];
     [checkButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [checkButton addTarget:self action:@selector(clickBtn:) forControlEvents:UIControlEventTouchUpInside];
     [contentView addSubview:checkButton];
     
+}
+
+- (void)clickBtn2:(UIButton *)sender{
+    if (sender.tag == 400){
+        UIStoryboard *st = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        SecondViewController *secondView = [st instantiateViewControllerWithIdentifier:@"SecondViewController"];
+        
+//        SecondViewController *secondView = [[SecondViewController alloc] init]; 화면전환(코드로만 했을 때)
+        
+        [self.navigationController pushViewController:secondView animated:YES];
+    }
 }
 
 -(void)clickBtn:(UIButton *)sender{
@@ -114,22 +122,20 @@
         } else if(self.tf2.isFirstResponder){ //textField2 포커스 여부 확인(isFisrstResponder)
             NSLog(@"tf2");
           [self.tf2 resignFirstResponder]; //textField2 포커스 제거(resignFirstResponder)
-            
         }
-        
         if (self.tf.text == self.tf2.text) {
             NSLog(@"로그인 성공!");
-        }else
+        }else{
             NSLog(@"로그인 실패!!!");
+        }
+        
     }
 }
 
 
-
 -(void)textFieldDidBeginEditing:(UITextField *)textField {
-    [self.sc setContentOffset:CGPointMake(0, 20) animated:YES];
+    [self.sc setContentOffset:CGPointMake(0, 30) animated:YES];
     //스크롤 뷰 위에 있는 textField를 클릭하면 애니메이션 효과에 의해textField1, 2가 위로 함께 올라간다.
-   
     
 }
 

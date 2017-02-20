@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  Login
+//  Controller
 //
-//  Created by 조백진 on 2017. 2. 7..
+//  Created by 조백진 on 2017. 2. 20..
 //  Copyright © 2017년 BaekJin.Cho. All rights reserved.
 //
 
@@ -17,6 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    /******************로그인 상태부터 보여주냐 / 로그인 했으면 그 다음 화면부터 보여주냐******************/
     //1. 윈도우 만들기
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
@@ -31,6 +32,7 @@
     [self.window makeKeyAndVisible];
     return YES;
 }
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
