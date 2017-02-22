@@ -18,6 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     //네이게이션바 타이틀 및 색상 설정
+    UINavigationController
     self.navigationItem.title = @"친 구";
     [self.navigationController.navigationBar setBarTintColor:[UIColor brownColor]];
     
@@ -36,6 +37,7 @@
 }
 - (void)backButton:(UIButton *)sender{
     [self.navigationController popViewControllerAnimated:YES];
+    
     NSLog(@"leftBarButoon을 클락하였습니다.");
 }
 

@@ -40,13 +40,13 @@
     NSLog(@"다음 페이지로 넘어가는 버튼이 눌렸습니다.");
     
 }
-- (void)viewWillAppear:(BOOL)animated{ // Called when the view is about to made visible. Default does nothing
-    [self.navigationController setNavigationBarHidden:YES]; //첫번째 뷰의 네비게이션 바를 숨긴다.
-}
-
-- (void)viewWillDisappear:(BOOL)animated{ // Called when the view is dismissed, covered or otherwise hidden. Default does nothing
-    [self.navigationController setNavigationBarHidden:NO]; //두번째 뷰의 네비게이션 바를 다시 보여준다.
-}
+//- (void)viewWillAppear:(BOOL)animated{ // Called when the view is about to made visible. Default does nothing
+//    [self.navigationController setNavigationBarHidden:YES]; //첫번째 뷰의 네비게이션 바를 숨긴다.
+//}
+//
+//- (void)viewWillDisappear:(BOOL)animated{ // Called when the view is dismissed, covered or otherwise hidden. Default does nothing
+//    [self.navigationController setNavigationBarHidden:NO]; //두번째 뷰의 네비게이션 바를 다시 보여준다.
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
