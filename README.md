@@ -69,6 +69,8 @@
 	>- [화면전환 / UIViewController / Stroyboard 이용하지 않고 화면전환 해보기 / NavigationController](ConceptProject/170220(UIViewcontroller)) 
 	>- [Login 화면에서 회원가입으로 화면 전환해보기](ConceptProject/170220)
 	>- [NavigationBar / ToolBar / TabBar](ConceptProject/170221(Navigation))
+	>- [카카오톡 ('더보기' Tab에 '친구' TableVeiwCell 만들어보기)](ConceptProject/170222)
+	>- [Singleton / NSUserDefault](ConceptProject/170223)
 
 - **[8 week]**
 
@@ -91,3 +93,4 @@
 |[객체지향 프로그래밍 특징](https://github.com/BaekJinCho/iOS.school/tree/master/Study/Study3)|
 |[Framework / Library](https://github.com/BaekJinCho/iOS.school/tree/master/Study/Study4)|
 |[리터럴(literal) / json](Study/Study7)
+|[UI 전체 구조](Study/Study8)|

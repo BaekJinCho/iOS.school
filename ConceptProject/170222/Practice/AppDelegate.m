@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ViewController.h"
+#import "SecondViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +18,44 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //TabBar 만들어보기
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    ViewController *vc = [[ViewController alloc] init];
+    SecondViewController *sVC = [[SecondViewController alloc] init];
+    
+    UINavigationController *temp = [[UINavigationController alloc] initWithRootViewController:vc];
+    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:sVC];
+    
+    UITabBarController *tab = [[UITabBarController alloc]init];
+    tab.viewControllers = @[temp, nvc];
+    UITabBarItem *item  = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemRecents tag:100];
+    UITabBarItem *item2 = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemMore tag:200];
+    
+    [temp setTabBarItem:item];
+    [nvc setTabBarItem:item2];
+    
+    self.window.rootViewController = tab;
+    [self.window makeKeyAndVisible];
+    
+    
+//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//    
+//    ViewController *vc = [[ViewController alloc] init];
+//    SecondViewController *sVC = [[SecondViewController alloc] init];
+//    
+//    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:sVC];
+//    UITabBarController *tab = [[UITabBarController alloc]init];
+//    tab.viewControllers = @[vc, nvc];
+//    UITabBarItem *item  = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemRecents tag:100];
+//    UITabBarItem *item2 = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemMore tag:200];
+//    
+//    [vc setTabBarItem:item];
+//    [nvc setTabBarItem:item2];
+//    
+//    self.window.rootViewController = tab;
+//    [self.window makeKeyAndVisible];
+
     
     return YES;
 }

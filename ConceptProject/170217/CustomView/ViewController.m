@@ -19,11 +19,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    /*
-    MyCustomView *customView = [[MyCustomView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 250)];
-    [customView setDataWithImgName:@"jin.jpeg" name:@"cho" msg:@"우왕 커스텀 뷰다~~"];
-    [self.view addSubview:customView];
-    */
     
     UITableView *tv = [[UITableView alloc] initWithFrame:CGRectMake(0,0, self.view.frame.size.width, self.view.frame.size.height)];
     tv.delegate = self;

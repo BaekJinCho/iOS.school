@@ -19,25 +19,24 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-//    /******************************TabBar 만들어보기***********************************/
-//    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-//    ViewController *vc = [[ViewController alloc] init];
-//    ViewController *vc2 = [[ViewController alloc] init];
-//    ViewController *vc3 = [[ViewController alloc] init];
-//    UITabBarController *tabbar = [[UITabBarController alloc] init];
-//    tabbar.viewControllers = @[vc,vc2,vc3];
-//    
-//    UITabBarItem *item = [[UITabBarItem alloc] initWithTitle:@"title" image:[self imageWithImagName:@"1.jpeg" scaledToSize:CGSizeMake(30,30)] selectedImage:nil];
-//    //UITabBarItem *item = [[UITabBarItem alloc] initWithTitle:@"title" image:[UIImage imageNamed:@"1"] tag:100];
-//    UITabBarItem *item2 = [[UITabBarItem alloc] initWithTitle:@"content" image:[UIImage imageNamed:@"232"] selectedImage:nil];
-//    UITabBarItem *item3 = [[UITabBarItem alloc] initWithTitle:@"range" image:[UIImage imageNamed:@"3232"] selectedImage:nil];
-//    item.badgeColor = [UIColor redColor];
-//    vc.tabBarItem = item;
-//    vc2.tabBarItem = item2;
-//    vc3.tabBarItem = item3;
-//    self.window.rootViewController = tabbar;
-//    [self.window makeKeyAndVisible];
+    /******************************TabBar 만들어보기***********************************/
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    ViewController *vc = [[ViewController alloc] init];
+    ViewController *vc2 = [[ViewController alloc] init];
+    ViewController *vc3 = [[ViewController alloc] init];
+    UITabBarController *tabbar = [[UITabBarController alloc] init];
+    tabbar.viewControllers = @[vc,vc2,vc3];
     
+    UITabBarItem *item = [[UITabBarItem alloc] initWithTitle:@"title" image:[self imageWithImagName:@"1.jpeg" scaledToSize:CGSizeMake(30,30)] selectedImage:nil];
+    //UITabBarItem *item = [[UITabBarItem alloc] initWithTitle:@"title" image:[UIImage imageNamed:@"1"] tag:100];
+    UITabBarItem *item2 = [[UITabBarItem alloc] initWithTitle:@"content" image:[UIImage imageNamed:@"232"] selectedImage:nil];
+    UITabBarItem *item3 = [[UITabBarItem alloc] initWithTitle:@"range" image:[UIImage imageNamed:@"3232"] selectedImage:nil];
+    item.badgeColor = [UIColor redColor];
+    vc.tabBarItem = item;
+    vc2.tabBarItem = item2;
+    vc3.tabBarItem = item3;
+    self.window.rootViewController = tabbar;
+    [self.window makeKeyAndVisible];
     
     /********************storyboard를 사용하지 않고 코드로 작성할 때********************/
     //윈도우 만들기
