@@ -7,18 +7,28 @@
 //
 
 #import "SecondViewController.h"
+#import "DataCenter.h"
 
 @interface SecondViewController ()
 <UITextFieldDelegate>
 @property UITextField *tf;
 @property UITextField *tf2;
 @property UITextField *tf3;
+
+@property (nonatomic) DataCenter *signUpInformation;
+
 @end
 
 @implementation SecondViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //싱글턴
+    self.signUpInformation = [DataCenter sharedInstance];
+    
+    //노티피케이션
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"Noti" object:@"noti" userInfo:@{@"a":@[@"aa",@"bb",@"cc"]}];
+    
     
     //회원가입 타이틀을 출력해주는 label
     UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, (self.view.frame.size.height/3))];
@@ -89,10 +99,19 @@
 }
 
 - (void)clickBtn:(UIButton *)sender{
-    if (sender.tag == 400) {
-        [self.navigationController popViewControllerAnimated:YES];
-    }
     
+    NSString* userId = self.signUpInformation.userID;
+    NSString* password = self.signUpInformation.password;
+    NSString* passwordCheck = self.signUpInformation.passwordCheck;
+    
+    if (sender.tag == 400) {
+        if ([self.tf.text isEqualToString:userId] ) {
+            [[NSUserDefaults standardUserDefaults]setObject:userId forKey:@"userID"];
+        }else if([self.tf2.text isEqualToString:password] == [self.tf3.text isEqualToString:passwordCheck]){
+            [[NSUserDefaults standardUserDefaults]setObject:password forKey:@"password"];
+            [self dismissViewControllerAnimated:YES completion:nil];
+        }
+    }
 }
 
 - (void)didReceiveMemoryWarning {

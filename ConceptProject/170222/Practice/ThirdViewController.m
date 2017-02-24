@@ -86,10 +86,12 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    //싱글턴 구현
     [self.single.information replaceObjectAtIndex:indexPath.row withObject:@"ㅇㅁㄴㅇ"];
+    
     [self.tv reloadData];
     
-    
+    //정보(데이터)를 저장 
     [[NSUserDefaults standardUserDefaults] setObject:self.single.information forKey:@"list"];
 }
 

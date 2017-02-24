@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "SecondViewController.h"
+#import "ThirdViewController.h"
+#import "DataCenter.h"
 
 @interface ViewController ()
 <UIScrollViewDelegate, UITextFieldDelegate>
@@ -15,6 +17,8 @@
 @property UITextField *tf2;
 
 @property UIScrollView *sc;
+
+@property (nonatomic) DataCenter *information;
 @end
 
 @implementation ViewController
@@ -22,6 +26,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    //싱클턴 연습
+    self.information = [DataCenter sharedInstance];
+    //노티피케이션 연습
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(noti:) name:@"Noti" object:nil];
+    
     
     //로그인 페이지 만들기 변수
     CGSize frameSize = self.view.frame.size;
@@ -64,8 +73,6 @@
     self.tf2.delegate = self; //델리게이트
     [contentView addSubview:self.tf2];
     
-
-     
     //ID를 만드는 UILabel
      UILabel *idLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.tf.frame.origin.x-70, self.tf.frame.origin.y, self.view.frame.size.width*20/100, 30)];
     
@@ -96,25 +103,30 @@
     checkButton.tag = 300;
     [checkButton setTitle:@"로그인" forState:UIControlStateNormal];
     [checkButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    
     [checkButton addTarget:self action:@selector(clickBtn:) forControlEvents:UIControlEventTouchUpInside];
     [contentView addSubview:checkButton];
     
+    self.tf.text = [DataCenter sharedInstance].userID;
+    
 }
-
+//회원가입 버튼
 - (void)clickBtn2:(UIButton *)sender{
     if (sender.tag == 400){
         UIStoryboard *st = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         SecondViewController *secondView = [st instantiateViewControllerWithIdentifier:@"SecondViewController"];
-        
 //        SecondViewController *secondView = [[SecondViewController alloc] init]; 화면전환(코드로만 했을 때)
+//        [self.navigationController pushViewController:secondView animated:YES];
         
-        [self.navigationController pushViewController:secondView animated:YES];
+        [self presentViewController:secondView animated:YES completion:nil];
     }
 }
-
+//로그인 버튼
 -(void)clickBtn:(UIButton *)sender{
     NSLog(@"로그인을 시도하였습니다.");
     if (sender.tag == 300) {
+        UIStoryboard *st = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        ThirdViewController *thirdView = [st instantiateViewControllerWithIdentifier:@"ThirdViewController"];
         
         if(self.tf.isFirstResponder){ //textField 포커스 여부 확인(isFirstResponder)
             NSLog(@"tf");
@@ -123,23 +135,29 @@
             NSLog(@"tf2");
           [self.tf2 resignFirstResponder]; //textField2 포커스 제거(resignFirstResponder)
         }
-        if (self.tf.text == self.tf2.text) {
-            NSLog(@"로그인 성공!");
+        NSString *user     = self.information.userID;
+        NSString *password = self.information.password;
+        if ([self.tf.text isEqualToString:user] && [self.tf2.text isEqualToString:password]) {
+            [self.navigationController pushViewController:thirdView animated:YES];
+            
+//            [[NSUserDefaults standardUserDefaults] setObject:self.tf.text forKey:@"userId"];
+//            [[NSUserDefaults standardUserDefaults] setObject:self.tf2.text forKey:@"password"];
+            
+            [[DataCenter sharedInstance] settingUserId:user];
+            
         }else{
             NSLog(@"로그인 실패!!!");
         }
-        
     }
 }
 
-
--(void)textFieldDidBeginEditing:(UITextField *)textField {
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
     [self.sc setContentOffset:CGPointMake(0, 30) animated:YES];
     //스크롤 뷰 위에 있는 textField를 클릭하면 애니메이션 효과에 의해textField1, 2가 위로 함께 올라간다.
     
 }
 
--(BOOL)textFieldShouldReturn:(UITextField *)textField{
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
     [self.tf resignFirstResponder];
     [self.sc setContentOffset:CGPointMake(0, 0) animated:YES];
     //return를 클릭하면 애니메이션 효과에 의해 키보드가 내려가면서 textField1, 2가 아래로 함께 내려간다.
@@ -148,6 +166,15 @@
     }else if(textField.tag == 200)
         [self.tf2 resignFirstResponder];
     return YES;
+}
+
+- (void)noti:(NSNotification *)notiSender{
+    NSLog(@"노티 성공 %@", notiSender.userInfo);
+}
+
+- (void)dealloc{
+    [[NSNotificationCenter defaultCenter]removeObserver:self];
+    
 }
 
 - (void)didReceiveMemoryWarning {

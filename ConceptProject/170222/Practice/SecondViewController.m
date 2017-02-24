@@ -156,12 +156,11 @@
     ThirdViewController *thirdView = [[ThirdViewController alloc] init];
     [self.navigationController pushViewController:thirdView animated:YES];
     NSLog(@"첫번째 스위치가 눌렸습니다.");
-    
-    
 }
 
 - (void)testSave {
     //친구 추천 허용
+    //데이터 저장
     [[NSUserDefaults standardUserDefaults] setObject:[[NSMutableArray alloc] initWithObjects:@"에릭", @"나혜미", @"디스패치", nil] forKey:@"list"];
     
     NSMutableArray *test = [[NSUserDefaults standardUserDefaults] objectForKey:@"list"];
