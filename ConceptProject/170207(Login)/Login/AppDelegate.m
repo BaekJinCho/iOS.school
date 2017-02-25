@@ -24,11 +24,10 @@
     UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     UIViewController *rootVC = [mainStoryboard instantiateViewControllerWithIdentifier:@"ViewController"]; //스토리보드에 있는viewcontroller (storyboard id)에 있는 객체를 가져온다.
     
-    //UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:rootVC];
-    
+    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:rootVC];
     
     //3. 윈도우에 RootViewController 지정
-    self.window.rootViewController = rootVC;
+    self.window.rootViewController = navi;
     [self.window makeKeyAndVisible];
     return YES;
 }

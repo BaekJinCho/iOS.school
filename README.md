@@ -70,7 +70,8 @@
 	>- [Login 화면에서 회원가입으로 화면 전환해보기](ConceptProject/170220)
 	>- [NavigationBar / ToolBar / TabBar](ConceptProject/170221(Navigation))
 	>- [카카오톡 ('더보기' Tab에 '친구' TableVeiwCell 만들어보기)](ConceptProject/170222)
-	>- [Singleton / NSUserDefault](ConceptProject/170223)
+	>- [Singleton / NSUserDefault (실습 코드 : 170222 폴더)](ConceptProject/170223)
+	>- [NSNotification(addObserver / Post Notification / Remove Observer) (실습 코드 : 170207(login) 폴더)](ConceptProject/170224)
 
 - **[8 week]**
 

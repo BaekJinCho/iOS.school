@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface SecondViewController : UIViewController
-
+@property NSString *userid;
+@property NSString *password;
 @end

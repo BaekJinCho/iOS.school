@@ -11,8 +11,9 @@
 @interface DataCenter : NSObject
 @property (nonatomic) NSString *userID;
 @property (nonatomic) NSString *password;
-@property (nonatomic) NSString *passwordCheck;
-+ (instancetype)sharedInstance;
--(void)settingUserId:(NSString *)userID;
 
+//싱글턴 패턴 클래스 메소드 선언
++ (instancetype)sharedInstance;
+//userID와 Password를 저장하는 메소드
+- (void)settingUserIdPassword:(NSString *)userIDPassword;
 @end

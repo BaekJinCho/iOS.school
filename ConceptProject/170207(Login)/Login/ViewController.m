@@ -15,10 +15,12 @@
 <UIScrollViewDelegate, UITextFieldDelegate>
 @property UITextField *tf;
 @property UITextField *tf2;
-
 @property UIScrollView *sc;
 
+//싱글톤 프로퍼티 생성
 @property (nonatomic) DataCenter *information;
+//시스템 노티 프로퍼티 생성
+@property UIView *firstView;
 @end
 
 @implementation ViewController
@@ -30,7 +32,14 @@
     self.information = [DataCenter sharedInstance];
     //노티피케이션 연습
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(noti:) name:@"Noti" object:nil];
+    //시스템 노티피케이션
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardNoti:) name:UIKeyboardWillShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardNoti:) name:UIKeyboardWillHideNotification object:nil];
     
+    //키보드 노티 연습을 위한 뷰 생성
+    self.firstView = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height/2+300, self.view.frame.size.width, 100)];
+    self.firstView.backgroundColor = [UIColor greenColor];
+    [self.view addSubview:self.firstView];
     
     //로그인 페이지 만들기 변수
     CGSize frameSize = self.view.frame.size;
@@ -99,16 +108,17 @@
     
     //확인을 만들어주는 UIButton
     UIButton *checkButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    checkButton.frame = CGRectMake((self.tf2.frame.origin.x+120), (self.tf2.frame.origin.x+self.tf2.frame.size.height+65), self.view.frame.size.width*20/100, 35);
+    checkButton.frame = CGRectMake(0, 0, self.view.frame.size.width*20/100, 35);
     checkButton.tag = 300;
     [checkButton setTitle:@"로그인" forState:UIControlStateNormal];
     [checkButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    
     [checkButton addTarget:self action:@selector(clickBtn:) forControlEvents:UIControlEventTouchUpInside];
     [contentView addSubview:checkButton];
     
     self.tf.text = [DataCenter sharedInstance].userID;
-    
+    [UIView animateWithDuration:3 animations:^{ //로그인 버튼에 애니메이션 효과 주긔
+        checkButton.frame = CGRectMake((self.tf2.frame.origin.x+120), (self.tf2.frame.origin.x+self.tf2.frame.size.height+65), self.view.frame.size.width*20/100, 35);
+    }];
 }
 //회원가입 버튼
 - (void)clickBtn2:(UIButton *)sender{
@@ -117,7 +127,6 @@
         SecondViewController *secondView = [st instantiateViewControllerWithIdentifier:@"SecondViewController"];
 //        SecondViewController *secondView = [[SecondViewController alloc] init]; 화면전환(코드로만 했을 때)
 //        [self.navigationController pushViewController:secondView animated:YES];
-        
         [self presentViewController:secondView animated:YES completion:nil];
     }
 }
@@ -135,28 +144,22 @@
             NSLog(@"tf2");
           [self.tf2 resignFirstResponder]; //textField2 포커스 제거(resignFirstResponder)
         }
-        NSString *user     = self.information.userID;
-        NSString *password = self.information.password;
-        if ([self.tf.text isEqualToString:user] && [self.tf2.text isEqualToString:password]) {
+        if ([self.tf.text isEqualToString:[DataCenter sharedInstance].userID] && [self.tf2.text isEqualToString:[DataCenter sharedInstance].password]) {
             [self.navigationController pushViewController:thirdView animated:YES];
-            
-//            [[NSUserDefaults standardUserDefaults] setObject:self.tf.text forKey:@"userId"];
+//            [[NSUserDefaults standardUserDefaults] setObject:self.tf.text forKey:@"userID"];
 //            [[NSUserDefaults standardUserDefaults] setObject:self.tf2.text forKey:@"password"];
-            
-            [[DataCenter sharedInstance] settingUserId:user];
-            
         }else{
             NSLog(@"로그인 실패!!!");
         }
     }
 }
-
+//텍스트 필드를 클릭했을 때, 키보드가 올라옴과 동시에 텍스트필드 전체가 올라가는 메소드
 - (void)textFieldDidBeginEditing:(UITextField *)textField {
     [self.sc setContentOffset:CGPointMake(0, 30) animated:YES];
     //스크롤 뷰 위에 있는 textField를 클릭하면 애니메이션 효과에 의해textField1, 2가 위로 함께 올라간다.
     
 }
-
+//각 텍스트 필드에서 return 버튼을 눌렀을 때, 텍스트 필드의 커서가 바뀌는 메소드
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
     [self.tf resignFirstResponder];
     [self.sc setContentOffset:CGPointMake(0, 0) animated:YES];
@@ -167,14 +170,24 @@
         [self.tf2 resignFirstResponder];
     return YES;
 }
-
+//노티피케이션
 - (void)noti:(NSNotification *)notiSender{
     NSLog(@"노티 성공 %@", notiSender.userInfo);
 }
-
+//노티피케이션 해제
 - (void)dealloc{
     [[NSNotificationCenter defaultCenter]removeObserver:self];
-    
+}
+//시스템 노티피케이션
+- (void)keyboardNoti:(NSNotification *)keyboardSender{
+    //키보드가 올라올 때 뒤에 있는 뷰가 함께 올라오는 로직
+    CGFloat temp = [keyboardSender.userInfo[UIKeyboardFrameBeginUserInfoKey] CGRectValue].size.height;
+    CGRect tempFrame = self.firstView.frame;
+    if([keyboardSender.name isEqualToString:@"UIKeyboardWillShowNotification"]) {
+        self.firstView.frame = CGRectMake(tempFrame.origin.x, tempFrame.origin.y-temp, tempFrame.size.width, tempFrame.size.height);
+    } else if([keyboardSender.name isEqualToString:@"UIKeyboardWillHideNotification"]) {
+        self.firstView.frame = CGRectMake(tempFrame.origin.x, tempFrame.origin.y+temp, tempFrame.size.width, tempFrame.size.height);
+    }
 }
 
 - (void)didReceiveMemoryWarning {
