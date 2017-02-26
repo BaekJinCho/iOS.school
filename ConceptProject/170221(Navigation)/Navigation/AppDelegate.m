@@ -52,7 +52,6 @@
     //윈도우에 rootViewController 지정
     self.window.rootViewController = navi;
     [self.window makeKeyAndVisible];
-    
     return YES;
 }
 

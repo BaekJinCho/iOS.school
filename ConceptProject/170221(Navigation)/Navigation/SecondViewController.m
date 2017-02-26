@@ -29,8 +29,6 @@
     [self.view addSubview:btn];
 //    UIBarButtonItem *bar = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
 //    self.navigationItem.leftBarButtonItem = bar;
-    
-    
 }
 
 - (void)backButton:(UIButton *)sender{

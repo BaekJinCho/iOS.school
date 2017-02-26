@@ -26,7 +26,6 @@
     [nextBtn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
     [nextBtn addTarget:self action:@selector(clickBtn:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:nextBtn];
-    
 }
 
 - (void)clickBtn:(UIButton *)sender{

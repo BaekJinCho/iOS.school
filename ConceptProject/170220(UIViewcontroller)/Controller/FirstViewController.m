@@ -28,8 +28,6 @@
 
 - (void)clickBtn:(UIButton *)sender{
     [self dismissViewControllerAnimated:YES completion:nil];
-
-
 }
 
 - (void)didReceiveMemoryWarning {
