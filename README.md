@@ -14,6 +14,7 @@
 - **[1 week]**
   
 	>- [Git](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170109)
+	
 	>- [프로그램 / 컴퓨터 역사, 구성, 구조 / 데이터 표현방식](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170110)
 	>- [운영체제 & 프로세스 / 자료구조 / 알고리즘](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170111)
 	>- [데이터베이스 / 네트워크 / 암호화](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170112)
@@ -26,6 +27,7 @@
 - **[2 week]**
 
 	>- [Xcode 시작하기 & 구조잡기](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170116)
+	
 	>-  [객체화 / property 접근 / Class / property / method / 퀵헬프](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170117)
 	>- [매개변수 / 데이터 타입 / self](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/17011819)
 	>- [재정의(Override) / super / 은닉화](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170119)
@@ -34,12 +36,14 @@
 - **[3 week]**
 
 	>- [Objective-C 특징 / 클래스 / 객체 / 메소드(클래스, 인스턴스)](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170123)
+	
 	>- [조건문(if / else if) / 비교연산자 / 논리연산자](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170124) 
 	>- [계산기 알고리즘](https://github.com/BaekJinCho/iOS.school/tree/master/Study/Study5)  
 
 - **[4 week]**
 
 	>- [기억 끄집어 내기 / 조건문(Switch)](ConceptProject/170131)
+	
 	>- [반복문(While문 / for문)](ConceptProject/170201)
 	>- [반복문(While문 / for문)을 활용하여 구구단 / 팩토리얼 / 삼각수 만들어보기](ConceptProject/170201(Exam))
 	>- [for문을 이용하여 *로 트리 만들기](ConceptProject/170202(StarTree))
@@ -51,6 +55,7 @@
 
 	>- [Delegate / TextField / UIButton, UITextField(코드 연습)](ConceptProject/170206) 
 	>- [UIScrollView / UIPageControl](ConceptProject/170207)
+	
 	>- [UI를 이용하여 로그인 페이지 만들어 보기](ConceptProject/170207(Login))
 	>- [자료구조 (포인터 / 구조체 / typedef / 배열(Array, Linked List)) / Dictionaries](ConceptProject/170208)
 	>- [for - in / 자료구조 (Stack, Queue, 정렬 알고리즘(selection, insert, bubble), 복잡 효율 정렬 알고리즘) ](ConceptProject/170209)
@@ -59,6 +64,7 @@
 - **[6 week]**
 
 	>- [Application State Change / Application Life Cycle / View Controller Life Cycle](ConceptProject/170213)
+	
 	>- [Delegate / UITableView](ConceptProject/170215)
 	>- [TableView 만들어보기](ConceptProject/170216)
 	>- [Custom UI / UX 특강](ConceptProject/170217)
@@ -66,7 +72,8 @@
 
 - **[7 week]**
 
-	>- [화면전환 / UIViewController / Stroyboard 이용하지 않고 화면전환 해보기 / NavigationController](ConceptProject/170220(UIViewcontroller)) 
+	>- [화면전환 / UIViewController / Stroyboard 이용하지 않고 화면전환 해보기 / NavigationController](ConceptProject/170220(UIViewcontroller))
+	 
 	>- [Login 화면에서 회원가입으로 화면 전환해보기](ConceptProject/170220)
 	>- [NavigationBar / ToolBar / TabBar](ConceptProject/170221(Navigation))
 	>- [카카오톡 ('더보기' Tab에 '친구' TableVeiwCell 만들어보기)](ConceptProject/170222)
@@ -74,6 +81,7 @@
 	>- [NSNotification(addObserver / Post Notification / Remove Observer) (실습 코드 : 170207(login) 폴더)](ConceptProject/170224)
 
 - **[8 week]**
+	>- 
 
 - **[9 week]**
 
