@@ -134,8 +134,7 @@
 -(void)clickBtn:(UIButton *)sender{
     NSLog(@"로그인을 시도하였습니다.");
     if (sender.tag == 300) {
-        UIStoryboard *st = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-        ThirdViewController *thirdView = [st instantiateViewControllerWithIdentifier:@"ThirdViewController"];
+
         
         if(self.tf.isFirstResponder){ //textField 포커스 여부 확인(isFirstResponder)
             NSLog(@"tf");
@@ -145,7 +144,25 @@
           [self.tf2 resignFirstResponder]; //textField2 포커스 제거(resignFirstResponder)
         }
         if ([self.tf.text isEqualToString:[DataCenter sharedInstance].userID] && [self.tf2.text isEqualToString:[DataCenter sharedInstance].password]) {
-            [self.navigationController pushViewController:thirdView animated:YES];
+            
+            //로그인 성공시 alert 띄어주기
+            //alertcontroller 객체 생성
+            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"제목" message:@"메시지" preferredStyle:UIAlertControllerStyleAlert];
+            //alert action
+            UIAlertAction *okaciton = [UIAlertAction actionWithTitle:@"로그인 성공" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                
+                UIStoryboard *st = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+                ThirdViewController *thirdView = [st instantiateViewControllerWithIdentifier:@"ThirdViewController"];
+                [self.navigationController pushViewController:thirdView animated:YES];
+                
+            }];
+            [alertController addAction:okaciton];
+            
+            [self presentViewController:alertController animated:YES completion:nil];
+            
+//            [self presentViewController:thirdView animated:YES completion:nil];
+            NSLog(@"alert button");
+
 //            [[NSUserDefaults standardUserDefaults] setObject:self.tf.text forKey:@"userID"];
 //            [[NSUserDefaults standardUserDefaults] setObject:self.tf2.text forKey:@"password"];
         }else{
