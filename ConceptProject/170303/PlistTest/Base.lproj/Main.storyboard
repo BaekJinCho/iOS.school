@@ -120,8 +120,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="nameLabel" destination="DLA-Sk-DgM" id="mzi-1X-chg"/>
-                        <outlet property="phoneLabel" destination="15Q-bg-JKt" id="EZM-wf-18C"/>
+                        <outlet property="nameTextField" destination="DLA-Sk-DgM" id="FCx-ej-fN2"/>
+                        <outlet property="phoneTextField" destination="15Q-bg-JKt" id="Koq-XJ-IVr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aW9-OV-Clj" userLabel="First Responder" sceneMemberID="firstResponder"/>

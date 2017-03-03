@@ -79,31 +79,55 @@
 				0164F8FC1E690B1B003BA3EB /* AppDelegate.m */,
 				0164F8FE1E690B1B003BA3EB /* ViewController.h */,
 				0164F8FF1E690B1B003BA3EB /* ViewController.m */,
-				0164F9191E6937BA003BA3EB /* DataCenter.h */,
-				0164F91A1E6937BA003BA3EB /* DataCenter.m */,
 				0164F9011E690B1B003BA3EB /* Main.storyboard */,
-				0164F91F1E695E9B003BA3EB /* DetailViewController.h */,
-				0164F9201E695E9B003BA3EB /* DetailViewController.m */,
+				0164F9231E698C2D003BA3EB /* Singleton */,
+				0164F9241E698C46003BA3EB /* DetailView */,
+				0164F8F81E690B1B003BA3EB /* CustomTableView */,
+				0164F9221E698C0B003BA3EB /* Image */,
 				0164F9041E690B1B003BA3EB /* Assets.xcassets */,
 				0164F9061E690B1B003BA3EB /* LaunchScreen.storyboard */,
 				0164F90F1E690B56003BA3EB /* Sample.plist */,
 				0164F9091E690B1B003BA3EB /* Info.plist */,
-				0164F9111E691739003BA3EB /* jin.jpeg */,
-				0164F9151E691C38003BA3EB /* 7.jpeg */,
-				0164F9171E691CCF003BA3EB /* back.png */,
-				0164F8F81E690B1B003BA3EB /* Supporting Files */,
 				0164F91C1E6942FA003BA3EB /* CustomTableViewCell.h */,
 				0164F91D1E6942FA003BA3EB /* CustomTableViewCell.m */,
 			);
 			path = PlistTest;
 			sourceTree = "<group>";
 		};
-		0164F8F81E690B1B003BA3EB /* Supporting Files */ = {
+		0164F8F81E690B1B003BA3EB /* CustomTableView */ = {
 			isa = PBXGroup;
 			children = (
 				0164F8F91E690B1B003BA3EB /* main.m */,
 			);
-			name = "Supporting Files";
+			name = CustomTableView;
+			sourceTree = "<group>";
+		};
+		0164F9221E698C0B003BA3EB /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				0164F9111E691739003BA3EB /* jin.jpeg */,
+				0164F9151E691C38003BA3EB /* 7.jpeg */,
+				0164F9171E691CCF003BA3EB /* back.png */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		0164F9231E698C2D003BA3EB /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				0164F9191E6937BA003BA3EB /* DataCenter.h */,
+				0164F91A1E6937BA003BA3EB /* DataCenter.m */,
+			);
+			name = Singleton;
+			sourceTree = "<group>";
+		};
+		0164F9241E698C46003BA3EB /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				0164F91F1E695E9B003BA3EB /* DetailViewController.h */,
+				0164F9201E695E9B003BA3EB /* DetailViewController.m */,
+			);
+			name = DetailView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +365,7 @@
 				0164F90E1E690B1B003BA3EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

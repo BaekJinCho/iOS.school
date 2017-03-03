@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface DetailViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UITextField *nameLabel;
-@property (weak, nonatomic) IBOutlet UITextField *phoneLabel;
-
+@property (weak, nonatomic) IBOutlet UITextField *nameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *phoneTextField;
 @end

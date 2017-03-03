@@ -11,7 +11,6 @@
 @implementation DataCenter
 
 + (instancetype)sharedInstance{
-    
     static DataCenter *data=nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{

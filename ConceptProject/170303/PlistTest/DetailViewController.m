@@ -26,9 +26,12 @@
 }
 - (IBAction)didClickSaveButton:(id)sender {
     
-    NSDictionary *result = @{@"FriendName":@"아이유", @"FriendPhoneNumber": @"010-1111-2222"};
+    NSString *name = self.nameTextField.text;
+    NSString *phoneNumber = self.phoneTextField.text;
     
-    [[DataCenter sharedInstance].plistData insertObject:result atIndex:0];
+    NSDictionary *result = @{@"FriendName":name, @"FriendPhoneNumber": phoneNumber};
+    [[DataCenter sharedInstance].plistData addObject:result];
+//    [[DataCenter sharedInstance].plistData insertObject:result atIndex:0];
     [[DataCenter sharedInstance] saveFile];
     
     [self.navigationController popViewControllerAnimated:YES];
