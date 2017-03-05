@@ -134,10 +134,7 @@
     [[DataCenter sharedInstance] saveInformation];
     [[DataCenter sharedInstance] loadInformation];    
     }
-    
-    
-    
-    
+
 //NSUserDefault 사용
 //    if (self.tf2.text == self.tf3.text) {
 //        self.userid = self.tf.text; //첫번째 텍스트 필드의 텍스트를 NSString 형태인 userid에 저장

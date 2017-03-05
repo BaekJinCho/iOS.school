@@ -149,28 +149,31 @@
         if ([self.tf.text isEqualToString:[DataCenter sharedInstance].userID] && [self.tf2.text isEqualToString:[DataCenter sharedInstance].password]){
             //로그인 성공시 alert 띄어주기
             //alertcontroller 객체 생성
-            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"제목" message:@"메시지" preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"로그인 성공!" message:@"로그인에 성공하셨습니다." preferredStyle:UIAlertControllerStyleAlert];
             //alert action
-            UIAlertAction *okaciton = [UIAlertAction actionWithTitle:@"로그인 성공" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            UIAlertAction *okAciton = [UIAlertAction actionWithTitle:@"확인" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                 
                 UIStoryboard *st = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
                 ThirdViewController *thirdView = [st instantiateViewControllerWithIdentifier:@"ThirdViewController"];
                 [self.navigationController pushViewController:thirdView animated:YES];
                 
             }];
-            [alertController addAction:okaciton];
+            [alertController addAction:okAciton];
             
             [self presentViewController:alertController animated:YES completion:nil];
-            
-//            [self presentViewController:thirdView animated:YES completion:nil];
-            NSLog(@"alert button");
+            NSLog(@"로그인 성공 alert button(확인)이 클릭되었습니다.");
 
 //            [[NSUserDefaults standardUserDefaults] setObject:self.tf.text forKey:@"userID"];
 //            [[NSUserDefaults standardUserDefaults] setObject:self.tf2.text forKey:@"password"];
         }else{
+            UIAlertController *alertController2 = [UIAlertController alertControllerWithTitle:@"로그인 실패" message:@"회원 또는 비밀번호가 일치하지 않습니다." preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *okAction2 = [UIAlertAction actionWithTitle:@"확인" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                
+            }];
+            [alertController2 addAction:okAction2];
+            [self presentViewController:alertController2 animated:YES completion:nil];
             NSLog(@"로그인 실패!!!");
-        }
-    }
+        }    }
 }
 //텍스트 필드를 클릭했을 때, 키보드가 올라옴과 동시에 텍스트필드 전체가 올라가는 메소드
 - (void)textFieldDidBeginEditing:(UITextField *)textField {

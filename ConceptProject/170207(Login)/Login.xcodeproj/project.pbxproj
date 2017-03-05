@@ -89,6 +89,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0164F92F1E6C3DAE003BA3EB /* SingUpPage */ = {
+			isa = PBXGroup;
+			children = (
+				01C707E31E5AD3FA00308C2D /* SecondViewController.h */,
+				01C707E41E5AD3FA00308C2D /* SecondViewController.m */,
+			);
+			name = SingUpPage;
+			sourceTree = "<group>";
+		};
+		0164F9301E6C3E01003BA3EB /* SignInPage */ = {
+			isa = PBXGroup;
+			children = (
+				01A7D4B51E498E2300AC4212 /* ViewController.h */,
+				01A7D4B61E498E2300AC4212 /* ViewController.m */,
+			);
+			name = SignInPage;
+			sourceTree = "<group>";
+		};
+		0164F9311E6C3F11003BA3EB /* SignUpNextPage */ = {
+			isa = PBXGroup;
+			children = (
+				019CC3F71E5FCEF6005EC0EA /* ThirdViewController.h */,
+				019CC3F81E5FCEF6005EC0EA /* ThirdViewController.m */,
+			);
+			name = SignUpNextPage;
+			sourceTree = "<group>";
+		};
 		01A7D4A31E498E2300AC4212 = {
 			isa = PBXGroup;
 			children = (
@@ -114,12 +141,9 @@
 			children = (
 				01A7D4B21E498E2300AC4212 /* AppDelegate.h */,
 				01A7D4B31E498E2300AC4212 /* AppDelegate.m */,
-				01A7D4B51E498E2300AC4212 /* ViewController.h */,
-				01A7D4B61E498E2300AC4212 /* ViewController.m */,
-				01C707E31E5AD3FA00308C2D /* SecondViewController.h */,
-				01C707E41E5AD3FA00308C2D /* SecondViewController.m */,
-				019CC3F71E5FCEF6005EC0EA /* ThirdViewController.h */,
-				019CC3F81E5FCEF6005EC0EA /* ThirdViewController.m */,
+				0164F9301E6C3E01003BA3EB /* SignInPage */,
+				0164F92F1E6C3DAE003BA3EB /* SingUpPage */,
+				0164F9311E6C3F11003BA3EB /* SignUpNextPage */,
 				019CC3F41E5FC747005EC0EA /* DataCenter.h */,
 				019CC3F51E5FC747005EC0EA /* DataCenter.m */,
 				01A7D4B81E498E2300AC4212 /* Main.storyboard */,

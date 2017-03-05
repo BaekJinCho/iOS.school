@@ -80,9 +80,6 @@
     self.plistData = [[NSArray arrayWithContentsOfFile:docuPath] mutableCopy];
     self.userID = [[self.plistData objectAtIndex:[self.plistData count]-1] objectForKey:@"userID"];
     self.password = [[self.plistData objectAtIndex:[self.plistData count]-1] objectForKey:@"userPassword"];
-    
-    
-    
 }
 
 @end
