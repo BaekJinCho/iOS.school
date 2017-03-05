@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="One Photo Diary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9B-e0-VMg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" 하루한장" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9B-e0-VMg">
                                 <rect key="frame" x="16" y="51" width="343" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
@@ -94,8 +94,54 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="muR-OF-eSG">
+            <objects>
+                <viewController id="ssQ-Pj-sdO" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NzX-Uu-e5J"/>
+                        <viewControllerLayoutGuide type="bottom" id="G9b-Wx-hHZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M9b-4D-qNV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="chD-LQ-hZT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image=" background1.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="BI4-qb-DXh">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="BI4-qb-DXh" firstAttribute="width" secondItem="chD-LQ-hZT" secondAttribute="width" id="TwS-sZ-5oz"/>
+                                    <constraint firstAttribute="bottom" secondItem="BI4-qb-DXh" secondAttribute="bottom" id="ivh-qP-zb7"/>
+                                    <constraint firstItem="BI4-qb-DXh" firstAttribute="leading" secondItem="chD-LQ-hZT" secondAttribute="leading" id="nSe-Ix-qwW"/>
+                                    <constraint firstItem="BI4-qb-DXh" firstAttribute="height" secondItem="chD-LQ-hZT" secondAttribute="height" id="pnU-pn-0WV"/>
+                                    <constraint firstItem="BI4-qb-DXh" firstAttribute="top" secondItem="chD-LQ-hZT" secondAttribute="top" id="qtt-g2-x1g"/>
+                                    <constraint firstAttribute="trailing" secondItem="BI4-qb-DXh" secondAttribute="trailing" id="xQx-Tv-iRZ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="G9b-Wx-hHZ" firstAttribute="top" secondItem="chD-LQ-hZT" secondAttribute="bottom" id="0f0-fo-8cC"/>
+                            <constraint firstItem="chD-LQ-hZT" firstAttribute="leading" secondItem="M9b-4D-qNV" secondAttribute="leading" id="4XB-C8-Gih"/>
+                            <constraint firstItem="chD-LQ-hZT" firstAttribute="top" secondItem="M9b-4D-qNV" secondAttribute="top" id="fac-TB-3Uo"/>
+                            <constraint firstAttribute="trailing" secondItem="chD-LQ-hZT" secondAttribute="trailing" id="jP8-tk-kPK"/>
+                            <constraint firstItem="chD-LQ-hZT" firstAttribute="height" secondItem="M9b-4D-qNV" secondAttribute="height" id="kjG-da-P5y"/>
+                            <constraint firstItem="chD-LQ-hZT" firstAttribute="width" secondItem="M9b-4D-qNV" secondAttribute="width" id="xVR-rS-6tg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mz3-sF-z9X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="837.60000000000002" y="167.76611694152925"/>
+        </scene>
     </scenes>
     <resources>
+        <image name=" background1.jpeg" width="539" height="960"/>
         <image name="facebook.png" width="1024" height="1024"/>
     </resources>
 </document>

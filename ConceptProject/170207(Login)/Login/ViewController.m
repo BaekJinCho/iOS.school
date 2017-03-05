@@ -28,6 +28,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    //plist 데이터 로드
+    [[DataCenter sharedInstance] loadInformation];
     //싱클턴 연습
     self.information = [DataCenter sharedInstance];
     //노티피케이션 연습
@@ -134,8 +136,6 @@
 -(void)clickBtn:(UIButton *)sender{
     NSLog(@"로그인을 시도하였습니다.");
     if (sender.tag == 300) {
-
-        
         if(self.tf.isFirstResponder){ //textField 포커스 여부 확인(isFirstResponder)
             NSLog(@"tf");
           [self.tf2 becomeFirstResponder]; //맞다면 textField2에 포커스를 이동(becomeFirstResponder)
@@ -143,8 +143,10 @@
             NSLog(@"tf2");
           [self.tf2 resignFirstResponder]; //textField2 포커스 제거(resignFirstResponder)
         }
-        if ([self.tf.text isEqualToString:[DataCenter sharedInstance].userID] && [self.tf2.text isEqualToString:[DataCenter sharedInstance].password]) {
-            
+        //NSUserDefault 적용
+//        if ([self.tf.text isEqualToString:[DataCenter sharedInstance].userID] && [self.tf2.text isEqualToString:[DataCenter sharedInstance].password]) {
+        
+        if ([self.tf.text isEqualToString:[DataCenter sharedInstance].userID] && [self.tf2.text isEqualToString:[DataCenter sharedInstance].password]){
             //로그인 성공시 alert 띄어주기
             //alertcontroller 객체 생성
             UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"제목" message:@"메시지" preferredStyle:UIAlertControllerStyleAlert];

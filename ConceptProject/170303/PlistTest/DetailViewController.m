@@ -26,12 +26,11 @@
 }
 - (IBAction)didClickSaveButton:(id)sender {
     
-    NSString *name = self.nameTextField.text;
-    NSString *phoneNumber = self.phoneTextField.text;
-    
-    NSDictionary *result = @{@"FriendName":name, @"FriendPhoneNumber": phoneNumber};
-    [[DataCenter sharedInstance].plistData addObject:result];
-//    [[DataCenter sharedInstance].plistData insertObject:result atIndex:0];
+    NSString *name = self.nameTextField.text; //내가 입력한 값을 string 형태로 저장
+    NSString *phoneNumber = self.phoneTextField.text; //내가 입력한 값을 string 형태로 저장
+    NSDictionary *result = @{@"FriendName":name, @"FriendPhoneNumber": phoneNumber}; // 내가 직접 입력한 이름과 연락처를 추가
+    [[DataCenter sharedInstance].plistData addObject:result]; // 맨 끝에서부터 들어감
+//    [[DataCenter sharedInstance].plistData insertObject:result atIndex:0]; // 내가 원하는 위치에 둘 수 있음
     [[DataCenter sharedInstance] saveFile];
     
     [self.navigationController popViewControllerAnimated:YES];

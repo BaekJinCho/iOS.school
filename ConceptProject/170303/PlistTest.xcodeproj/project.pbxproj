@@ -88,8 +88,6 @@
 				0164F9061E690B1B003BA3EB /* LaunchScreen.storyboard */,
 				0164F90F1E690B56003BA3EB /* Sample.plist */,
 				0164F9091E690B1B003BA3EB /* Info.plist */,
-				0164F91C1E6942FA003BA3EB /* CustomTableViewCell.h */,
-				0164F91D1E6942FA003BA3EB /* CustomTableViewCell.m */,
 			);
 			path = PlistTest;
 			sourceTree = "<group>";
@@ -97,6 +95,8 @@
 		0164F8F81E690B1B003BA3EB /* CustomTableView */ = {
 			isa = PBXGroup;
 			children = (
+				0164F91C1E6942FA003BA3EB /* CustomTableViewCell.h */,
+				0164F91D1E6942FA003BA3EB /* CustomTableViewCell.m */,
 				0164F8F91E690B1B003BA3EB /* main.m */,
 			);
 			name = CustomTableView;

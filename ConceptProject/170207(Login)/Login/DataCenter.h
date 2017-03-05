@@ -11,9 +11,15 @@
 @interface DataCenter : NSObject
 @property (nonatomic) NSString *userID;
 @property (nonatomic) NSString *password;
-
 //싱글턴 패턴 클래스 메소드 선언
 + (instancetype)sharedInstance;
+
+//plist 프로퍼티(170305)
+@property (nonatomic) NSMutableArray *plistData;
+- (void)saveInformation;
+- (void)loadInformation;
+
+
 //userID와 Password를 저장하는 메소드
-- (void)settingUserIdPassword:(NSString *)userIDPassword;
+//- (void)settingUserIdPassword:(NSString *)userIDPassword;
 @end

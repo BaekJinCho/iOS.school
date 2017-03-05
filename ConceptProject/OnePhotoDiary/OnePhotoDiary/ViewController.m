@@ -26,7 +26,6 @@
     self.facebookLoginButton.backgroundColor = [UIColor colorWithDisplayP3Red:61/255.0 green:90/255.0 blue:150/255.0 alpha:1];
     //페이스북 로그인 텍스트 컬러
     [self.fackbookLoginButtonText setTitleColor:[UIColor  colorWithDisplayP3Red:61/255.0 green:89/255.0 blue:155/255.0 alpha:1] forState:UIControlStateNormal];
-    
 }
 
 

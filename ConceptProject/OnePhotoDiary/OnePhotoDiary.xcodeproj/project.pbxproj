@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0164F9271E6BD831003BA3EB /*  background1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0164F9251E6BD831003BA3EB /*  background1.jpeg */; };
+		0164F9281E6BD831003BA3EB /* background2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0164F9261E6BD831003BA3EB /* background2.jpeg */; };
 		01E2FC821E6452F000D554CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E2FC811E6452F000D554CD /* main.m */; };
 		01E2FC851E6452F000D554CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E2FC841E6452F000D554CD /* AppDelegate.m */; };
 		01E2FC881E6452F000D554CD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E2FC871E6452F000D554CD /* ViewController.m */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0164F9251E6BD831003BA3EB /*  background1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = " background1.jpeg"; sourceTree = "<group>"; };
+		0164F9261E6BD831003BA3EB /* background2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background2.jpeg; sourceTree = "<group>"; };
 		01E2FC7D1E6452F000D554CD /* OnePhotoDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnePhotoDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01E2FC811E6452F000D554CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		01E2FC831E6452F000D554CD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -146,6 +150,8 @@
 		01E2FCB31E64600F00D554CD /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				0164F9251E6BD831003BA3EB /*  background1.jpeg */,
+				0164F9261E6BD831003BA3EB /* background2.jpeg */,
 				01E2FCB41E64605C00D554CD /* facebook.png */,
 			);
 			name = Image;
@@ -261,6 +267,8 @@
 				01E2FCB51E64605C00D554CD /* facebook.png in Resources */,
 				01E2FC8D1E6452F000D554CD /* Assets.xcassets in Resources */,
 				01E2FC8B1E6452F000D554CD /* Main.storyboard in Resources */,
+				0164F9281E6BD831003BA3EB /* background2.jpeg in Resources */,
+				0164F9271E6BD831003BA3EB /*  background1.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,6 +525,7 @@
 				01E2FCAC1E6452F000D554CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01E2FCAD1E6452F000D554CD /* Build configuration list for PBXNativeTarget "OnePhotoDiaryTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +534,7 @@
 				01E2FCAF1E6452F000D554CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01E2FCB01E6452F000D554CD /* Build configuration list for PBXNativeTarget "OnePhotoDiaryUITests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +543,7 @@
 				01E2FCB21E6452F000D554CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

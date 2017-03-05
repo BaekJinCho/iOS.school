@@ -11,4 +11,5 @@
 @interface SecondViewController : UIViewController
 @property NSString *userid;
 @property NSString *password;
+@property NSDictionary *userInformation;
 @end

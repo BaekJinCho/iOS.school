@@ -15,6 +15,7 @@
 @property UITextField *tf2;
 @property UITextField *tf3;
 @property UIScrollView *sc;
+
 //@property NSString *userid;
 //@property NSString *password;
 
@@ -124,14 +125,29 @@
 //회원가입 완료를 클릭하면 실행되는 메소드
 - (void)clickBtn:(UIButton *)sender{
     if (self.tf2.text == self.tf3.text) {
-        self.userid = self.tf.text; //첫번째 텍스트 필드의 텍스트를 NSString 형태인 userid에 저장
-        self.password = self.tf2.text; //두번째 텍스트 필드의 텍스트를 NSString 형태인 password에 저장
-        self.signUpInformation.userID = self.userid; //첫번째 텍스트 필드에서 저장한 형태를 DataCenter의 userID에 저장
-        self.signUpInformation.password = self.password; //두번째 텍스트 필드에서 저장한 형태를 DataCenter의 password에 저장
-        NSLog(@"회원가입 완료");
-    }else{
-        NSLog(@"회원가입 안됌");
+    //plist를 사용한 회원가입
+    self.userid = self.tf.text;
+    self.password = self.tf2.text;
+    // 내가 직접 입력한 id와 password를 추가
+    self.userInformation = @{@"userID":self.userid, @"userPassword": self.password};
+    [[DataCenter sharedInstance].plistData addObject:self.userInformation];
+    [[DataCenter sharedInstance] saveInformation];
+    [[DataCenter sharedInstance] loadInformation];    
     }
+    
+    
+    
+    
+//NSUserDefault 사용
+//    if (self.tf2.text == self.tf3.text) {
+//        self.userid = self.tf.text; //첫번째 텍스트 필드의 텍스트를 NSString 형태인 userid에 저장
+//        self.password = self.tf2.text; //두번째 텍스트 필드의 텍스트를 NSString 형태인 password에 저장
+//        self.signUpInformation.userID = self.userid; //첫번째 텍스트 필드에서 저장한 형태를 DataCenter의 userID에 저장
+//        self.signUpInformation.password = self.password; //두번째 텍스트 필드에서 저장한 형태를 DataCenter의 password에 저장
+//        NSLog(@"회원가입 완료");
+//    }else{
+//        NSLog(@"회원가입 안됌");
+//    }
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

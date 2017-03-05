@@ -49,14 +49,9 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     CustomTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     NSDictionary *temp = [[DataCenter sharedInstance].plistData objectAtIndex:indexPath.row];
-    
+    //cell의 top 부분에는 이름, bottom 부분에는 전화번호를 넣는 것
     cell.topLabel.text = [temp objectForKey:@"FriendName"];
     cell.bottomLabel.text = [temp objectForKey:@"FriendPhoneNumber"];
-    
-    /*
-    cell.textLabel.text = [temp objectForKey:@"FriendName"];
-    cell.detailTextLabel.text = [temp objectForKey:@"FriendPhoneNumber"];
-     */
     return cell;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
