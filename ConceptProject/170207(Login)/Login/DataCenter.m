@@ -8,9 +8,11 @@
 
 #import "DataCenter.h"
 #import "SecondViewController.h"
-
+//타입 별칭(상수)
+//static NSString *const LOGINUSERID = @"userID";
+static NSString *const LOIGINUSERPASSWORD = @"userPassword";
 @implementation DataCenter
-//
+//싱글턴 클래스 메소드
 + (instancetype)sharedInstance{
     static DataCenter *dataCenter;
     
@@ -78,8 +80,8 @@
         [fileManger copyItemAtPath:bundlePath toPath:docuPath error:nil];
     }
     self.plistData = [[NSArray arrayWithContentsOfFile:docuPath] mutableCopy];
-    self.userID = [[self.plistData objectAtIndex:[self.plistData count]-1] objectForKey:@"userID"];
-    self.password = [[self.plistData objectAtIndex:[self.plistData count]-1] objectForKey:@"userPassword"];
+    self.userID = [[self.plistData objectAtIndex:[self.plistData count]-1] objectForKey:LOGINUSERID];
+    self.password = [[self.plistData objectAtIndex:[self.plistData count]-1] objectForKey:LOIGINUSERPASSWORD];
 }
 
 @end

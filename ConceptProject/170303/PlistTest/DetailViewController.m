@@ -8,6 +8,9 @@
 
 #import "DetailViewController.h"
 #import "DataCenter.h"
+//타입 별칭(상수)
+static NSString *const FRIENDNAME = @"FriendName";
+static NSString *const FRIENDPHONENUMBER = @"FriendPhoneNumber";
 
 @interface DetailViewController ()
 

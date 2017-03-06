@@ -104,6 +104,9 @@
 
 <br><br>
 ##- 로그 관리
+- **git reflog**
+
+> **git에 log를 볼 수 있다.**
 
 - **git log**
 
