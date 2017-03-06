@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Title-->
+        <!--Autolayout-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -108,7 +108,10 @@
                             <constraint firstAttribute="trailingMargin" secondItem="vZf-7w-k93" secondAttribute="trailing" id="zMP-Sz-eae"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="F8F-GB-lMC"/>
+                    <navigationItem key="navigationItem" title="Autolayout" id="F8F-GB-lMC">
+                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="Xzf-wc-bKe"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="dJF-NU-vRn"/>
+                    </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="370" height="667"/>
                 </viewController>
