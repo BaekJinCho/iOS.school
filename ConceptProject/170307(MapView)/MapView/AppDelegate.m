@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  Login
+//  MapView
 //
-//  Created by 조백진 on 2017. 2. 7..
+//  Created by 조백진 on 2017. 3. 7..
 //  Copyright © 2017년 BaekJin.Cho. All rights reserved.
 //
 
@@ -17,20 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    //1. 윈도우 만들기
-    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    
-    //2. RootViewController 만들기
-    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UIViewController *rootVC = [mainStoryboard instantiateViewControllerWithIdentifier:@"ViewController"]; //스토리보드에 있는viewcontroller (storyboard id)에 있는 객체를 가져온다.
-    
-    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:rootVC];
-    
-    //3. 윈도우에 RootViewController 지정
-    self.window.rootViewController = navi;
-    [self.window makeKeyAndVisible];
     return YES;
-
 }
 
 

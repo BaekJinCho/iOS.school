@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-static NSString *const LOGINUSERID = @"userID";
-
 @interface DataCenter : NSObject
 @property (nonatomic) NSString *userID;
 @property (nonatomic) NSString *password;

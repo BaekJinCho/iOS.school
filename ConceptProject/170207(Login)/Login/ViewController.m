@@ -10,6 +10,7 @@
 #import "SecondViewController.h"
 #import "ThirdViewController.h"
 #import "DataCenter.h"
+#import <MapKit/MapKit.h>
 
 @interface ViewController ()
 <UIScrollViewDelegate, UITextFieldDelegate>
@@ -177,7 +178,7 @@
 }
 //텍스트 필드를 클릭했을 때, 키보드가 올라옴과 동시에 텍스트필드 전체가 올라가는 메소드
 - (void)textFieldDidBeginEditing:(UITextField *)textField {
-    [self.sc setContentOffset:CGPointMake(0, 30) animated:YES];
+    [self.sc setContentOffset:CGPointMake(0, 50) animated:YES];
     //스크롤 뷰 위에 있는 textField를 클릭하면 애니메이션 효과에 의해textField1, 2가 위로 함께 올라간다.
     
 }

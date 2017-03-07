@@ -9,7 +9,7 @@
 #import "DataCenter.h"
 #import "SecondViewController.h"
 //타입 별칭(상수)
-//static NSString *const LOGINUSERID = @"userID";
+static NSString *const LOGINUSERID = @"userID";
 static NSString *const LOIGINUSERPASSWORD = @"userPassword";
 @implementation DataCenter
 //싱글턴 클래스 메소드

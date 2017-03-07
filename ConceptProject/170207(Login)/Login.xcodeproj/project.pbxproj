@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0164F92E1E6BF2D8003BA3EB /* Test.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0164F92D1E6BF2D8003BA3EB /* Test.plist */; };
+		0164F95D1E6E814A003BA3EB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0164F95C1E6E814A003BA3EB /* MapKit.framework */; };
 		019CC3F61E5FC747005EC0EA /* DataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 019CC3F51E5FC747005EC0EA /* DataCenter.m */; };
 		019CC3F91E5FCEF6005EC0EA /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 019CC3F81E5FCEF6005EC0EA /* ThirdViewController.m */; };
 		01A7D4B11E498E2300AC4212 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A7D4B01E498E2300AC4212 /* main.m */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		0164F92D1E6BF2D8003BA3EB /* Test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Test.plist; sourceTree = SOURCE_ROOT; };
+		0164F95C1E6E814A003BA3EB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		019CC3F41E5FC747005EC0EA /* DataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCenter.h; sourceTree = "<group>"; };
 		019CC3F51E5FC747005EC0EA /* DataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataCenter.m; sourceTree = "<group>"; };
 		019CC3F71E5FCEF6005EC0EA /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0164F95D1E6E814A003BA3EB /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +119,14 @@
 			name = SignUpNextPage;
 			sourceTree = "<group>";
 		};
+		0164F95B1E6E814A003BA3EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0164F95C1E6E814A003BA3EB /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		01A7D4A31E498E2300AC4212 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +134,7 @@
 				01A7D4C81E498E2300AC4212 /* LoginTests */,
 				01A7D4D31E498E2300AC4212 /* LoginUITests */,
 				01A7D4AD1E498E2300AC4212 /* Products */,
+				0164F95B1E6E814A003BA3EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -249,6 +261,7 @@
 				TargetAttributes = {
 					01A7D4AB1E498E2300AC4212 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = NN7QXHC8A3;
 						ProvisioningStyle = Automatic;
 					};
 					01A7D4C41E498E2300AC4212 = {
@@ -468,9 +481,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NN7QXHC8A3;
 				INFOPLIST_FILE = Login/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.BaekJin.develop.Login;
+				PRODUCT_BUNDLE_IDENTIFIER = com.baekjin.developer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -479,9 +493,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NN7QXHC8A3;
 				INFOPLIST_FILE = Login/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.BaekJin.develop.Login;
+				PRODUCT_BUNDLE_IDENTIFIER = com.baekjin.developer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

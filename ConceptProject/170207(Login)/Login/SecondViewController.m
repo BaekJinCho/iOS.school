@@ -19,7 +19,6 @@
 //@property NSString *userid;
 //@property NSString *password;
 
-
 @property (nonatomic) DataCenter *signUpInformation;
 
 @end
