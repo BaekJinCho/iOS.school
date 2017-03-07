@@ -19,6 +19,7 @@
 @property (nonatomic) NSMutableArray *plistData;
 - (void)saveInformation;
 - (void)loadInformation;
+- (BOOL)checkUserID:(NSString *)userID;
 
 
 //userID와 Password를 저장하는 메소드

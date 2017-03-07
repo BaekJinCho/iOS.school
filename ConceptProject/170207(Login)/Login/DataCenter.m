@@ -53,6 +53,7 @@ static NSString *const LOIGINUSERPASSWORD = @"userPassword";
 //}
 
 //plist 메소드
+//데이터 저장
 - (void)saveInformation{
     
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
@@ -67,7 +68,7 @@ static NSString *const LOIGINUSERPASSWORD = @"userPassword";
     }
     [self.plistData writeToFile:docuPath atomically:NO];
 }
-
+//데이터 로드
 - (void)loadInformation{
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     
@@ -80,8 +81,30 @@ static NSString *const LOIGINUSERPASSWORD = @"userPassword";
         [fileManger copyItemAtPath:bundlePath toPath:docuPath error:nil];
     }
     self.plistData = [[NSArray arrayWithContentsOfFile:docuPath] mutableCopy];
-    self.userID = [[self.plistData objectAtIndex:[self.plistData count]-1] objectForKey:LOGINUSERID];
-    self.password = [[self.plistData objectAtIndex:[self.plistData count]-1] objectForKey:LOIGINUSERPASSWORD];
+//    self.userID = [[self.plistData objectAtIndex:[self.plistData count]-1] objectForKey:LOGINUSERID];
+//    self.password = [[self.plistData objectAtIndex:[self.plistData count]-1] objectForKey:LOIGINUSERPASSWORD];
 }
 
+//id 중복 확인
+- (BOOL)checkUserID:(NSString *)userID{
+    
+//    NSInteger index = 0;
+//    while (!temp) {
+//        temp = [self.plistData objectAtIndex:<#(NSUInteger)#>]
+//        
+//        index ++
+//    }
+    
+    for(NSInteger i=0; i<[self.plistData count]; i++) {
+        
+        NSString *tempId = [[self.plistData objectAtIndex:i] objectForKey:LOGINUSERID];
+        
+        if([userID isEqualToString:tempId]) {
+//            i = [self.plistData count];
+            return YES;
+        }
+    }
+    
+    return NO;
+}
 @end

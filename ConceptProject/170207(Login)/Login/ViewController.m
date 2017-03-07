@@ -61,6 +61,8 @@
     //ContentView 만들기
     [self.sc setContentSize:CGSizeMake(frameSize.width, frameSize.height)];
     self.sc.delegate = self;
+    //스크롤 기능 막아놓기
+    self.sc.scrollEnabled = NO ;
     [self.view addSubview:self.sc];
     
     //ContentView
@@ -147,7 +149,17 @@
         //NSUserDefault 적용
 //        if ([self.tf.text isEqualToString:[DataCenter sharedInstance].userID] && [self.tf2.text isEqualToString:[DataCenter sharedInstance].password]) {
         
-        if ([self.tf.text isEqualToString:[DataCenter sharedInstance].userID] && [self.tf2.text isEqualToString:[DataCenter sharedInstance].password]){
+//        if ([self.tf.text isEqualToString:[DataCenter sharedInstance].userID] && [self.tf2.text isEqualToString:[DataCenter sharedInstance].password]){
+        
+        /*******************회원가입 한 user 로그인 하는 것(170307)*******************/
+        NSMutableArray *dataTemp= [DataCenter sharedInstance].plistData;
+        for (NSInteger i = 0; i<dataTemp.count; i++) {
+            
+    
+        }
+        
+        if ([[dataTemp objectAtIndex:dataTemp.count] objectForKey:@"userID"] && [[dataTemp objectAtIndex:dataTemp.count] objectForKey:@"userPassword"] ) {
+
             //로그인 성공시 alert 띄어주기
             //alertcontroller 객체 생성
             UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"로그인 성공!" message:@"로그인에 성공하셨습니다." preferredStyle:UIAlertControllerStyleAlert];

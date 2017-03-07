@@ -131,7 +131,9 @@
     self.userInformation = @{@"userID":self.userid, @"userPassword": self.password};
     [[DataCenter sharedInstance].plistData addObject:self.userInformation];
     [[DataCenter sharedInstance] saveInformation];
-    [[DataCenter sharedInstance] loadInformation];    
+    [[DataCenter sharedInstance] loadInformation];
+    [[DataCenter sharedInstance] checkUserID:@"userID"];
+        
     }
 
 //NSUserDefault 사용
