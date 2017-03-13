@@ -119,7 +119,7 @@
 	
 	>- [기기 테스트 / MapView / Add Annotation](ConceptProject/170307(MapView))
 	
-	>- 해커톤(Hackathon)
+	>- [해커톤(Hackathon)](https://github.com/BaekJinCho/PetmeApp)
 	
 	>- [Block](ConceptProject/170310(BlockPractice)) / 해커톤 기술 공유
 
