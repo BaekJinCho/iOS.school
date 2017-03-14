@@ -11,6 +11,8 @@
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UIButton *changeBtn;
+@property (weak, nonatomic) IBOutlet UIButton *changeBtn2;
+
 @property (weak, nonatomic) IBOutlet UILabel *numberLabel;
 @property NSThread *thread;
 @property dispatch_queue_t queue;
@@ -52,22 +54,35 @@
     // Dispose of any resources that can be recreated.
 }
 
+
 - (IBAction)changeNumber:(UIButton *)sender {
     self.thread = [[NSThread alloc] initWithTarget:self selector:@selector(startThread) object:nil];
     [self.thread start];
-    self.queue = dispatch_queue_create("queue", DISPATCH_QUEUE_CONCURRENT);
+//    self.queue = dispatch_queue_create("queue", DISPATCH_QUEUE_CONCURRENT);
     
-    
-    
+    [self.changeBtn setTitle:@"시작" forState:UIControlStateNormal];
 }
+
+- (IBAction)changeBtn:(UIButton *)sender {
+    
+    [self.thread cancel];
+}
+
 
 - (void)startThread{
     
-    for (NSInteger i=0; i<50; i++) {
+    NSInteger i = 0;
+    
+    while (!self.thread.isCancelled) {
+        
         sleep(1);
         [self performSelectorOnMainThread:@selector(changeText:) withObject:[NSString stringWithFormat:@"%ld",i] waitUntilDone:YES];
+        i += 1;
+    }
     
-}
+//    for (NSInteger i=0; i<50; i++) {
+//        sleep(1);
+//    }
     
 }
 

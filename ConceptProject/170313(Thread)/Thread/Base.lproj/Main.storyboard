@@ -29,11 +29,26 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0XS-S5-dmB">
-                                <rect key="frame" x="164" y="297" width="46" height="30"/>
+                                <rect key="frame" x="111" y="298" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="changeNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fIY-jF-y44"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rN2-Vn-2kW">
+                                <rect key="frame" x="266" y="302" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHV-0t-rNp">
+                                <rect key="frame" x="194" y="298" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="changeBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wPw-Y7-QO9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -41,6 +56,7 @@
                     </view>
                     <connections>
                         <outlet property="changeBtn" destination="0XS-S5-dmB" id="Uuf-vW-DRe"/>
+                        <outlet property="changeBtn2" destination="oHV-0t-rNp" id="WEg-gi-AYc"/>
                         <outlet property="numberLabel" destination="PxL-Zp-wjW" id="IJN-72-O24"/>
                     </connections>
                 </viewController>
