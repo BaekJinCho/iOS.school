@@ -116,3 +116,62 @@ void dispatch_async(dispatch_time_t when, dispatch_queue_t queue, dispatch_block
 //작업을 구분
 void dispatch_barrier_async(dispatch_queue_t queue, dispatch_block_t block);
 ```
+
+<br>
+####- GCD 예제
+####- 1. Serial Dispatch Queue에 Sync하게 Task 추가
+
+```objc
+dispatch_queue_t queue = dispatch_queue_create("test", DISPATCH_QUEUE_SERIAL);
+dispatch_sync(queue, ^{ NSLog(@"1"); });
+dispatch_sync(queue, ^{ NSLog(@"2"); });
+dispatch_sync(queue, ^{ NSLog(@"3"); });
+Serial Queue를 생성한 후, 위와 같이 Sync 하게 Task를 추가하게 되면,
+넣은 순서대로 실행이 되므로, 결과는 아래와 같습니다.
+
+1
+2
+3
+```
+
+####- 2. Serial Dispatch Queue에 Async하게 Task 추가
+
+```objc
+dispatch_queue_t queue = dispatch_queue_create("test", DISPATCH_QUEUE_SERIAL);
+dispatch_async(queue, ^{ NSLog(@"1"); });
+dispatch_async(queue, ^{ NSLog(@"2"); });
+dispatch_async(queue, ^{ NSLog(@"3"); });
+Serial Queue를 생성한 후, 위와 같이 Async 하게 Task를 추가하게 되어도, 결국은 Serial하게 1개의 Task씩 실행하며, 다른 Task의 추가를 먼저 들어간 Task의 실행까지 Blocking 하므로, 위와 같이 동일한 실행순서를 보여줍니다.
+
+1
+2
+3
+```
+
+####- 3. Async Dispatch Queue에 Sync하게 Task 추가
+
+```objc
+dispatch_queue_t queue = dispatch_queue_create("test", DISPATCH_QUEUE_CONCURRENT);
+dispatch_sync(queue, ^{ NSLog(@"1"); });
+dispatch_sync(queue, ^{ NSLog(@"2"); });
+dispatch_sync(queue, ^{ NSLog(@"3"); });
+위와 같이 Concurrent Queue를 생성한 후, Sync하게 Task를 추가하게 되면, 각 Task가 실행되기 전까지 Task추가를 하지 않으므로, 아래와 같은 결과를 보여줍니다.
+
+1
+2
+3
+```
+
+#### -4. Async Dispatch Queue에 Async하게 Task 추가
+
+```objc
+dispatch_queue_t queue = dispatch_queue_create("test", DISPATCH_QUEUE_CONCURRENT);
+dispatch_async(queue, ^{ NSLog(@"1"); });
+dispatch_async(queue, ^{ NSLog(@"2"); });
+dispatch_async(queue, ^{ NSLog(@"3"); });
+Concurrent Queue에 Async하게 Task를 추가하게 되면 각 Task가 Queue에 들어가게 되며, 특정한 개수만큼 동시에 실행이 됩니다. 그래서 아래와 같은 결과(상황에 따라 계속 달라지는)를 얻게 됩니다.
+
+1
+3
+2
+```
