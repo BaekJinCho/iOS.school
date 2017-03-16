@@ -4,10 +4,12 @@
 # - Content
 
 <br>
+
 ## 1. Profile
 - resume : 이력서< >
 
 <br><br>
+
 ## 2. iOS School🍎
 ### - 컴퓨터 개론
 
@@ -25,6 +27,7 @@
 
 
 <br>
+
 ### - Objective-C
 
 - **[2 week]**
@@ -134,6 +137,7 @@
 - **[12 week]**
 
 <br><br>
+
 ## 3. Study
 
 |[Git 명령어 정리](Study/Study6)|
