@@ -1,15 +1,15 @@
-#조백진(Cho Baek Jin)<a href="url"><img src="Study/Image/apple-logo.png" align="right" height="48" ></a>
+# 조백진(Cho Baek Jin)<a href="url"><img src="Study/Image/apple-logo.png" align="right" height="48" ></a>
 
 
-#- Content
+# - Content
 
 <br>
-##1. Profile
+## 1. Profile
 - resume : 이력서< >
 
 <br><br>
-##2. iOS School🍎
-###- 컴퓨터 개론
+## 2. iOS School🍎
+### - 컴퓨터 개론
 
 - **[1 week]**
   
@@ -25,7 +25,7 @@
 
 
 <br>
-###- Objective-C
+### - Objective-C
 
 - **[2 week]**
 
@@ -134,7 +134,7 @@
 - **[12 week]**
 
 <br><br>
-##3. Study
+## 3. Study
 
 |[Git 명령어 정리](Study/Study6)|
 |:--:||:--:||:--:|
