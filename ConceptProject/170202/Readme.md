@@ -1,23 +1,33 @@
-#2017. 02. 02
-##- iOS 구조 파악
-###- The Structure of an App - MVC
+# 2017. 02. 02
+
+## - iOS 구조 파악
+
+### - The Structure of an App - MVC
+
 ![](https://developer.apple.com/library/content/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Art/core_objects_2x.png)
 
 <br>
-###- Step of After Launch
+
+### - Step of After Launch
+
 ![](https://developer.apple.com/library/content/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Art/app_launch_fg_2x.png)
 
 <br>
-###- 화면 구조
+### - 화면 구조
+
 ![](https://developer.apple.com/library/content/featuredarticles/ViewControllerPGforiPhoneOS/Art/VCPG-root-view-controller_2-1_2x.png)
 
 <br>
-###- 사용자 Event 처리
+
+### - 사용자 Event 처리
+
 ![](https://developer.apple.com/library/content/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Art/event_draw_cycle_a_2x.png)
 
 <br><br>
-##- UI Base Guide
-####- 해상도
+
+## - UI Base Guide
+
+#### - 해상도
 
 - Pixel : 실제 이미지 사이즈
 - Point : 화면에 표시되는 이미지 사이즈
@@ -29,18 +39,23 @@
 |6Plus|414Point / 736Point|1242Pixel / 2208Pixel| 
 
 
-####- 좌표계
+#### - 좌표계
+
 : View 기준 좌측 상단이 0,0이다.<br>
 : 뷰의 위치는 **상대적**으로 상위뷰를 기준으로 위치를 잡는다.
 
 <br><br>
-##- View
-####- UIKit Framework
+
+## - View
+
+#### - UIKit Framework
+
 : Cocoa Touch Framework에 추가된 UI관련 기능의 클래스가 모여 있는 Framework<br>
 
 : #import UIKit/UIKit.h 로 추가 한다.
  
-####- UIResponder
+#### - UIResponder
+
 : UIResponder 클래스는 이벤트를 재 생성하고 처리하는 객체의 인터페이스를 정의
 
 : **사용자의 반응을 정리한 클래스**

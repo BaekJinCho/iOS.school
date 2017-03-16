@@ -1,5 +1,7 @@
-#2017. 03. 02
-##- UIAlertController
+# 2017. 03. 02
+
+## - UIAlertController
+
 - Alert : 화면에 딱 표시
 - ActionSheet : 아래에서 올라옴
 
@@ -28,7 +30,9 @@
 ```
 
 <br>
-##- UIGestureRecognizer
+
+## - UIGestureRecognizer
+
 - 사용자의 입력을 전달받을 수 있는 방법을 제공
 - Tap, Pinch, Rotation, Swipe, Pan(drag), Edge Pan, Long Press 등을 인지하는 각각의 서브클래스 존재
 - View 위에 얹어 액션을 핸들링
@@ -45,13 +49,17 @@ tapGesture.numberOfTapsRequired = 1;
 ```
 
 <br>
-##- Image Picker
-####- UIImagePickerController
+
+## - Image Picker
+
+#### - UIImagePickerController
+
 - 다양한 소스로부터 사진을 가져오는 기능이 구현되어 있는 클래스
 - 사진 소스에는 라이브러리, 사진앨범, 카메라 등이 있다.
 - 옵션을 주어 사진을 가져올 때, 사용자에게 정사각형으로 편집할 수 있도록 할 수 있다.
 
-####- 사용자로부터 접근 권한 요청하기
+#### - 사용자로부터 접근 권한 요청하기
+
 - iOS 10에서부터 사용자의 데이터에 접근하기 위해서는 접근 권한을 설정해야 한다.(info.plist에 사용목적 작성)
 
 - 항목
@@ -67,4 +75,4 @@ tapGesture.numberOfTapsRequired = 1;
 	- 위치정보 접근(항상 허용) : NSLocationAlwaysUsageDescription
 	- 위치정보 접근(사용할 경우만) : NSLocationWhenInUseUsageDescription
 	- 마이크 접근 : NSMicrophoneUsageDescription
-	- 사진 라이브러리 접근 : NSPhotoLibraryUsageDescription
+	- 사진 라이브러리 접근 : NSPhotoLibraryUsageDescription# 

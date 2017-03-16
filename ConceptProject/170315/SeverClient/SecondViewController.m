@@ -7,6 +7,7 @@
 //
 
 #import "SecondViewController.h"
+#import "ThirdViewController.h"
 
 @interface SecondViewController ()
 <UIScrollViewDelegate, UITextFieldDelegate>
@@ -32,6 +33,36 @@
     self.loginBtn.layer.cornerRadius = 20;
     self.loginBtn.layer.borderWidth = 1;
     self.loginBtn.layer.borderColor = [UIColor whiteColor].CGColor;
+    
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didChangeScrollView:) name:UIKeyboardWillHideNotification object:nil];
+    
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didChangeScrollView:) name:UIKeyboardWillShowNotification object:nil];
+}
+
+-(void)didChangeScrollView:(NSNotification *) notification {
+    
+    
+    CGRect keyboardRect = [[notification.userInfo objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue];
+    
+    NSLog(@"%lf", keyboardRect.size.width);
+    if([notification.name isEqualToString:UIKeyboardWillShowNotification]) {
+        
+        [self.scrollView setContentOffset:CGPointMake(0, keyboardRect.size.height-170) animated:YES];
+        
+        
+    } else if([notification.name isEqualToString:UIKeyboardWillHideNotification]) {
+        
+        [self.scrollView setContentOffset:CGPointMake(0, 0) animated:YES];
+    }
+    
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,24 +70,27 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)textFieldDidBeginEditing:(UITextField *)textField{
-    [self.scrollView setContentOffset:CGPointMake(0, 400) animated:YES];
-    
-}
-
-- (void)textFieldDidEndEditing:(UITextField *)textField{
-    [self.scrollView setContentOffset:CGPointMake(0,0) animated:YES];
-}
-
+//- (void)textFieldDidBeginEditing:(UITextField *)textField{
+//    [self.scrollView setContentOffset:CGPointMake(0, 400) animated:YES];
+//    
+//}
+//
+//- (void)textFieldDidEndEditing:(UITextField *)textField{
+//    [self.scrollView setContentOffset:CGPointMake(0,0) animated:YES];
+//}
+//로그인 버튼
 - (IBAction)clickLoginBtn:(UIButton *)sender {
     
     
 }
-
+//회원가입 버튼(회원가입 페이지로 이동)
 - (IBAction)clickSignUpBtn:(UIButton *)sender {
+    
+
     
     
 }
+
 
 /*
 #pragma mark - Navigation

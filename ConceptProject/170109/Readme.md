@@ -1,6 +1,6 @@
-#2017. 01. 09
+# 2017. 01. 09
 
-##- Git
+## - Git
 
 > 소스 저장소란 무엇인가?<br>
 > VCS : Version Control System<br>
@@ -21,6 +21,7 @@
 : 저장소의 위치가 서버에 존재.<br>
 
 <br>
+
 ![](https://github.com/projectlife724/i.wonsuk.choi/blob/master/Notes/Images/DAY%201/Git%20Structure.png?raw=true)
 
 <br>
@@ -32,7 +33,9 @@
 |Remote Repository -> Working Directory : Pull|
 
 <br>
-##- Github은 Git 저장소를 제공하는 서비스 중에서 하나일 뿐입니다.
+
+## - Github은 Git 저장소를 제공하는 서비스 중에서 하나일 뿐입니다.
+
 <br>
 
 * Souretree 설치<br>
@@ -44,7 +47,9 @@
 	<http://pcottle.github.io/learnGitBranching/>
 	
 <br><br>
+
 * 잘 모르겠거나 궁금하신 사항 있으면? - [검색하러가기](http://google.com)
 
 <br>
+
 ![구글 로고](http://www.google.co.kr/images/srpr/logo11w.png)<br>

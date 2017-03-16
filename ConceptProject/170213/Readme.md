@@ -1,11 +1,15 @@
-#2017. 02. 13
-##- Application Life Cycle
-####- Main Function
+# 2017. 02. 13
+
+## - Application Life Cycle
+
+#### - Main Function
+
 : 모든 C언어 기반의 프로그램의 시작점은 main 함수이다.<br>iOS앱도 예외는 아니다. 작은 차이가 있다면 iOS앱에서는 직접 main 함수를 작성하지 않는다는 것이다.<br>  특별한 예외 상황이 아니라면 XCode가 제공하는 이 main 함수를 함부로 변경하지 않는게 좋다.
 
 
 <br>
-####- The Structure of an App
+
+#### - The Structure of an App
 
 : 앱이 시작되면서 UIApplicationMain 함수는 몇가지 중요한 객체를 생성하고 앱을 실행시킨다.<br> 모든 iOS앱의 중심에는 시스템과 앱의 여러 객체들간의 대화를 가능하게 해주는 UIApplication 객체가 있다. <br> 아래 그림을 보았을 때, iOS앱은 Model-view-controller(MVC) 구조를 사용한다.<br> 이 디자인패턴은 앱의 Data와 비지니스 로직을 UI요소로부터 분리를 시켜준다. 이 패턴 덕분에 다른 사이즈의 디바이스에서도 앱의 동작이 가능하다.
 
@@ -15,7 +19,8 @@
 
 
 <br>
-####- The Main Run Loop
+
+#### - The Main Run Loop
 
 : 한 앱의 Main Run Loop는 사용자와 관련된 프로세스들을 처리한다.<br> UIApplication 객체는 앱이 실행(launch)되는 시점에 메인 run loop를 생성한 뒤 이 run loop로 이벤트를 처리한다.<br>  Main run loop는 앱의 메인 스레드에서 동작하고 main run loop는 사용자 관련 이벤트들을 받은 순서대로 처리한다.
 
@@ -35,7 +40,9 @@
 (터치 이벤트의 경우 main window 객체가 인식하고 window 객체가 다시 터치가 발생한 view로 이벤트를 전달한다.)
 
 <br>
-####- Event에 대한 처리
+
+#### - Event에 대한 처리
+
 |이벤트 종류|설명|
 |:---:|:---:|:---:|
 |Touch|발생된 이벤트에 대한 뷰가 처리|
@@ -46,7 +53,9 @@
 
 
 <br>
-####- 앱의 실행 상태
+
+#### - 앱의 실행 상태
+
 ![](http://cfile23.uf.tistory.com/image/23735E4C5692204C1259A1)
 
 <br>
@@ -69,7 +78,9 @@
 ```
 
 <br>
-####- AppDelegate의 메소드
+
+#### - AppDelegate의 메소드
+
 - application:willFinishLaunchingWithOptions:<br>
 : 앱이 최초로 실행될 때 호출되는 메소드 
 
@@ -93,7 +104,8 @@
 
 
 <br>
-####- Supported Background Tasks
+
+#### - Supported Background Tasks
 
 - Audio and AirPlay (음악) **※ 영상은 불가능**
 - Location updates (위치 정보)
@@ -107,17 +119,21 @@
 **이 외에는 Background 작업을 할 수 없다.‼️**
 
 <br>
-####- UIViewController의 생명주기 메소드
+
+#### - UIViewController의 생명주기 메소드
+
 - 프로그래머가 직접 호출 불가
 - 오버라이드 하는 메소드 이므로 꼭 해당 메소드 내에서 **[super 메소드]**를 통해 기존 메소드를 호출해야함!!!
 
 <br>
+
 ![](https://cdn-images-1.medium.com/max/800/1*etDLgjBamDJoiaM3_hie9A.png)
 
 **※ Appdelegate : Delegate에 의해서 실행<br>
 ※ UIViewController : 오버라이드**
 
-####- 생명주기 메소드
+#### - 생명주기 메소드
+
 	- (void)loadView
 	: UIviewControllerd의 view가 생성될 떄 호출
 	

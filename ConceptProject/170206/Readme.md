@@ -1,7 +1,9 @@
-#2017. 02. 06
-##- Delegate, TextField
+# 2017. 02. 06
 
-####- Protocol
+## - Delegate, TextField
+
+#### - Protocol
+
 : 복수의 컴퓨터 사이나 중앙 컴퓨터와 단말기 사이에서 데이터 통신을 원활하게 하기 위해 필요한 통신 규약. 신호 송신의 순서, 데이터 표현법, 오류 검출법 등을 정함
 
 - 객체 지향에선 두 클래스 간의 약속!
@@ -14,7 +16,9 @@
 **※ Delegate를 쓰는 이유<br>: 하위 계층이 상위 계층에 있는 것들을 쓰려고?**
 
 <br>
-####- UITextField
+
+#### - UITextField
+
 : 사용자 텍스트 입력을 위한 UI Component
 
 <br>
@@ -31,7 +35,7 @@
 	@property(nonatomic,strong) UIImage *background;
 	@property(nonatomic, weak) id<UITextFieldDelegate> delegate;
 	
-####- UITextFieldDelegate
+#### - UITextFieldDelegate
 
 	@protocol UITextFieldDelegata <NSObject>
 	
@@ -66,6 +70,7 @@
 : retun이 'NO'일 때 'YES'일 때 차이가 없이 동작한다면 return NO는 무시된다.
 
 <br>
-####- UIButton / UITextField 만들어 보기
+
+#### - UIButton / UITextField 만들어 보기
 
 ![](https://github.com/BaekJinCho/iOS.school/blob/master/Study/Image/button.png?raw=true)

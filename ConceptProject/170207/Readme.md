@@ -1,13 +1,17 @@
-#2017. 02. 07
-##- ScrollView
-####- UIScrollView
+# 2017. 02. 07
+
+## - ScrollView
+
+#### - UIScrollView
+
 : ViewSize보다 확장된 뷰를 보기위한 View
 
 : UIScrollView에 추가된 View는 ContentView 위에 추가 된다.
 
 <br>
 
-####- UIScrollView - ContentView
+#### - UIScrollView - ContentView
+
 ![](https://spin.atomicobject.com/wp-content/uploads/uiscrollview-with-constraints-on-content.png)
 
 **- UIScrollView 주요 항목**
@@ -42,6 +46,7 @@
 - maximumZoomSclae : 줌(확대)
 
 <br>
-####- UIScrollView 구현해보기
+
+#### - UIScrollView 구현해보기
 
 ![](https://github.com/BaekJinCho/iOS.school/blob/master/Study/Image/scroll.png?raw=true) 

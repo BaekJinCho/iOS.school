@@ -1,4 +1,5 @@
-#2017. 02. 09
+# 2017. 02. 09
+
 - for - in
 - Stack
 - Queue
@@ -6,7 +7,9 @@
 - 복잡 효율 정렬 알고리즘
 
 <br>
-##- for - in & data
+
+## - for - in & data
+
 : for문을 가지고 하는 행위중 많은 비율이 배열이나 dictionary에 있는 데이터를 가지고 오는데 있다.
 
 : for문의 i값으로 하는 일은 배열의 데이터는 가져오는데만 필요하다.
@@ -24,7 +27,9 @@
 ![](https://github.com/BaekJinCho/iOS.school/blob/master/Study/Image/for-in.png?raw=true)
 
 <br>
-##- Stack
+
+## - Stack
+
 : 한 쪽 끝에서만 자료를 넣거나 뺄 수 있는 선형 구조(LIFO - Last In First Out)으로 되어 있다.
 
 <br>
@@ -36,7 +41,9 @@
 - isEmpty 메소드
 
 <br>
-##- Queue
+
+## - Queue
+
 : 먼저 집어 넣은 데이터가 먼저 나오는 FIFO(First In First Out) 구조로 저장하는 형식<br>
 : 나중에 집어 넣은 데이터가 먼저 나오는 스택과는 반대되는 개념
 
@@ -50,7 +57,9 @@
 - get : 큐에서 자료를 꺼내는 것
 
 <br>
-##- 정렬 알고리즘
+
+## - 정렬 알고리즘
+
 : 일정한 순서대로 열거하는 알고리즘
 
 - selection sort(선택 정렬)
@@ -63,17 +72,21 @@
 - radix sort(기수 정렬)
 
 <br>
-####- 정렬 알고리즘 효율
+
+#### - 정렬 알고리즘 효율
+
 : 비교연산의 횟수와 이동연산의 횟수를 통해 효율을 측정
 
 - 단순 비효율 정렬 : insertion sort, selection sort, bubble sort
 - 복잡 효율 정렬 : merge sort, quick sort, heap sort, radix sofrt
 
-####- 알고리즘 복잡도
+#### - 알고리즘 복잡도
+
 : 가장 최악의 경우 걸리는 시간<br>
 : big O 표기법으로 표시 ex)O(n), O(n logn)
 
-####- Selection sort
+#### - Selection sort
+
 : 가장 쉬운 정렬 방법<br>
 : 리스트의 데이터중 가장 작은 데이터 순으로 앞쪽에 정렬하는 방식<br>
 : 빅O = n*n
@@ -83,12 +96,16 @@
 ![](http://cfs2.tistory.com/upload_control/download.blog?fhandle=YmxvZzEyNDIxQGZzMi50aXN0b3J5LmNvbTovYXR0YWNoLzAvMjEucG5n)
 
 <br>
-####- Insert sort
+
+#### - Insert sort
+
 : 데이터의 비교에 따라 적절한 자리에 삽입하는 방식
 ![](https://upload.wikimedia.org/wikipedia/commons/e/ea/Insertion_sort_001.PNG)
 
 <br>
-####- bubble sort
+
+#### - bubble sort
+
 : 인접한 데이터와 비교하여 정렬<br>
 : 리스트의 왼쪽에서 오른쪽 끝까지 한번 비교 - 교환 과정이 완료되면 가장 큰 수가 오른쪽 끝에 이동<br>
 : 모든 숫자가 정렬 될 때까지 실행
@@ -97,16 +114,18 @@
 ![](http://cfs2.tistory.com/upload_control/download.blog?fhandle=YmxvZzEyNDIxQGZzMi50aXN0b3J5LmNvbTovYXR0YWNoLzAvMjIucG5n)
 
 <br>
-##- 복잡 효율 정렬 알고리즘
 
-####- Divide and conquer algorithms
+## - 복잡 효율 정렬 알고리즘
+
+#### - Divide and conquer algorithms
 문제를 해결이 가능한 정도까지 포갠다. 해결한 다음에 문제를 다시 합친다. 다시 합치면 해결이 가능한 정도로 쉬운 문제가 되거나 해결되어 있다.
 : 그대로 해결할 수 없는 문제를 작은 문제로 분할하여 문제를 해결하는 방법
 
 : 보통 재귀 함수(recursive function)를 통해 자연스럽게 구현된다.
 
 <br>
-####- merge sort
+
+#### - merge sort
 
 <br>	
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Merge_sort_algorithm_diagram.svg/1064px-Merge_sort_algorithm_diagram.svg.png)
@@ -122,7 +141,8 @@
 	- 4. 두 부분 리스트를 다시 하나의 정렬된 리스트로 합병한다.
 
 <br>
-####- quick sort
+
+#### - quick sort
 
 <br>
 ![](http://cfile23.uf.tistory.com/image/121267394EF3CA2430A139)

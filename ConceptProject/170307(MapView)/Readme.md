@@ -1,16 +1,20 @@
-#2017. 03. 07
-##- 기기테스트
+# 2017. 03. 07
+
+## - 기기테스트
+
 [- Developer Program 기기테스트 방법](http://lab.anybuild.co.kr/page/basic_app2)
 
 <br>
-##- MapView
+
+## - MapView
+
 - Region : 지역 (MKCoordinateRegion사용)
 - Span : 펼쳐진 영역(zoom level) - (MKCoordinateSpan사용)
 - Location Coordinate : 좌표
 - latitude : 위도 (wgs84 좌표계 사용)
 - longitude : 경도 (wgs84 좌표계 사용)
 
-###- 좌표 설정 코드
+### - 좌표 설정 코드
 
 ```objc
 //setLocation Location
@@ -21,7 +25,7 @@ MKCoordinateSpan span = MKCoordinateSpanMake(0.1, 0.1);
 [self.mapView setRegion:MKCoordinateRegionMake(coordinate,span)];
 ```
 
-###- 사용자 위치 설정
+### - 사용자 위치 설정
 
 - 사용자 허용
 
@@ -62,7 +66,7 @@ self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
 [self.mapView setShowsUserLocation:YES];
 ```
 
-###- Pin 추가 (Add Annotation)
+### - Pin 추가 (Add Annotation)
 
 - Annotation Protocol을 상속 받아서 Class 생성
 - Annotation 객체 생성 후 Mapview에 Add

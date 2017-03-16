@@ -14,6 +14,7 @@
 		01AFD00E1E7909EC00B6BF8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01AFD00D1E7909EC00B6BF8E /* Assets.xcassets */; };
 		01AFD0111E7909EC00B6BF8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01AFD00F1E7909EC00B6BF8E /* LaunchScreen.storyboard */; };
 		01AFD01A1E7959C000B6BF8E /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AFD0191E7959C000B6BF8E /* SecondViewController.m */; };
+		01AFD01D1E7A3DE200B6BF8E /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AFD01C1E7A3DE200B6BF8E /* ThirdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		01AFD0121E7909EC00B6BF8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01AFD0181E7959C000B6BF8E /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		01AFD0191E7959C000B6BF8E /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		01AFD01B1E7A3DE200B6BF8E /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		01AFD01C1E7A3DE200B6BF8E /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				01AFD0081E7909EC00B6BF8E /* ViewController.m */,
 				01AFD0181E7959C000B6BF8E /* SecondViewController.h */,
 				01AFD0191E7959C000B6BF8E /* SecondViewController.m */,
+				01AFD01B1E7A3DE200B6BF8E /* ThirdViewController.h */,
+				01AFD01C1E7A3DE200B6BF8E /* ThirdViewController.m */,
 				01AFD00A1E7909EC00B6BF8E /* Main.storyboard */,
 				01AFD00D1E7909EC00B6BF8E /* Assets.xcassets */,
 				01AFD00F1E7909EC00B6BF8E /* LaunchScreen.storyboard */,
@@ -156,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01AFD01A1E7959C000B6BF8E /* SecondViewController.m in Sources */,
+				01AFD01D1E7A3DE200B6BF8E /* ThirdViewController.m in Sources */,
 				01AFD0091E7909EC00B6BF8E /* ViewController.m in Sources */,
 				01AFD0061E7909EC00B6BF8E /* AppDelegate.m in Sources */,
 				01AFD0031E7909EC00B6BF8E /* main.m in Sources */,
@@ -313,6 +319,7 @@
 				01AFD0171E7909EC00B6BF8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

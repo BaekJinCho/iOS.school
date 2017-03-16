@@ -1,9 +1,13 @@
-#2017. 03. 06
-##- 타입 별칭
-####- typedef
+# 2017. 03. 06
+
+## - 타입 별칭
+
+#### - typedef
+
 - 자료형의 별칭 지정
 
-####- 상수(고정된 값을 지정해줄 때 사용)
+#### - 상수(고정된 값을 지정해줄 때 사용)
+
 - constatnt
 - 변하지 않는 값을 생성하고자 할 때 사용
 - const 키워드 사용
@@ -17,7 +21,9 @@ name = @"yagom"; (에러)
 ```
 
 <br>
-####- 열거형
+
+#### - 열거형
+
 - enumeration
 - 유사한 종류의 여러 값을 유의미한 이름으로 한 곳에 모아 정의
 ex) 요일, 상태값, 월(Month) 등
@@ -40,7 +46,9 @@ typedef NS_ENUM(NSUInteger, NSPostingStyle) {
 };
 ```
 <br>
-####- 옵션
+
+#### - 옵션
+
 - option
 - 열거형과 유사한 모습으로 옵션값을 정의
 - 주로 비트플래그를 사용하여 정의
@@ -66,12 +74,14 @@ typedef NS_OPTIONS(NSUInteger, UIViewAutoresizing) {
 
 ```
 
-####- 매크로
+#### - 매크로
+
 - macro
 - 전처리자(Preprocessor)의 일종인 #define을 사용하여 정의
 - 단순한 수식 또는 변치않을 값을 정의하는데 주로 사용
 
-####- define
+#### - define
+
 - 매크로를 정의하기 위한 전처리자
 
 ```objc
