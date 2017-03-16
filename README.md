@@ -126,6 +126,8 @@
 - **[10 week]**
 
 	>- [Thread / GCD](ConceptProject/170313(Thread))
+	
+	>- Network
 
 - **[11 week]**
 

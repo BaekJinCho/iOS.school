@@ -12,14 +12,11 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *changeBtn;
 @property (weak, nonatomic) IBOutlet UIButton *changeBtn2;
-
 @property (nonatomic) IBOutlet UILabel *numberLabel;
-@property NSThread *thread;
-
-
-@property dispatch_queue_t queue;
 @property (nonatomic) NSInteger i;
 
+@property NSThread *thread;
+@property dispatch_queue_t queue;
 @property dispatch_source_t mainTimer;
 @end
 
