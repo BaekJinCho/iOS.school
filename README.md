@@ -140,12 +140,18 @@
 
 ## 3. Study
 
-|[Git 명령어 정리](Study/Study6)|
-|:--:||:--:||:--:|
-|[RAM / Encoding](https://github.com/BaekJinCho/iOS.school/tree/master/Study/Study)|
-|[Actice X / 기술적 부채](https://github.com/BaekJinCho/iOS.school/tree/master/Study/Study1)|
-|[공인인증서 / 앱 접근성](https://github.com/BaekJinCho/iOS.school/tree/master/Study/Study2)|
-|[객체지향 프로그래밍 특징](https://github.com/BaekJinCho/iOS.school/tree/master/Study/Study3)|
-|[Framework / Library](https://github.com/BaekJinCho/iOS.school/tree/master/Study/Study4)|
-|[리터럴(literal) / json](Study/Study7)
-|[UI 전체 구조](Study/Study8)|
+> - [Git 명령어 정리](Study/Study6)
+
+> - [RAM / Encoding](https://github.com/BaekJinCho/iOS.school/tree/master/Study/Study)
+
+> - [Actice X / 기술적 부채](https://github.com/BaekJinCho/iOS.school/tree/master/Study/Study1)
+
+> - [공인인증서 / 앱 접근성](https://github.com/BaekJinCho/iOS.school/tree/master/Study/Study2)
+
+> - [객체지향 프로그래밍 특징](https://github.com/BaekJinCho/iOS.school/tree/master/Study/Study3)
+
+> - [Framework / Library](https://github.com/BaekJinCho/iOS.school/tree/master/Study/Study4)
+
+> - [리터럴(literal) / json](Study/Study7)
+
+> - [UI 전체 구조](Study/Study8)
