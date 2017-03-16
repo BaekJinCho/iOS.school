@@ -49,8 +49,8 @@
                 dispatch_async(dispatch_get_main_queue(), ^{
                     self.image1.image = image;
                 });
-                
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
+            }
+           
         }
     }];
     [task resume];

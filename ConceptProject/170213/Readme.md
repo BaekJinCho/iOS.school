@@ -14,7 +14,9 @@
 : 앱이 시작되면서 UIApplicationMain 함수는 몇가지 중요한 객체를 생성하고 앱을 실행시킨다.<br> 모든 iOS앱의 중심에는 시스템과 앱의 여러 객체들간의 대화를 가능하게 해주는 UIApplication 객체가 있다. <br> 아래 그림을 보았을 때, iOS앱은 Model-view-controller(MVC) 구조를 사용한다.<br> 이 디자인패턴은 앱의 Data와 비지니스 로직을 UI요소로부터 분리를 시켜준다. 이 패턴 덕분에 다른 사이즈의 디바이스에서도 앱의 동작이 가능하다.
 
 <br>
+
 ![](http://cfile29.uf.tistory.com/image/23380C3456920731138950)
+
 **- 앱에서 공통으로 사용되는 객체를 보여주는 그림 -**
 
 
@@ -26,6 +28,7 @@
 
 
 ![](http://cfile23.uf.tistory.com/image/26767C3E569215E00EF1E3)
+
 **- 앱에서 main run loop와 사용자의 이벤트가 어떻게 인식되는지에 대한 구조를 보여주는 그림 -** 
 
 **※ 순서**

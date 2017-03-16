@@ -33,6 +33,7 @@
 : 한 쪽 끝에서만 자료를 넣거나 뺄 수 있는 선형 구조(LIFO - Last In First Out)으로 되어 있다.
 
 <br>
+
 ![](https://www.tutorialspoint.com/data_structures_algorithms/images/stack_representation.jpg)
 
 - Push 메소드 : 자료를 밀어 넣는다.
@@ -48,6 +49,7 @@
 : 나중에 집어 넣은 데이터가 먼저 나오는 스택과는 반대되는 개념
 
 <br>
+
 ![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP0AAADHCAMAAADlCqUFAAAAwFBMVEX///+5ubkAAAC2tra8vLybm5v7+/uKiorm5ubh4eHp6enGxsbe3t60tLT+AADU1NTOzs6BgYHv7+8mJiZCQkJHR0enp6d1dXVRUVGSkpKhoaFfX1/19fVWVlYfHx+tra03NzcwMDD/yspnZ2f+LSv/d3hxcXEVFRX/7e0ODg6NjY1NTU08PDwlJSX/8/L8QkH9i4v/09L+tLT93dv+YF//Ojr+mpn/bm3+ubv9EhL9rqz+Uk/8pKX+kI7/np//dHYtU7T2AAAIyElEQVR4nO2da2OiOhCGYeSighdURBAVyq6u1brtdrvbvZ3+/391EiLWtihRiELg/VBsG0cek0wmAySCUKnMUuoZ69pAJ6nZqmWq1rWBTlKzJmaq2rWBThINvUSUml5RLoZFKQp6yVphTVop6N360ApGo8DOl1+goR8D9O+m3uxs+p68hkjypQmPiZJe085v+U0D9mVcHvKgaOnP7/c2vJN0BcwDoqS3rLlNhf+eXvffw4OZH+dHSY80OYfe+cCOlB/Px7blhz1+Lre63ZZ9t6OfXYn1o2jpqdDf0yN4Q9u18107uL085gGxrHsZHHf/s4a58/qU9I4sy1Qx8R59d9R7+1nKqoj02zFreCL9x5FNJobUC/IdF1Wcj2v+9Lr/KC1v4R7dHC+bWY7QJfTapeASdakZbuj5t3XfvCDfcV0quyE3hGjMW7oHylxerq43spR+4HO6uL2T6c74ooD5kAe2Mgjp7WufyhWEWj2Bh861T+UK6kRx7uLaZ3INudFUd9zMj9fLQopnesmlJlHlT/2BqfaS3xBJHgzyMyv8KAUhJZdSXyf4g9YJ8PiN+YkOP4qOvhax92enJXe4oI/cnnVKvWNxQa8T+NNzmvzQ98/I6XFB31gCjM5J53JBr58b4XNCPznPPBf0neWpzn4rLui17pnmuaA/+/oVF/Rnq6JnaD6tKnqG5it6hubTqqJnaL6iZ2g+rSp6huYreobm06qiZ2i+omdoPq0qeobmK3qG5tOqomdovij0vYyfbiNJ4KLQdzO+/4vc41Ic+mzv/eOP/pSn27ijlwarlbmyWjT8/NFrAAt/CdMhBT6X9HNt5sGgtPSSZAA4yfic0otDALW09BKiN0pNX+K6twEoHu3kk16TJjClCIy4pJ84AVW355BeCp/Ju6OB55BerMmy7Mzonmjmj16knuQUjp6OilZFo8/28baCZTeamT7c1tCLldlio4qeofm0qujDF71mtipWvy+3zy/5eE8FRZ3SLho9VaQrj0cTq5w5XVEcASzw4htlzG5IEwBbk5dwV0b6WZjTxau4lJBeUrcZPRq/xx+9AUDj8PilD9t8KTNbkhwmNKWZ4yQvUsodvSgBrCVJQ54/ObfHIf0tTmnPAUYl9PkYHy8/shyX8moGwq/Jtkzl93mkp89pF42eCp5aRaMvdXajrmcrshBfUejZqKJnaD6tKnqG5otC39GyFVmmsij0idFO7fVFSSNdenFIP2sh1biMdKnu2ULyqTZi4JLeVD2qm5T5pA80p6z362H6rkF1oyqf9FhBafu9P17DhGZs5JI+0FoeTVKTU3qc0F6UMtYL637m01zC5ZPen/hlHfEkY4pk3pbT54uSJkmU281xSH+CikafKXzh6FvZqlj0bFTRMzSfVhU9Q/MVPUPzaVXRMzRf0TM0n1YVPUPzFT1D82lV0TM0X9EzNJ9WFT1D8xX9/u+bL6EEtxm3sa7ruvslz96phVoXpr9ph8JbqsfsP+T3X7fZ/tn+9YXhiRFdnv6/5+dnYRZLv7/F+uf2Jx7pH/Gxq6quK9uSK+uCoMm2U0d/kwFMOdqQGdO7t7Zes+Uzd6miUAb0+qE9lIXD9LjuewswAURhHl4X1wSyWX20HRmm75FL5h6zjVhT0+v+MaceQ//v9+8bQt9Hn200urjIOjyL9y0f0fsKKnrGtoR0SknvWjA89v94r/dzRy+Fe24G29YTQz8TpNzSd/y9841TDP2DslEiehP/De8vfqfi4a1Y9C2AwfEScfT4uKUnsLqK+n8gYHprVzL39GjQhiMeD4uCXjdXmjCBKXo5hYUR7cSXd3pEAGpCmaP0U1L3I1hMiKXWns9/iehFlvS+6Z/3TnwH1zRpKJYH6zf7YD88PYUjnrhe93qTtY1fu/ZqMBHDf9c7nagx3T9937j+WhS0tRcXFV9X9SVAgsvjWOFKgwm9nlthj0cGrBJKCUNQK7kglyIxucPuA9jP7VOITD+27jzXZ8pA2/uVbfKborKbg+ZRpOHvIpPZQkx6h3ITSnG1bsxX1WzsBzTKw83N47sS9UZ+Bv0xoUeT8lCKB5OEvaK/kJTWprN701t7e8PH41dU8NfnN/3JHYQTgXxosKXvkzuzwqB3JB1LQiD6H4+Pj0JnMY35nsZ7s6XNU/vp4Vu7fb9fAH2/+aEfQSS1ETKHX4dvdA46AET/DR8blqULRmA3jJYg1Kxgjmf4QR8W82j4/BZOBX7gpKYTzNFUIVCF2ngB/XlecuMqvMoPDMPwtr8sAlvs9GIGgYgetfyusAZ/Cbd4Yu8DOnYXKGr2o9r/2f6Efj7g8haegQ1gJThTgGU/L+FFB47Jiaf/fn//l9DjlmLrdYA5/h6VNy1/86f9FR0e2+1/hN6EESqRp5YvBIfZ4zNdxOv92dGjdo/m9/0a+aL26b+iUoj+1xt614PxRcDoZB5gnx9wfYj+GR+39Av8WsJvGOCxbt/rfW8/CWHd/31Ln6O6RzP3WPiY0YzoTb8fRJGCiPiWAqb3diXv0bgoCM849W3hf3ohvY96f57kDsfv2f3GwdLv6EfoZW+Kpkmk389RG7BfS34WNp/aL2G+E6d2cL+fAKxmB61fRUq95tza6q3tzLAjGBwJ+BHTb3zc+vywIp1wnUqc0mpgPxgV/Y1inXb762YXUJvIbnf9GlrmT6iaVsdmO5ufLzf42JjPdeHWIhWtGZZF+orS672GCg/3Ly/fNmEBa961LVshJZhd0kmt4GjNcy7FnDJLvOZfPT9hlsO1Gkev5vGu8vb5SpUqxamevP5s+PyiSLOKESojXRvoJNWzfcaVV3rKVar5pKdZmp1XerxC+6y89Otwdf5y0ktosk+15SSf9AF4AFSLWnBI3wJQV2CWkx7vTFCzAYalpK95cGcYdGt4cUcvRfnxBcWgxx/9BMDv+1OqlYy4ox8CmGKr1lqAV766l1RzJUuSKFmmmbw3AW/0uz0JqLYm4I7+JFX0xVGd7CmYna4NVOma+h8PjcbEAGeckQAAAABJRU5ErkJggg==)
 
 <br>
@@ -100,6 +102,7 @@
 #### - Insert sort
 
 : 데이터의 비교에 따라 적절한 자리에 삽입하는 방식
+
 ![](https://upload.wikimedia.org/wikipedia/commons/e/ea/Insertion_sort_001.PNG)
 
 <br>
@@ -111,6 +114,7 @@
 : 모든 숫자가 정렬 될 때까지 실행
 
 <br>
+
 ![](http://cfs2.tistory.com/upload_control/download.blog?fhandle=YmxvZzEyNDIxQGZzMi50aXN0b3J5LmNvbTovYXR0YWNoLzAvMjIucG5n)
 
 <br>
@@ -127,7 +131,8 @@
 
 #### - merge sort
 
-<br>	
+<br>
+	
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Merge_sort_algorithm_diagram.svg/1064px-Merge_sort_algorithm_diagram.svg.png)
 
 <br>
@@ -145,9 +150,10 @@
 #### - quick sort
 
 <br>
+
 ![](http://cfile23.uf.tistory.com/image/121267394EF3CA2430A139)
 
-<br>
+
 : divide and conquer 방법 적용
 
 - 순서

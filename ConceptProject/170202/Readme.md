@@ -13,6 +13,7 @@
 ![](https://developer.apple.com/library/content/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Art/app_launch_fg_2x.png)
 
 <br>
+
 ### - 화면 구조
 
 ![](https://developer.apple.com/library/content/featuredarticles/ViewControllerPGforiPhoneOS/Art/VCPG-root-view-controller_2-1_2x.png)
@@ -88,14 +89,17 @@
 
 
 <br>
-####- UIView
+
+#### - UIView
+
 : 가장 기본이 되는 View
 
 : UIComponent들의 조합으로 화면이 구성되며 UIView를 상속받았다.
 
 : 즉, iOS 화면구성은 UIView의 집합으로 되어 있다.
 
-####- UIView Class
+#### - UIView Class
+
 - 데이터 타입
 
 |CGPoint|CGSize|CGSize|
@@ -105,6 +109,7 @@
 **※ CGPoint + CGSize = CGRect**
 
 <br>
+
 **- property**
 
 - frame : 구조체(정해진 데이터의 묶음)
@@ -130,11 +135,13 @@
 : 해당 뷰를 하위 뷰에 추가하고자 할 때!
 
 <br>
+
 **- 앱 UI 분석해보기**
 
 ![](https://github.com/BaekJinCho/iOS.school/blob/master/Study/Image/UIAnalysis.png?raw=true)
 
 <br>
+
 ![](https://github.com/BaekJinCho/iOS.school/blob/master/Study/Image/UIAnalysisCell.png?raw=true)
 
 **- view 만들기 연습(아이폰 사이즈에 맞춰서 만들어 보기)**
@@ -148,5 +155,7 @@
 	: 내가 원하는 사이즈(x, y)를 계산하는 것 
 
 <br>
-####- UIView 구현해보기1
+
+#### - UIView 구현해보기1
+
 ![](https://github.com/BaekJinCho/iOS.school/blob/master/Study/Image/uiview.png?raw=true)

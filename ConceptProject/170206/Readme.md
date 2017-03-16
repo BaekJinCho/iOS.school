@@ -22,6 +22,7 @@
 : 사용자 텍스트 입력을 위한 UI Component
 
 <br>
+
 ![](http://blog.apoorvmote.com/wp-content/uploads/2015/05/new-textfield.png)
 
 **- 주요 항목**
@@ -66,7 +67,8 @@
 - textFieldShouldClear : 
 - textFieldShouldReturn :
 
-**※ textFieldShouldReturn에서 반환 되는 return 값이 YES와 NO일 떄, 차이**<br>
+**※ textFieldShouldReturn에서 반환 되는 return 값이 YES와 NO일 떄, 차이**
+
 : retun이 'NO'일 때 'YES'일 때 차이가 없이 동작한다면 return NO는 무시된다.
 
 <br>

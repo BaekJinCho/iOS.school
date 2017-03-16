@@ -4,6 +4,7 @@
 
 - 템플릿 선택 & 프로젝트 생성
 - Xcode Main Window<br><br>
+
 ![xcode4_overview](https://cloud.githubusercontent.com/assets/24997656/22183103/535cb5e6-e0f9-11e6-84d1-abb5563ce66b.png)
 
 

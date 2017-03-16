@@ -132,10 +132,12 @@ str2 = [[NSStirng alloc] init];
 @property(strong) NSString *str1;
 @property(weak) NSString *str2;
 ```
-**- strong = 소유권, 참조권 -> (권리가 있다.)<br>
-- 1weak = 참조권 -> (참조만 한다.)**
+**- strong = 소유권, 참조권 -> (권리가 있다.)**
 
-※ 객체 할당 -> reference count 증가<br>
+**- 1weak = 참조권 -> (참조만 한다.)**
+
+※ 객체 할당 -> reference count 증가
+
 ※ 객체 해제 -> reference count 감소
 
 <br>

@@ -12,6 +12,7 @@
 : 사용자가 컴퓨터를 쉽게 다루게 해주는 인터페이스
 
 사전적 의미 말고 좀 더 쉽게!<br>
+
 **'응용 프로그램과 하드웨어 사이의 중재자 역할'** 입니다.
 
 - 과거 : 하드웨어 -> 사용자
@@ -59,6 +60,7 @@ ex) 실제로는 0,1 밖에 없는데 어떤 공간(가상의 공간)을 제공�
 이 과정을 반복하게 됩니다!
 
 <br>
+
 ![](https://github.com/projectlife724/i.wonsuk.choi/blob/master/Notes/Images/DAY%203/ProcessGraph.png?raw=true)
 
 <br><br>
@@ -199,6 +201,7 @@ ex) 뒤로 가기
 : '부모 노드(The Root Node), 자식 노드(A Child Node)의 유무' 입니다.
 
 <br>
+
 ![](https://github.com/projectlife724/i.wonsuk.choi/blob/master/Notes/Images/DAY%203/Tree,%20Graph.png?raw=true)
 
 <br><br>
