@@ -78,6 +78,7 @@
 - 엄격한 의미로 REST는 네트워크 아키텍처 원리의 모음이다. 여기서 '네트워크 아키텍처 원리'란 자원을 정의하고 자원에 대한 주소를 지정하는 방법 전반을 일컫는다.
 
 #### - Rest 사용 원칙 
+
 - Resources : URI들은 쉽게 자원의 내용을 이해할 수 있게 만들어야 한다.
 - Representations : 객체와 속성을 나타내는 데이터를 **JSON**이나 XML 구조로 전환해서 표현한다.
 - Messages : **HTTP Methods**를 사용한다. (for example, GET, POST, PUT, and DELETE)
@@ -97,6 +98,7 @@
 |PUT|Update/Replace|
 |PATCH|Update/Modify|
 |DELETE|Delete|
+
 [- 참고](http://goo.gl/xjH2ke)
 
 #### - HTTP Request 구조
