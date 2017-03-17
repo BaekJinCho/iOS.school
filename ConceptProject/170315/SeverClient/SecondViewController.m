@@ -41,6 +41,20 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didChangeScrollView:) name:UIKeyboardWillHideNotification object:nil];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didChangeScrollView:) name:UIKeyboardWillShowNotification object:nil];
+    
+    
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didTestNoti:) name:@"clickMemberSignButton" object:nil];
+}
+
+-(void)didTestNoti:(NSNotification *)noti {
+    
+    NSLog(@"Click");
+}
+
+-(void)dealloc {
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 //notification을 이용하여 scrollview 올리기(method)
@@ -92,21 +106,22 @@
     NSString *idText = self.idTextField.text;
     NSString *passwordText = self.passwordTextField.text;
     
+    [self.idTextField resignFirstResponder];
+    [self.passwordTextField resignFirstResponder];
+    
     [[DataCenter shardData].apiData loginMembers:idText userPassword:passwordText completion:^(BOOL isSucessed, id respond) {
         if (isSucessed) {
             NSString *token = [respond objectForKey:@"key"];
             NSLog(@"%@",token);
-            [self.dataCenter.userDefault setObject:token forKey:@"sucessToken"];
+            [[NSUserDefaults standardUserDefaults] setObject:token forKey:@"Authorization"];
+//            [self.dataCenter.userDefault setObject:token forKey:@"Authorization"];
             [self sucessAlert];
-        
             NSLog(@"로그인 성공");
             
         }
         else{
             NSLog(@"시발!!!");
         
-            
-            
         }
     }];
     
@@ -125,7 +140,13 @@
     
     UIAlertController *sucessAlert = [UIAlertController alertControllerWithTitle:@"로그인 성공" message:@"진짜 성공" preferredStyle:UIAlertControllerStyleAlert];
     
-    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"Sucess" style:UIAlertActionStyleCancel handler:nil];
+    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"Sucess" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        
+        
+        
+        
+        
+    }];
     
     [sucessAlert addAction:ok];
     [self presentViewController:sucessAlert animated:YES completion:nil];

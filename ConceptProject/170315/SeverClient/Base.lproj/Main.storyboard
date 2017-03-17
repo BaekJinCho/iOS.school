@@ -320,6 +320,7 @@
                                         <state key="normal" title="로그인"/>
                                         <connections>
                                             <action selector="clickLoginBtn:" destination="GkS-7S-KyL" eventType="touchUpInside" id="caY-is-OLn"/>
+                                            <segue destination="KIb-72-EdP" kind="presentation" id="9q7-qe-0b8"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -339,6 +340,68 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ew-so-320" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1920.8" y="144.3778110944528"/>
+        </scene>
+        <!--Post View Controller-->
+        <scene sceneID="ZdT-6s-UVD">
+            <objects>
+                <viewController storyboardIdentifier="PostViewController" id="KIb-72-EdP" customClass="PostViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KZQ-2i-3bI"/>
+                        <viewControllerLayoutGuide type="bottom" id="jsu-UA-txV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cjq-Jz-W6j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RhF-AV-BPd">
+                                <rect key="frame" x="16" y="98" width="343" height="248"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DvB-Z6-D4d">
+                                <rect key="frame" x="16" y="386" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LL4-OC-cRE">
+                                <rect key="frame" x="16" y="448" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uPU-rF-1Ta">
+                                <rect key="frame" x="146" y="536" width="72" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Post"/>
+                                <connections>
+                                    <action selector="sendForm:" destination="KIb-72-EdP" eventType="touchUpInside" id="W8Y-rh-MEU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vub-8m-EAC">
+                                <rect key="frame" x="159" y="617" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="back"/>
+                                <connections>
+                                    <action selector="back:" destination="KIb-72-EdP" eventType="touchUpInside" id="h9Y-th-Cpl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="backBtn" destination="Vub-8m-EAC" id="f2s-WB-FqP"/>
+                        <outlet property="content" destination="DvB-Z6-D4d" id="iFn-rY-Njb"/>
+                        <outlet property="image" destination="RhF-AV-BPd" id="gDX-t4-pTp"/>
+                        <outlet property="imgCover" destination="LL4-OC-cRE" id="0la-em-Yld"/>
+                        <outlet property="postBtn" destination="uPU-rF-1Ta" id="4Yp-K3-CeK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zTY-2x-kZK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2738.4000000000001" y="129.98500749625188"/>
         </scene>
     </scenes>
     <resources>

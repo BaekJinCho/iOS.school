@@ -6,6 +6,7 @@
 <br>
 
 ## 1. Profile
+
 - resume : 이력서< >
 
 <br><br>

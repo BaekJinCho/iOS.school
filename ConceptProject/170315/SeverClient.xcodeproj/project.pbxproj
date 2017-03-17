@@ -17,6 +17,8 @@
 		01AFD01D1E7A3DE200B6BF8E /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AFD01C1E7A3DE200B6BF8E /* ThirdViewController.m */; };
 		01AFD0221E7A5EBF00B6BF8E /* DataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AFD0211E7A5EBF00B6BF8E /* DataCenter.m */; };
 		01AFD0251E7A5EDC00B6BF8E /* NetworkCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AFD0241E7A5EDC00B6BF8E /* NetworkCenter.m */; };
+		01B7161E1E7BD06100DAE054 /* background2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 01B7161D1E7BD06100DAE054 /* background2.jpeg */; };
+		01B716211E7BEE6400DAE054 /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B716201E7BEE6400DAE054 /* PostViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,9 @@
 		01AFD0211E7A5EBF00B6BF8E /* DataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataCenter.m; sourceTree = "<group>"; };
 		01AFD0231E7A5EDC00B6BF8E /* NetworkCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkCenter.h; sourceTree = "<group>"; };
 		01AFD0241E7A5EDC00B6BF8E /* NetworkCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkCenter.m; sourceTree = "<group>"; };
+		01B7161D1E7BD06100DAE054 /* background2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background2.jpeg; sourceTree = "<group>"; };
+		01B7161F1E7BEE6400DAE054 /* PostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostViewController.h; sourceTree = "<group>"; };
+		01B716201E7BEE6400DAE054 /* PostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,9 +86,11 @@
 				01AFD0241E7A5EDC00B6BF8E /* NetworkCenter.m */,
 				01AFD01F1E7A599A00B6BF8E /* LoginPage */,
 				01AFD01E1E7A597500B6BF8E /* SignUpPage */,
+				01B716221E7BEE6A00DAE054 /* PostPage */,
 				01AFD00A1E7909EC00B6BF8E /* Main.storyboard */,
 				01AFD00D1E7909EC00B6BF8E /* Assets.xcassets */,
 				01AFD00F1E7909EC00B6BF8E /* LaunchScreen.storyboard */,
+				01B7161D1E7BD06100DAE054 /* background2.jpeg */,
 				01AFD0121E7909EC00B6BF8E /* Info.plist */,
 				01AFD0011E7909EC00B6BF8E /* Supporting Files */,
 			);
@@ -121,6 +128,15 @@
 			children = (
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		01B716221E7BEE6A00DAE054 /* PostPage */ = {
+			isa = PBXGroup;
+			children = (
+				01B7161F1E7BEE6400DAE054 /* PostViewController.h */,
+				01B716201E7BEE6400DAE054 /* PostViewController.m */,
+			);
+			name = PostPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +199,7 @@
 			files = (
 				01AFD0111E7909EC00B6BF8E /* LaunchScreen.storyboard in Resources */,
 				01AFD00E1E7909EC00B6BF8E /* Assets.xcassets in Resources */,
+				01B7161E1E7BD06100DAE054 /* background2.jpeg in Resources */,
 				01AFD00C1E7909EC00B6BF8E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,6 +215,7 @@
 				01AFD01D1E7A3DE200B6BF8E /* ThirdViewController.m in Sources */,
 				01AFD0091E7909EC00B6BF8E /* ViewController.m in Sources */,
 				01AFD0061E7909EC00B6BF8E /* AppDelegate.m in Sources */,
+				01B716211E7BEE6400DAE054 /* PostViewController.m in Sources */,
 				01AFD0251E7A5EDC00B6BF8E /* NetworkCenter.m in Sources */,
 				01AFD0221E7A5EBF00B6BF8E /* DataCenter.m in Sources */,
 				01AFD0031E7909EC00B6BF8E /* main.m in Sources */,
