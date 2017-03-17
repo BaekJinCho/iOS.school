@@ -27,7 +27,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    
+    //server에 있는 이미지 set
 //    self.image1.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://cfile4.uf.tistory.com/image/26341033578B83D31B6523"]]];
 //    self.image2.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://cfile4.uf.tistory.com/image/26341033578B83D31B6523"]]];
 //    self.image3.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://cfile4.uf.tistory.com/image/26341033578B83D31B6523"]]];

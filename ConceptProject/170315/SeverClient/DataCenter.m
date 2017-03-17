@@ -26,7 +26,7 @@
     self = [super init];
     if (self) {
         self.apiData = [[NetworkCenter alloc] init];
-        self.userDefault = [NSUserDefaults standardUserDefaults];
+        //self.userDefault = [NSUserDefaults standardUserDefaults];
         
     }
     return self;
