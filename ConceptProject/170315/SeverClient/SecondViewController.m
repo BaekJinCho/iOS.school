@@ -120,7 +120,7 @@
             
         }
         else{
-            NSLog(@"시발!!!");
+            NSLog(@"로그인 실패!!!");
         
         }
     }];
@@ -141,9 +141,6 @@
     UIAlertController *sucessAlert = [UIAlertController alertControllerWithTitle:@"로그인 성공" message:@"진짜 성공" preferredStyle:UIAlertControllerStyleAlert];
     
     UIAlertAction *ok = [UIAlertAction actionWithTitle:@"Sucess" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-        
-        
-        
         
         
     }];

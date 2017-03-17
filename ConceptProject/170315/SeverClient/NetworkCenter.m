@@ -23,7 +23,7 @@
     //requrest 생성
     NSURL *url = [NSURL URLWithString:signUpBase];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-    //api에 있는 key 타입 지정
+    //api에 있는 URL PARM
     NSString *dataString = [NSString stringWithFormat:@"username=%@&password1=%@&password2=%@",userID,userPassword,userPasswordCheck];
     //request method 지정
     request.HTTPMethod = @"POST";
@@ -31,7 +31,8 @@
     request.HTTPBody = [dataString dataUsingEncoding:NSUTF8StringEncoding];
     //Task 생성
     NSURLSessionDataTask *signUpData = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        if (error != [NSNull null]) {
+        if (error == nil) {
+            //JSON 형식을 Dictionary으로 넣어주기
             NSDictionary *responsData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
             completion(YES,responsData);
             NSLog(@"회원가입 성공");
@@ -47,6 +48,7 @@
     
 }
 
+//login logic
 - (void)loginMembers:(NSString *)userID
          userPassword:(NSString *)userPassword
            completion:(completion)completion{
@@ -56,17 +58,21 @@
     //requrest 생성
     NSURL *url = [NSURL URLWithString:loginBase];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-    
+    //api에 있는 URL PARM
     NSString *dataString = [NSString stringWithFormat:@"username=%@&password=%@",userID,userPassword];
+    
+    //request method 지정
     request.HTTPMethod = @"POST";
     request.HTTPBody = [dataString dataUsingEncoding:NSUTF8StringEncoding];
     
+    //Task 생성
     NSURLSessionDataTask *loginData = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
+        //NSURLResponse를 NSHTTPURLResponse로 형변환하여 statusCode로 set
         NSInteger statusCode = [(NSHTTPURLResponse *)response statusCode];
         
         if(error == nil){
-            
+            //JSON 형식을 Dictionary으로 넣어주기
             NSDictionary *responsData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
             
             if(statusCode == 200) {
@@ -88,6 +94,7 @@
 
 }
 
+//multipart form method
 - (void)multiPartForm:(NSString *)title
               content:(NSString *)content
              formData:(NSData *)formdata
@@ -101,8 +108,10 @@
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     request.HTTPMethod = @"POST";
     
+    //token 값
     NSString *token = [NSString stringWithFormat:@"Token %@", [[NSUserDefaults standardUserDefaults] objectForKey:@"Authorization"]];
     
+    //token 값 set
     [request setValue:token forHTTPHeaderField:@"Authorization"];
     
     /****************************Multipart Data**************************/
@@ -149,7 +158,6 @@
     }];
     //task 시작
     [formData resume];
-    
     
 }
                                         

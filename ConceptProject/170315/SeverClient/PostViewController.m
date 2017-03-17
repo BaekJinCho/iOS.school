@@ -36,8 +36,9 @@
 
 //post btn
 - (IBAction)sendForm:(UIButton *)sender {
-    
+    //이미지 지정
     UIImage *image = [UIImage imageNamed:@"background2.jpeg"];
+    //지정한 이미지 NSData로 넣어주기
     NSData *imageData = UIImageJPEGRepresentation(image, 0.5);
     [[DataCenter shardData].apiData multiPartForm:@"들어가라"content:@"들어왔따" formData:imageData completion:^(BOOL isSucessed, id respond) {
         if (isSucessed) {
@@ -48,6 +49,7 @@
     }];
     
 }
+//back btn click method
 - (IBAction)back:(UIButton *)sender {
     
     ThirdViewController *signUpPage = [[ThirdViewController alloc] init];
