@@ -22,7 +22,7 @@
 	
 	 static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        dataCenter = [[self alloc]init];
+        dataCenter = [[DataCenter alloc]init];
     });
     return dataCenter;
 }
