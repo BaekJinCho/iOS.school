@@ -132,13 +132,18 @@
 
 	>- [Thread / GCD](ConceptProject/170313(Thread))
 	
-	>- [Network](ConceptProject/170315)
+	>- [Network(api를 참조하며 회원가입, 로그인, Multipart Form 해보기)](ConceptProject/170315)
 	
 	>- [Multipart Form](ConceptProject/170317)
 
 - **[11 week]**
 
+	>- 
+
 - **[12 week]**
+
+	>- Team Project Start (2017. 03. 27)
+
 
 <br><br>
 
