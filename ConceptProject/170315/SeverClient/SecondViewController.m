@@ -9,7 +9,6 @@
 #import "SecondViewController.h"
 #import "ThirdViewController.h"
 #import "DataCenter.h"
-#import "NetworkCenter.h"
 
 @interface SecondViewController ()
 <UIScrollViewDelegate, UITextFieldDelegate>
@@ -41,8 +40,6 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didChangeScrollView:) name:UIKeyboardWillHideNotification object:nil];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didChangeScrollView:) name:UIKeyboardWillShowNotification object:nil];
-    
-    
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didTestNoti:) name:@"clickMemberSignButton" object:nil];
 }
@@ -129,9 +126,6 @@
 
 //회원가입 버튼(회원가입 페이지로 이동)
 - (IBAction)clickSignUpBtn:(UIButton *)sender {
-    
-
-    
     
 }
 

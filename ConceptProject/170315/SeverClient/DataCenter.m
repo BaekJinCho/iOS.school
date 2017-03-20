@@ -27,7 +27,6 @@
     if (self) {
         self.apiData = [[NetworkCenter alloc] init];
         //self.userDefault = [NSUserDefaults standardUserDefaults];
-        
     }
     return self;
 }
