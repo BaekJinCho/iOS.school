@@ -138,7 +138,7 @@
 #### - 생명주기 메소드
 
 	- (void)loadView
-	: UIviewControllerd의 view가 생성될 떄 호출
+	: UIviewController의 view가 생성될 때 호출
 	
 	- (void)viewDidLoad
 	: UIViewController가 인스턴스화 된 직후 호출(처음 한 번 세팅해줘야 하는 값들을 넣기에 적절) 
