@@ -19,9 +19,12 @@
 		01AFD0251E7A5EDC00B6BF8E /* NetworkCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AFD0241E7A5EDC00B6BF8E /* NetworkCenter.m */; };
 		01B7161E1E7BD06100DAE054 /* background2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 01B7161D1E7BD06100DAE054 /* background2.jpeg */; };
 		01B716211E7BEE6400DAE054 /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B716201E7BEE6400DAE054 /* PostViewController.m */; };
+		01B716281E80FF5300DAE054 /* AFNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B716271E80FF5300DAE054 /* AFNetwork.m */; };
+		A1796FC7E382286C3B2C6684 /* libPods-SeverClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF60A59C6BF0760D94DF4CDB /* libPods-SeverClient.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0138D6D69EE2BE15D6C055DB /* Pods-SeverClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeverClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SeverClient/Pods-SeverClient.debug.xcconfig"; sourceTree = "<group>"; };
 		01AFCFFE1E7909EC00B6BF8E /* SeverClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeverClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01AFD0021E7909EC00B6BF8E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		01AFD0041E7909EC00B6BF8E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -43,6 +46,10 @@
 		01B7161D1E7BD06100DAE054 /* background2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background2.jpeg; sourceTree = "<group>"; };
 		01B7161F1E7BEE6400DAE054 /* PostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostViewController.h; sourceTree = "<group>"; };
 		01B716201E7BEE6400DAE054 /* PostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostViewController.m; sourceTree = "<group>"; };
+		01B716261E80FF5300DAE054 /* AFNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetwork.h; sourceTree = "<group>"; };
+		01B716271E80FF5300DAE054 /* AFNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetwork.m; sourceTree = "<group>"; };
+		23C54928200538FC0387F2A8 /* Pods-SeverClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeverClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-SeverClient/Pods-SeverClient.release.xcconfig"; sourceTree = "<group>"; };
+		EF60A59C6BF0760D94DF4CDB /* libPods-SeverClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SeverClient.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1796FC7E382286C3B2C6684 /* libPods-SeverClient.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +69,8 @@
 			children = (
 				01AFD0001E7909EC00B6BF8E /* SeverClient */,
 				01AFCFFF1E7909EC00B6BF8E /* Products */,
+				A1AAF9EC4E28CFA333E2D2D6 /* Pods */,
+				0E132A7FCBCD5ABD7B394716 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,11 +94,13 @@
 				01AFD0211E7A5EBF00B6BF8E /* DataCenter.m */,
 				01AFD0231E7A5EDC00B6BF8E /* NetworkCenter.h */,
 				01AFD0241E7A5EDC00B6BF8E /* NetworkCenter.m */,
+				01B716261E80FF5300DAE054 /* AFNetwork.h */,
+				01B716271E80FF5300DAE054 /* AFNetwork.m */,
 				01AFD01F1E7A599A00B6BF8E /* LoginPage */,
 				01AFD01E1E7A597500B6BF8E /* SignUpPage */,
 				01B716221E7BEE6A00DAE054 /* PostPage */,
-				01AFD00A1E7909EC00B6BF8E /* Main.storyboard */,
 				01AFD00D1E7909EC00B6BF8E /* Assets.xcassets */,
+				01AFD00A1E7909EC00B6BF8E /* Main.storyboard */,
 				01AFD00F1E7909EC00B6BF8E /* LaunchScreen.storyboard */,
 				01B7161D1E7BD06100DAE054 /* background2.jpeg */,
 				01AFD0121E7909EC00B6BF8E /* Info.plist */,
@@ -139,6 +151,23 @@
 			name = PostPage;
 			sourceTree = "<group>";
 		};
+		0E132A7FCBCD5ABD7B394716 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF60A59C6BF0760D94DF4CDB /* libPods-SeverClient.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1AAF9EC4E28CFA333E2D2D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0138D6D69EE2BE15D6C055DB /* Pods-SeverClient.debug.xcconfig */,
+				23C54928200538FC0387F2A8 /* Pods-SeverClient.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01AFD0151E7909EC00B6BF8E /* Build configuration list for PBXNativeTarget "SeverClient" */;
 			buildPhases = (
+				4B10816A2CF5A07703A050DB /* [CP] Check Pods Manifest.lock */,
 				01AFCFFA1E7909EC00B6BF8E /* Sources */,
 				01AFCFFB1E7909EC00B6BF8E /* Frameworks */,
 				01AFCFFC1E7909EC00B6BF8E /* Resources */,
+				4D457356A6E10117B460BA20 /* [CP] Embed Pods Frameworks */,
+				F48C9517062280D1EFB29980 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,6 +238,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4B10816A2CF5A07703A050DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4D457356A6E10117B460BA20 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SeverClient/Pods-SeverClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F48C9517062280D1EFB29980 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SeverClient/Pods-SeverClient-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		01AFCFFA1E7909EC00B6BF8E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -217,6 +297,7 @@
 				01AFD0061E7909EC00B6BF8E /* AppDelegate.m in Sources */,
 				01B716211E7BEE6400DAE054 /* PostViewController.m in Sources */,
 				01AFD0251E7A5EDC00B6BF8E /* NetworkCenter.m in Sources */,
+				01B716281E80FF5300DAE054 /* AFNetwork.m in Sources */,
 				01AFD0221E7A5EBF00B6BF8E /* DataCenter.m in Sources */,
 				01AFD0031E7909EC00B6BF8E /* main.m in Sources */,
 			);
@@ -334,6 +415,7 @@
 		};
 		01AFD0161E7909EC00B6BF8E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0138D6D69EE2BE15D6C055DB /* Pods-SeverClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SeverClient/Info.plist;
@@ -345,6 +427,7 @@
 		};
 		01AFD0171E7909EC00B6BF8E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23C54928200538FC0387F2A8 /* Pods-SeverClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SeverClient/Info.plist;

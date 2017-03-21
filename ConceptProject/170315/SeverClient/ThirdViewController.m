@@ -8,8 +8,8 @@
 
 #import "ThirdViewController.h"
 #import "SecondViewController.h"
-#import "DataCenter.h"
 #import "PostViewController.h"
+#import "DataCenter.h"
 
 @interface ThirdViewController ()
 <UITextFieldDelegate>
@@ -19,7 +19,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *idTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordCheckTextField;
-
 @property DataCenter *dataCenter;
 
 @end
@@ -37,70 +36,62 @@
     // Dispose of any resources that can be recreated.
 }
 //회원가입 완료 버튼
+#pragma mark - clickSignUpBtn Method
 - (IBAction)clickSignUpBtn:(UIButton *)sender {
     
     NSString *idText = self.idTextField.text;
     NSString *password1Text = self.passwordTextField.text;
     NSString *password2Text = self.passwordCheckTextField.text;
-    
-    [[DataCenter shardData].apiData signUpMembers:idText userPassword:password1Text userPasswordCheck:password2Text completion:^(BOOL isSucessed, id respond) {
-        
+    [self.dataCenter signUpMembers:idText userPassword:password1Text userPasswordCheck:password2Text completion:^(BOOL isSucessed, id respond) {
         if (isSucessed) {
-            
-            NSString *token = [respond objectForKey:@"key"];
-            [[NSUserDefaults standardUserDefaults] setObject:token forKey:@"Authorization"];
-            
-//            [self.dataCenter.userDefault setObject:token forKey:@"Authorization"];
-//            [self.dataCenter.userDefault objectForKey:@"Authorization"];
-            
             NSLog(@"회원가입 token ::: %@", [self.dataCenter.userDefault objectForKey:@"Authorization"]);
             NSLog(@"회원가입 성공!");
-        }
-        else{
+            [self signUpSucessAlert];
+        } else {
             NSLog(@"회원가입 실패!!");
         }
     }];
-    
 }
 
-//로그인 버튼
+//로그인 버튼을 클릭했을 때 행동
+#pragma mark - clickLoginBtn Method
 - (IBAction)clickLoginBtn:(UIButton *)sender {
     SecondViewController *loginPage = [[SecondViewController alloc] init];
-    PostViewController *postPage = [[PostViewController alloc] init];
-//    [self dismissViewControllerAnimated:loginPage completion:nil];
+    [self dismissViewControllerAnimated:loginPage completion:nil];
     
 }
 //stroyboare에서 dismiss 주고싶을 때 method
-- (IBAction)back:(UIStoryboardSegue *)sender
-{
+//- (IBAction)back:(UIStoryboardSegue *)sender
+//{
+//    
+//}
+//회원가입 성공 alert
+- (void)signUpSucessAlert{
     
+    UIAlertController *sucessAlert = [UIAlertController alertControllerWithTitle:@"회원가입 성공" message:@"진짜 성공" preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"Sucess" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        
+        //PostViewcontroller로 넘어가기
+        PostViewController *postPage = [[PostViewController alloc] init];
+        [self presentViewController:postPage animated:YES completion:nil];
+        
+    }];
+    [sucessAlert addAction:ok];
+    [self presentViewController:sucessAlert animated:YES completion:nil];
 }
 
+#pragma mark - textFieldShouldReturn Method
+//return을 클릭했을 때 실행되는 메소드
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
-    
     if (textField.tag == 1) {
         [self.passwordTextField becomeFirstResponder];
-    }
-    else if(textField.tag == 2) {
+    } else if(textField.tag == 2) {
         [self.passwordCheckTextField becomeFirstResponder];
-    }
-    else{
+    } else {
         [self.passwordCheckTextField resignFirstResponder];
     }
-        
-    
     return YES;
 }
-
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

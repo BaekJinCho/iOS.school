@@ -7,9 +7,8 @@
 //
 
 #import "PostViewController.h"
-#import "DataCenter.h"
-#import "NetworkCenter.h"
 #import "ThirdViewController.h"
+#import "DataCenter.h"
 
 
 @interface PostViewController ()
@@ -19,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *imgCover;
 @property (weak, nonatomic) IBOutlet UIButton *postBtn;
 @property (weak, nonatomic) IBOutlet UIButton *backBtn;
+@property DataCenter *dataCenter;
 
 @end
 
@@ -35,23 +35,29 @@
 }
 
 //post btn
+#pragma mark - mutiParForm Method
 - (IBAction)sendForm:(UIButton *)sender {
-    //이미지 지정
+    
+    //content & img 텍스트 변수 선언
+    NSString *contentTextField = self.content.text;
+    NSString *imgCoverTextField = self.imgCover.text;
+    
+    //이미지 지정 변수 선언
     UIImage *image = [UIImage imageNamed:@"background2.jpeg"];
     //지정한 이미지 NSData로 넣어주기
     NSData *imageData = UIImageJPEGRepresentation(image, 0.5);
-    [[DataCenter shardData].apiData multiPartForm:@"들어가라"content:@"들어왔따" formData:imageData completion:^(BOOL isSucessed, id respond) {
+    
+    self dataCenter 
+    //[self.dataCenter multiPartForm:contentTextField content:imgCoverTextField formData:imageData completion:^(BOOL isSucessed, id respond) {
         if (isSucessed) {
             NSLog(@"Multipart 성공!");
         } else {
             NSLog(@"Multipart 실패!");
         }
     }];
-    
 }
 //back btn click method
 - (IBAction)back:(UIButton *)sender {
-    
     ThirdViewController *signUpPage = [[ThirdViewController alloc] init];
     [self dismissViewControllerAnimated:signUpPage completion:nil];
 }

@@ -9,6 +9,7 @@
 #import "NetworkCenter.h"
 #import "DataCenter.h"
 
+
 @implementation NetworkCenter
 
 
@@ -36,8 +37,7 @@
             NSDictionary *responsData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
             completion(YES,responsData);
             NSLog(@"회원가입 성공");
-        }
-        else{
+        } else {
             completion(NO,error);
             NSLog(@"회원가입 실패");
         }
@@ -75,15 +75,14 @@
             //JSON 형식을 Dictionary으로 넣어주기
             NSDictionary *responsData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
             
-            if(statusCode == 200) {
+            if (statusCode == 200) {
                 NSLog(@"로그인 성공");
                 completion(YES,responsData);
             } else {
                 NSLog(@"로그인실패 성공");
                 completion(NO,responsData);
             }
-        }
-        else{
+        } else {
             NSLog(@"실패");
             completion(NO,error);
             
@@ -148,12 +147,10 @@
             NSDictionary *responsData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
             completion(YES,responsData);
             NSLog(@"multipartForm 성공");
-        }
-        else{
+        } else {
             completion(NO,error);
             NSLog(@"multipartForm 실패");
         }
-        
     }];
     //task 시작
     [formData resume];

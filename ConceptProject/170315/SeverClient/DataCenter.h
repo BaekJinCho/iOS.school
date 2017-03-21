@@ -8,11 +8,27 @@
 
 #import <Foundation/Foundation.h>
 #import "NetworkCenter.h"
+#import "AFNetwork.h"
 
 @interface DataCenter : NSObject
 
 @property NetworkCenter* apiData;
+@property AFNetwork* afNetwork;
 @property NSUserDefaults *userDefault;
 
 + (instancetype)shardData;
+
+- (void)signUpMembers:(NSString *)userID
+         userPassword:(NSString *)userPassword
+    userPasswordCheck:(NSString *)userPasswordCheck
+           completion:(completion)completion;
+
+- (void)loginMembers:(NSString *)userID
+        userPassword:(NSString *)userPassword
+          completion:(completion)completion;
+
+- (void)multiPartForm:(NSString *)title
+              content:(NSString *)content
+             formData:(NSData *)formdata
+           completion:(completion)completion;
 @end

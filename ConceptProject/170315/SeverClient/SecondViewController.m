@@ -43,22 +43,22 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didTestNoti:) name:@"clickMemberSignButton" object:nil];
 }
-
--(void)didTestNoti:(NSNotification *)noti {
+//키보드 노티
+- (void)didTestNoti:(NSNotification *)noti {
     
     NSLog(@"Click");
 }
-
--(void)dealloc {
-    
+//키보드 노티 dealloc
+- (void)dealloc {
+    //Observer remove
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 //notification을 이용하여 scrollview 올리기(method)
--(void)didChangeScrollView:(NSNotification *) notification {
+- (void)didChangeScrollView:(NSNotification *) notification {
     
     CGRect keyboardRect = [[notification.userInfo objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue];
-    if([notification.name isEqualToString:UIKeyboardWillShowNotification]) {
+    if ([notification.name isEqualToString:UIKeyboardWillShowNotification]) {
         
         [self.scrollView setContentOffset:CGPointMake(0, keyboardRect.size.height-170) animated:YES];
     
@@ -70,12 +70,11 @@
 }
 
 //textField Return 클릭시 불리는 method
--(BOOL)textFieldShouldReturn:(UITextField *)textField {
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
     
     if (textField.tag==1) {
         [self.passwordTextField becomeFirstResponder];
-    }
-    else if (textField.tag==2)
+    } else if (textField.tag==2)
         [self.passwordTextField resignFirstResponder];
     //[textField resignFirstResponder];
     
@@ -99,26 +98,20 @@
 
 //로그인 버튼
 - (IBAction)clickLoginBtn:(UIButton *)sender {
-    
+    //id textField를 변수에 넣어주기
     NSString *idText = self.idTextField.text;
+    //password textField를 변수에 넣어주기
     NSString *passwordText = self.passwordTextField.text;
-    
+    //id & passowrd textField responder 설정
     [self.idTextField resignFirstResponder];
     [self.passwordTextField resignFirstResponder];
-    
-    [[DataCenter shardData].apiData loginMembers:idText userPassword:passwordText completion:^(BOOL isSucessed, id respond) {
-        if (isSucessed) {
-            NSString *token = [respond objectForKey:@"key"];
-            NSLog(@"%@",token);
-            [[NSUserDefaults standardUserDefaults] setObject:token forKey:@"Authorization"];
-//            [self.dataCenter.userDefault setObject:token forKey:@"Authorization"];
-            [self sucessAlert];
-            NSLog(@"로그인 성공");
-            
-        }
-        else{
-            NSLog(@"로그인 실패!!!");
-        
+    //dataCenter에 요청하기
+     [self.dataCenter loginMembers:idText userPassword:passwordText completion:^(BOOL isSucessed, id respond) {
+         if (isSucessed) {
+             [self loginSucessAlert];
+             NSLog(@"로그인 성공");
+         } else {
+             NSLog(@"로그인 실패!!!");
         }
     }];
     
@@ -130,28 +123,18 @@
 }
 
 //로그인 성공 alert
-- (void)sucessAlert{
+- (void)loginSucessAlert{
     
     UIAlertController *sucessAlert = [UIAlertController alertControllerWithTitle:@"로그인 성공" message:@"진짜 성공" preferredStyle:UIAlertControllerStyleAlert];
     
     UIAlertAction *ok = [UIAlertAction actionWithTitle:@"Sucess" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         
+        //PostViewcontroller로 넘어가기
         
     }];
-    
     [sucessAlert addAction:ok];
     [self presentViewController:sucessAlert animated:YES completion:nil];
 }
 
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
