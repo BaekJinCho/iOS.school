@@ -1,6 +1,6 @@
 # 2017. 03. 20
 
-## - Catetory 명명 규칙
+## - Category 명명 규칙
 
 #### - Category
 
@@ -85,4 +85,4 @@
 
 <br>
 
-[※ spring Animation 참고 ](http://goo.gl/k8W7xK)
+[※ Spring Animation 참고 ](http://goo.gl/k8W7xK)
