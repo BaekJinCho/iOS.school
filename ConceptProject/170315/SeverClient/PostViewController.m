@@ -47,7 +47,7 @@
     //지정한 이미지 NSData로 넣어주기
     NSData *imageData = UIImageJPEGRepresentation(image, 0.5);
     
-    self dataCenter 
+
     //[self.dataCenter multiPartForm:contentTextField content:imgCoverTextField formData:imageData completion:^(BOOL isSucessed, id respond) {
         if (isSucessed) {
             NSLog(@"Multipart 성공!");
