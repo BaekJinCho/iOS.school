@@ -48,7 +48,7 @@
     NSData *imageData = UIImageJPEGRepresentation(image, 0.5);
     
 
-    //[self.dataCenter multiPartForm:contentTextField content:imgCoverTextField formData:imageData completion:^(BOOL isSucessed, id respond) {
+    [self.dataCenter multiPartForm:contentTextField content:imgCoverTextField formData:imageData completion:^(BOOL isSucessed, id respond) {
         if (isSucessed) {
             NSLog(@"Multipart 성공!");
         } else {

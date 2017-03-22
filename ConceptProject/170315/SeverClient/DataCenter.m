@@ -78,7 +78,7 @@
              formData:(NSData *)formdata
            completion:(completion)completion{
     
-    //[self.apiData multiPartForm:title content:content formData:formdata completion:^(BOOL isSucessed, id respond) {
+    [self.apiData multiPartForm:title content:content formData:formdata completion:^(BOOL isSucessed, id respond) {
       
     }];
     
