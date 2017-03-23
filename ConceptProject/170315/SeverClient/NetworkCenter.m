@@ -87,7 +87,6 @@
             completion(NO,error);
             
         }
-
     }];
     //task 시작
     [loginData resume];

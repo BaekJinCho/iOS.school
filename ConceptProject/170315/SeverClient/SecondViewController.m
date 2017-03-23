@@ -102,6 +102,7 @@
     NSString *idText = self.idTextField.text;
     //password textField를 변수에 넣어주기
     NSString *passwordText = self.passwordTextField.text;
+    
     //id & passowrd textField responder 설정
     [self.idTextField resignFirstResponder];
     [self.passwordTextField resignFirstResponder];
@@ -115,6 +116,12 @@
         }
     }];
     
+}
+
+//stroyboare에서 dismiss 주고싶을 때 method
+- (IBAction)back:(UIStoryboardSegue *)sender
+{
+
 }
 
 //회원가입 버튼(회원가입 페이지로 이동)

@@ -42,6 +42,7 @@
     NSString *idText = self.idTextField.text;
     NSString *password1Text = self.passwordTextField.text;
     NSString *password2Text = self.passwordCheckTextField.text;
+    
     [self.dataCenter signUpMembers:idText userPassword:password1Text userPasswordCheck:password2Text completion:^(BOOL isSucessed, id respond) {
         if (isSucessed) {
             NSLog(@"회원가입 token ::: %@", [self.dataCenter.userDefault objectForKey:@"Authorization"]);
@@ -60,11 +61,7 @@
     [self dismissViewControllerAnimated:loginPage completion:nil];
     
 }
-//stroyboare에서 dismiss 주고싶을 때 method
-//- (IBAction)back:(UIStoryboardSegue *)sender
-//{
-//    
-//}
+
 //회원가입 성공 alert
 - (void)signUpSucessAlert{
     

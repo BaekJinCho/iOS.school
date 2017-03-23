@@ -10,7 +10,7 @@
 #import <AFNetworking/AFNetworking.h>
 
 @implementation AFNetwork
-
+/*
 - (void)multiPartForm:(NSString *)title
               content:(NSString *)content
              formData:(NSData *)formdata
@@ -43,4 +43,5 @@
               }];
     [uploadTask resume];
 }
+*/
 @end

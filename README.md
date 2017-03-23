@@ -144,6 +144,8 @@
 	>- [CocoaPods](ConceptProject/170321)
 	
 	>- [UICollectionView (CoverFlow)](ConceptProject/170322)
+	
+	>- [Segue / Size Class](ConceptProject/170323)
 
 - **[12 week]**
 

@@ -11,6 +11,15 @@
 @interface AFNetwork : NSObject
 typedef void(^completion) (BOOL isSucessed, id respond);
 
+- (void)signUpMembers:(NSString *)userID
+         userPassword:(NSString *)userPassword
+    userPasswordCheck:(NSString *)userPasswordCheck
+           completion:(completion)completion;
+
+- (void)loginMembers:(NSString *)userID
+        userPassword:(NSString *)userPassword
+          completion:(completion)completion;
+
 - (void)multiPartForm:(NSString *)title
               content:(NSString *)content
              formData:(NSData *)formdata
