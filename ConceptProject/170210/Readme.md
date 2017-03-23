@@ -17,6 +17,7 @@
 - setter : 인스턴스 변수의 값을 변경할 때 사용하는 메소드
 
 	- setter 메소드 명은 인스턴스 변수명 앞에 set 키워드를 붙인다.
+	
 	- 인스턴스 변수 _name // 메소드 -(void)setName:(NSStirng *)name
 
 #### - 자동 접근자 멤소드 생성
@@ -81,7 +82,7 @@
 
 - alloc을 하면 retain count가 1 증가
 - retain을 호출하면 retain count가 1 증가
-- release을 호출하면 retain count가 1 감사
+- release을 호출하면 retain count가 1 감소
 - retain count가 0이 되면 객체가 메모리에서 해제
 - dealloc을 호출하면 메모리에서 해제
 
@@ -143,6 +144,8 @@ str2 = [[NSStirng alloc] init];
 <br>
 
 #### - weak을 사용하는 이유
-: 순환 참조를 막기 위해<br>
-: Autorelease pool을 대신해서 자동 해제가 필요한 경우<br>
+: 순환 참조를 막기 위해
+
+: Autorelease pool을 대신해서 자동 해제가 필요한 경우
+
 : view의 strong 참조 때문에
