@@ -36,6 +36,7 @@
 
 //post btn
 #pragma mark - mutiParForm Method
+/*
 - (IBAction)sendForm:(UIButton *)sender {
     
     //content & img 텍스트 변수 선언
@@ -56,10 +57,18 @@
         }
     }];
 }
+ */
+
 //back btn click method
 - (IBAction)back:(UIButton *)sender {
+    
+    /*
     ThirdViewController *signUpPage = [[ThirdViewController alloc] init];
     [self dismissViewControllerAnimated:signUpPage completion:nil];
+     
+     */
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 /*

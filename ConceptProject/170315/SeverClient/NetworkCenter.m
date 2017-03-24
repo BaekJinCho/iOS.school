@@ -10,9 +10,9 @@
 #import "DataCenter.h"
 
 
-@implementation NetworkCenter
+@implementation NetworkCenter : NSObject
 
-
+/*
 //회원가입 logic
 - (void)signUpMembers:(NSString *)userID
          userPassword:(NSString *)userPassword
@@ -92,8 +92,11 @@
     [loginData resume];
 
 }
+ */
+
 
 //multipart form method
+/*
 - (void)multiPartForm:(NSString *)title
               content:(NSString *)content
              formData:(NSData *)formdata
@@ -114,10 +117,11 @@
     [request setValue:token forHTTPHeaderField:@"Authorization"];
     
     /****************************Multipart Data**************************/
-    NSString *boundary = @"------------0x0x0x0x0x0x0x0x";
-    NSMutableData *body = [NSMutableData data];
+    //NSString *boundary = @"------------0x0x0x0x0x0x0x0x";
+    //NSMutableData *body = [NSMutableData data];
     //start boundary
     ///////////타이틀 정보
+/*
     [body appendData:[[NSString stringWithFormat:@"\r\n--%@\r\n", boundary] dataUsingEncoding:NSUTF8StringEncoding]];
     [body appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"title\"\r\n\r\n%@", title] dataUsingEncoding:NSUTF8StringEncoding]];
     
@@ -133,12 +137,13 @@
     //End boundary
     [body appendData:[[NSString stringWithFormat:@"\r\n--%@\r\n", boundary] dataUsingEncoding:NSUTF8StringEncoding]];
     /****************************Multipart Data End**************************/
-    
+
     //bady에 셋팅
+/*
     request.HTTPBody = body;
     NSString* MultiPartContentType = [NSString stringWithFormat:@"multipart/form-data; boundary=%@", boundary];
     [request setValue:MultiPartContentType forHTTPHeaderField: @"Content-Type"];
-    
+
     //Task 생성
     NSURLSessionDataTask *formData = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
@@ -155,6 +160,7 @@
     [formData resume];
     
 }
+*/
                                         
 @end
 

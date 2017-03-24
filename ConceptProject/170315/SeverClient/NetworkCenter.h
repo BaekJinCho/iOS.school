@@ -5,8 +5,9 @@
 //  Created by 조백진 on 2017. 3. 16..
 //  Copyright © 2017년 baekjin. All rights reserved.
 //
-
+/*
 #import <Foundation/Foundation.h>
+
 @class DataCenter;
 
 typedef void(^completion) (BOOL isSucessed, id respond);
@@ -32,4 +33,6 @@ static NSString *const postBase = @"https://fc-ios.lhy.kr/api/post/";
               content:(NSString *)content
              formData:(NSData *)formdata
            completion:(completion)completion;
+
 @end
+*/

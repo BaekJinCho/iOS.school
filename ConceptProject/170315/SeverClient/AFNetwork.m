@@ -10,6 +10,73 @@
 #import <AFNetworking/AFNetworking.h>
 
 @implementation AFNetwork
+
+
+- (void)signUpMembers:(NSString *)userID
+         userPassword:(NSString *)userPassword
+    userPasswordCheck:(NSString *)userPasswordCheck
+           completion:(completion)completion{
+    
+    NSMutableDictionary *bodyParameters = [[NSMutableDictionary alloc] init];
+    
+    [bodyParameters setObject:userID forKey:@"username"];
+    [bodyParameters setObject:userPassword forKey:@"password1"];
+    [bodyParameters setObject:userPasswordCheck forKey:@"password2"];
+    
+    NSMutableURLRequest *request = [[AFHTTPRequestSerializer serializer] multipartFormRequestWithMethod:@"POST" URLString:[NSString stringWithFormat:@"%@", signUpBase2] parameters:bodyParameters constructingBodyWithBlock:nil error:nil];
+    
+    AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+    
+    NSURLSessionUploadTask *uploadTask;
+    uploadTask = [manager uploadTaskWithStreamedRequest:request progress:nil completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
+        if (error) {
+            NSLog(@"\n\n userLogin task error = %@\n\n", error);
+            completion(NO, responseObject);
+        } else {
+            
+            //error이 nil이 아닐 때, ThirdViewController에서 넘어온 completion 처리해서 DataCenter로 보냄!
+            completion(YES, responseObject);
+        }
+        
+    }];
+    
+    [uploadTask resume];
+    
+}
+
+- (void)loginMembers:(NSString *)userID
+        userPassword:(NSString *)userPassword
+          completion:(completion)completion{
+    
+    NSMutableDictionary *bodyParameters = [[NSMutableDictionary alloc] init];
+    
+    [bodyParameters setObject:userID forKey:@"username"];
+    [bodyParameters setObject:userPassword forKey:@"password"];
+    
+    NSMutableURLRequest *request = [[AFHTTPRequestSerializer serializer] multipartFormRequestWithMethod:@"POST" URLString:[NSString stringWithFormat:@"%@", loginBase2] parameters:bodyParameters constructingBodyWithBlock:nil error:nil];
+    
+    AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+    
+    NSURLSessionUploadTask *uploadTask;
+    uploadTask = [manager uploadTaskWithStreamedRequest:request progress:nil completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
+        if (error) {
+            NSLog(@"\n\n userLogin task error = %@\n\n", error);
+            completion(NO, responseObject);
+        } else {
+            // error이 nil이 아닐 때, SecondViewController 넘어온 completion 처리해서 DataCenter로 보냄!
+            completion(YES, responseObject);
+        }
+        
+    }];
+    
+    [uploadTask resume];
+    
+    
+    
+}
+
+
+//멀티파트
 /*
 - (void)multiPartForm:(NSString *)title
               content:(NSString *)content
@@ -18,8 +85,7 @@
 
     NSMutableURLRequest *request = [[AFHTTPRequestSerializer serializer] multipartFormRequestWithMethod:@"POST" URLString:@"http://example.com/upload" parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
             [formData appendPartWithFileURL:[NSURL fileURLWithPath:@"file://path/to/image.jpg"] name:@"file" fileName:@"filename.jpg" mimeType:@"image/jpeg" error:nil];
-}
-                                                                                                  error:nil];
+    } error:nil];
 
     AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
 
@@ -44,4 +110,5 @@
     [uploadTask resume];
 }
 */
+
 @end

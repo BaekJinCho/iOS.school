@@ -19,7 +19,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *idTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordCheckTextField;
-@property DataCenter *dataCenter;
+//@property DataCenter *dataCenter;
 
 @end
 
@@ -43,15 +43,33 @@
     NSString *password1Text = self.passwordTextField.text;
     NSString *password2Text = self.passwordCheckTextField.text;
     
+    //dataCenter에서 요청 및 전송 하기(completion)
+    [[DataCenter shardData] signUpMembers:idText userPassword:password1Text userPasswordCheck:password2Text completion:^(BOOL isSucessed, id respond) {
+        if (isSucessed) {
+            //block된 상태가 다른 Thread에서 돌기 때문에 main_queue로 보내주기
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self signUpSucessAlert];
+            });
+            
+        } else {
+            NSLog(@"회원가입 실패!!");
+        }
+    }];
+    
+    
+    /* datacenter를 property로 뺐을 때
     [self.dataCenter signUpMembers:idText userPassword:password1Text userPasswordCheck:password2Text completion:^(BOOL isSucessed, id respond) {
         if (isSucessed) {
-            NSLog(@"회원가입 token ::: %@", [self.dataCenter.userDefault objectForKey:@"Authorization"]);
+            NSString *token = [respond objectForKey:@"key"];
+            NSLog(@"token ::: %@",token);
+            [[NSUserDefaults standardUserDefaults] setObject:token forKey:@"Authorization"];
             NSLog(@"회원가입 성공!");
             [self signUpSucessAlert];
         } else {
             NSLog(@"회원가입 실패!!");
         }
     }];
+     */
 }
 
 //로그인 버튼을 클릭했을 때 행동
@@ -68,14 +86,15 @@
     UIAlertController *sucessAlert = [UIAlertController alertControllerWithTitle:@"회원가입 성공" message:@"진짜 성공" preferredStyle:UIAlertControllerStyleAlert];
     
     UIAlertAction *ok = [UIAlertAction actionWithTitle:@"Sucess" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-        
         //PostViewcontroller로 넘어가기
-        PostViewController *postPage = [[PostViewController alloc] init];
+        PostViewController *postPage = [self.storyboard instantiateViewControllerWithIdentifier:@"PostViewController"];
         [self presentViewController:postPage animated:YES completion:nil];
         
     }];
     [sucessAlert addAction:ok];
     [self presentViewController:sucessAlert animated:YES completion:nil];
+    
+    
 }
 
 #pragma mark - textFieldShouldReturn Method

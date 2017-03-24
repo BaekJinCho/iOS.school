@@ -8,8 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AFNetwork : NSObject
+
 typedef void(^completion) (BOOL isSucessed, id respond);
+static NSString *const apiBase2 = @"https://fc-ios.lhy.kr/api";
+static NSString *const signUpBase2 = @"https://fc-ios.lhy.kr/api/member/signup/";
+static NSString *const loginBase2 = @"https://fc-ios.lhy.kr/api/member/login/";
+static NSString *const postBase2 = @"https://fc-ios.lhy.kr/api/post/";
+@interface AFNetwork : NSObject
+
 
 - (void)signUpMembers:(NSString *)userID
          userPassword:(NSString *)userPassword
@@ -19,9 +25,10 @@ typedef void(^completion) (BOOL isSucessed, id respond);
 - (void)loginMembers:(NSString *)userID
         userPassword:(NSString *)userPassword
           completion:(completion)completion;
-
+/*
 - (void)multiPartForm:(NSString *)title
               content:(NSString *)content
              formData:(NSData *)formdata
            completion:(completion)completion;
+*/
 @end

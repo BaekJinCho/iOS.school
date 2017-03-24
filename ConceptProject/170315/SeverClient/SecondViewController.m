@@ -18,7 +18,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *idTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-@property DataCenter *dataCenter;
+//@property DataCenter *dataCenter;
 
 @end
 
@@ -26,6 +26,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //self.dataCenter = [DataCenter shardData]; //property로 쓰고자 할 때, 해줘야 함!!!
+    
     // Do any additional setup after loading the view.
     //텍스트 필드 placeholder Color
     UIColor *color = [UIColor whiteColor];
@@ -106,7 +109,23 @@
     //id & passowrd textField responder 설정
     [self.idTextField resignFirstResponder];
     [self.passwordTextField resignFirstResponder];
-    //dataCenter에 요청하기
+    
+    //dataCenter에서 요청 및 전송 하기(completion)
+    [[DataCenter shardData] loginMembers:idText userPassword:passwordText completion:^(BOOL isSucessed, id respond) {
+        if (isSucessed) {
+            //block된 상태가 다른 Thread에서 돌기 때문에 main_queue로 보내주기
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self loginSucessAlert];
+            });
+            NSLog(@"로그인 성공");
+        } else {
+            NSLog(@"로그인 실패!!!");
+        }
+        
+    }];
+    
+    //datacenter를 property로 빼서 사용할 때!
+    /*
      [self.dataCenter loginMembers:idText userPassword:passwordText completion:^(BOOL isSucessed, id respond) {
          if (isSucessed) {
              [self loginSucessAlert];
@@ -115,6 +134,7 @@
              NSLog(@"로그인 실패!!!");
         }
     }];
+    */
     
 }
 
