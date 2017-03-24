@@ -1,0 +1,14 @@
+//
+//  Typedef.pch
+//  SeverClient
+//
+//  Created by 조백진 on 2017. 3. 24..
+//  Copyright © 2017년 baekjin. All rights reserved.
+//
+
+#ifndef Typedef_pch
+#define Typedef_pch
+#import <Foundation/Foundation.h>
+#import "BaseBox.h"
+
+#endif /* Typedef_pch */

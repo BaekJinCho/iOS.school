@@ -13,7 +13,8 @@
 
 @property UIScrollView *scrollView;
 @property UIPageControl *pageControl;
-
+@property(nonatomic) BOOL defersCurrentPageDisplay;
+@property(nonatomic) BOOL hidesForSinglePage;
 
 @end
 
@@ -34,28 +35,27 @@
     [self.view addSubview:self.scrollView];
     
     
-    UIView *image = [[UIView alloc] initWithFrame:CGRectMake(0, 0, frameSize.width, frameSize.height)];
-    image.backgroundColor = [UIColor blueColor];
+    UIImageView *image = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, frameSize.width, frameSize.height)];
+    [image setImage:[UIImage imageNamed:@"11.jpeg"]];
     [self.scrollView addSubview:image];
     
-    UIView *image1 = [[UIView alloc] initWithFrame:CGRectMake(image.frame.size.width, 0, image.frame.size.width, image.frame.size.height)];
-    image1.backgroundColor=[UIColor greenColor];
+    UIImageView *image1 = [[UIImageView alloc] initWithFrame:CGRectMake(image.frame.size.width, 0, image.frame.size.width, image.frame.size.height)];
+    [image1 setImage:[UIImage imageNamed:@"10.jpg"]];
     [self.scrollView addSubview:image1];
     
-    UIView *image2 = [[UIView alloc] initWithFrame:CGRectMake(image1.frame.size.width*2, 0, image1.frame.size.width, image.frame.size.height)];
-    image2.backgroundColor=[UIColor brownColor];
+    UIImageView *image2 = [[UIImageView alloc] initWithFrame:CGRectMake(image1.frame.size.width*2, 0, image1.frame.size.width, image.frame.size.height)];
+    [image2 setImage:[UIImage imageNamed:@" background1.jpeg"]];
     [self.scrollView addSubview:image2];
 
     
     //UIPageControl 구현해보기(어려움)
-    self.pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, self.scrollView.frame.size.height - 30, self.scrollView.frame.size.width, 30)];
-    [self.pageControl setBackgroundColor:[UIColor redColor]];
+    self.pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, self.scrollView.frame.size.height-30, self.scrollView.frame.size.width, 30)];
     self.pageControl.numberOfPages = 3;
     [self.view addSubview:self.pageControl];
     [self.pageControl addTarget:self action:@selector(changePage:) forControlEvents:UIControlEventValueChanged];
+
         
 }
-
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     CGFloat position = [scrollView contentOffset].x / self.view.frame.size.width;

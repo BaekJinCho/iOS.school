@@ -146,6 +146,8 @@
 	>- [UICollectionView (CoverFlow)](ConceptProject/170322)
 	
 	>- [Segue / Size Class](ConceptProject/170323)
+	
+	>- [ProjectSetting](ConceptProject/170324)
 
 - **[12 week]**
 
