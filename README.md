@@ -193,6 +193,6 @@
 
 ## 4. Contact Information
 
-> - e-mail : bjjo6457@gmail.com
+> - E-mail : bjjo6457@gmail.com
 >
-> - phone : 010-2929-5715
+> - Phone : 010-2929-5715
