@@ -51,7 +51,7 @@
 |Touch|발생된 이벤트에 대한 뷰가 처리|
 |Remote control & Shake motion events|First responder 객체|
 |Accelerometer & Magnetometer & Gyroscope| 각각의 객체로 전달|
-|Location|Core Location Framework를 사용하여 사용하여 위치와 관련된 이벤트를 등록할 수 있다.<br> Core Location에 대한 정보는 Location and Maps Programming Guide를 보자. 
+|Location|Core Location Framework를 사용하여 사용하여 위치와 관련된 이벤트를 등록할 수 있다. <br> Core Location에 대한 정보는 Location and Maps Programming Guide를 보자. 
 |Redraw|Redraw이벤트는 이벤트 객체를 갖지는 않고 단순히 업데이트가 필요한 view 객체에 요청|
 
 
@@ -65,10 +65,10 @@
 
 |State|Description|
 |:---:|:---:|:---:|
-|Not running|아직 실행되지 않았거나 실행되다가 시스템에 의해 종료된 상태
-|Inactive|앱이 Foreground에 올라와 있지만 이벤트를 받지 않고 있는 상태(다른 코드를 실행 중일 수도 있다.)<br> 앱에서는 보통 앱 상태변화가 일어나는 동안에 짧게 이 상태를 갖게된다. 
-|Active|앱이 Foreground에서 실행중이고 이벤트를 받고 있는 상태.<br> Foreground에 올라와 있는 앱은 대부분 이 상태를 갖고있다. 
-|Background| 앱이 Background에 있고 코드를 실행하고 있는 상태. <br>대부분의 앱은 Suspended 상태로 가는 도중에 잠깐 이 상태를 갖게된다. Background 상태에서 추가적인 코드수행시간이 필요햔 앱일 경우에는 좀 더 머무를수도 있다.<br> 외에도 Background 상태로 실행이 되는 앱의 경우에는 Inactive상태 대신 Background 상태로 진입 
+|Not running|아직 실행되지 않았거나 실행되다가 시스템에 의해 종료된 상태|
+|Inactive|앱이 Foreground에 올라와 있지만 이벤트를 받지 않고 있는 상태(다른 코드를 실행 중일 수도 있다.) <br> 앱에서는 보통 앱 상태변화가 일어나는 동안에 짧게 이 상태를 갖게된다.| 
+|Active|앱이 Foreground에서 실행중이고 이벤트를 받고 있는 상태. <br> Foreground에 올라와 있는 앱은 대부분 이 상태를 갖고있다.| 
+|Background| 앱이 Background에 있고 코드를 실행하고 있는 상태. <br> 대부분의 앱은 Suspended 상태로 가는 도중에 잠깐 이 상태를 갖게된다. Background 상태에서 추가적인 코드수행시간이 필요햔 앱일 경우에는 좀 더 머무를수도 있다. <br> 외에도 Background 상태로 실행이 되는 앱의 경우에는 Inactive상태 대신 Background 상태로 진입| 
 |Suspended|앱이 Background에 있으면서 코드를 수행하고 있지 않는 상태. <br>  Suspended 되어 있는 동안 앱은 메모리상에는 올라가 있지만 실질적으로 동작하고 있지는 않는다. <br>메모리가 부족한 상황에서 시스템은 현재 앱의 원활한 동작을 위해 시스템이 강제종료 하게된다.|
 
 ```
