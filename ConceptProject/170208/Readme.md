@@ -97,14 +97,17 @@
 
 <br>
 
-#### -Value Type vs Reference Type
+#### - Value Type vs Reference Type
 
 : 실질적인 값 저장 vs 참조하고 있는 주소값의 저장(Pointer)
 
-|클래스| 구조체|
-|:---:|:---:|:---:|
-|Reference Type (참조 형식)|Value Type(값 형식)|
-|alloc을 사용하여 인스턴스화|alloc를 사용하지 않고 인스턴스화|
+- 클래스 
+
+: Reference Type (참조 형식), alloc을 사용하여 인스턴스화
+
+- 구조체
+
+: Value Type(값 형식), alloc를 사용하지 않고 인스턴스화
 
 <br>
 
@@ -177,10 +180,14 @@
 
 <br>
 
-|Array|Linked list|
-|:---:|:---:|:---:|
-|정적(데이터 고정)|동적(데이터 수정, 삽입 용이)|
-|같은 타입(같은 크기)만 가능|데이터의 타입(크기)가 달라도 가능|
+- Array 
+
+: 정적(데이터 고정), 같은 타입(같은 크기)만 가능
+
+- Linked list
+
+: 동적(데이터 수정, 삽입 용이), 데이터의 타입(크기)가 달라도 가능
+
 
 <br>
 

@@ -11,10 +11,13 @@
 ![](https://github.com/BaekJinCho/iOS.school/blob/master/Study/Image/navigation.png?raw=true)
 
 
-|Left|backBarButtonItem leftBarButtonItem|
-|:---:|:---:|:---:|
-|Center|titleView|
-|Right|rightBarButtonItem|
+- Left
+
+: Center, Right
+
+- backBarButtonItem leftBarButtonItem
+
+: titleView, rightBarButtonItem
 
 #### - ToolBar
 

@@ -91,13 +91,14 @@
 - HTTP Method를 사용해서 요청 메세지를 보낸다.
 
 
-|HTTP Method|CRUD|
-|:--:|:--:|:--:|
-|POST|Create|
-|GET|Read|
-|PUT|Update/Replace|
-|PATCH|Update/Modify|
-|DELETE|Delete|
+		- HTTP Method
+		
+		: POST, GET, PUT, PATCH, DELETE
+		
+		- CRUD
+		
+		: Create, Read, Update/Replace, Update/Modify, Delete
+
 
 [- 참고](http://goo.gl/xjH2ke)
 

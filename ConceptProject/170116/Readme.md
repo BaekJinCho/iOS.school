@@ -3,21 +3,29 @@
 ## - Xcode
 
 - 템플릿 선택 & 프로젝트 생성
-- Xcode Main Window<br><br>
+- Xcode Main Window
+
+
 
 ![xcode4_overview](https://cloud.githubusercontent.com/assets/24997656/22183103/535cb5e6-e0f9-11e6-84d1-abb5563ce66b.png)
 
 
-- Break Point<br>
+- Break Point
 : debug를 위한 방법 -> 여기서 실행을 멈춰라!
-- Interface Builder<br>
+
+- Interface Builder
 : UI 컨트롤용
-- Property list Editor<br>
+
+- Property list Editor
 : 파일 안에 데이터를 저장할 때!
-- Debug Area<br>
+
+- Debug Area
 : Breaking point로 실행 중 해당 변수의 값을 확인 가능
+
 - Utilities
-- 빌드  & 런<br>
+
+- 빌드 & 런
+
 
 <br><br>
 
@@ -33,12 +41,14 @@
 
 ## - 프로퍼티와 메서드
 
-- 프로퍼티<br>
-: 객체가 가질 수 있는 특징, 상태 등의 **값**<br>
+- 프로퍼티
+
+: 객체가 가질 수 있는 특징, 상태 등의 **값**
 	- 프로퍼티 정의<br>
 	: ``@property <데이터 타입> <프로퍼티 이름>;``
 
-- 메서드<br>
+- 메서드
+
 : 객체가 수행할 수 있는 동작 또는 **기능**
 	- 메서드 정의<br>
 	: ``(<반환 타입>)<메서드 이름>;`` 
@@ -58,7 +68,8 @@
 
 ## - 주석 남기기
 
-- 주석이란<br>
+- 주석이란
+
 : 컴파일시에는 무시되지만 프로그래머에게는 해설 및 이해를 위한 유용한 문장
 	- 향후 참조를 위해 일반적으로 코드에 설명을 덧붙여 사용
 	- 주석은 컴파일러가 빈 공백으로 취급

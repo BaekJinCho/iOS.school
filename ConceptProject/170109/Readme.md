@@ -26,11 +26,13 @@
 
 <br>
 
-|Working Dircetory -> Stage Area : Add|
-|:--:||:--:||:--:|
-|Stage area -> Local Repository : Commit|
-|Local Repository -> Remote Repository : Push|
-|Remote Repository -> Working Directory : Pull|
+- Working Dircetory -> Stage Area : Add
+
+- Stage area -> Local Repository : Commit
+
+- Local Repository -> Remote Repository : Push
+
+- Remote Repository -> Working Directory : Pull
 
 <br>
 
