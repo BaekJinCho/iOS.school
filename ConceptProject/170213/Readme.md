@@ -65,9 +65,9 @@
 
 |State|Description|
 |:---:|:---:|:---:|
-|Not running|아직 실행되지 않았거나 실행되다가 시스템에 의해 종료된 상태| 
+|Not running|아직 실행되지 않았거나 실행되다가 시스템에 의해 종료된 상태
 |Inactive|앱이 Foreground에 올라와 있지만 이벤트를 받지 않고 있는 상태(다른 코드를 실행 중일 수도 있다.)<br> 앱에서는 보통 앱 상태변화가 일어나는 동안에 짧게 이 상태를 갖게된다. 
-|Active|앱이 Foreground에서 실행중이고 이벤트를 받고 있는 상태.<br> Foreground에 올라와 있는 앱은 대부분 이 상태를 갖고있다.| 
+|Active|앱이 Foreground에서 실행중이고 이벤트를 받고 있는 상태.<br> Foreground에 올라와 있는 앱은 대부분 이 상태를 갖고있다. 
 |Background| 앱이 Background에 있고 코드를 실행하고 있는 상태. <br>대부분의 앱은 Suspended 상태로 가는 도중에 잠깐 이 상태를 갖게된다. Background 상태에서 추가적인 코드수행시간이 필요햔 앱일 경우에는 좀 더 머무를수도 있다.<br> 외에도 Background 상태로 실행이 되는 앱의 경우에는 Inactive상태 대신 Background 상태로 진입 
 |Suspended|앱이 Background에 있으면서 코드를 수행하고 있지 않는 상태. <br>  Suspended 되어 있는 동안 앱은 메모리상에는 올라가 있지만 실질적으로 동작하고 있지는 않는다. <br>메모리가 부족한 상황에서 시스템은 현재 앱의 원활한 동작을 위해 시스템이 강제종료 하게된다.|
 
@@ -137,30 +137,34 @@
 
 #### - 생명주기 메소드
 
-	- (void)loadView
-	: UIviewController의 view가 생성될 때 호출
+```objc
+
+- (void)loadView
+: UIviewController의 view가 생성될 때 호출
 	
-	- (void)viewDidLoad
-	: UIViewController가 인스턴스화 된 직후 호출(처음 한 번 세팅해줘야 하는 값들을 넣기에 적절) 
+- (void)viewDidLoad
+: UIViewController가 인스턴스화 된 직후 호출(처음 한 번 세팅해줘야 하는 값들을 넣기에 적절) 
 	
-	- (void)viewWillAppear:(BOOL)animated
-	: view가 화면에 보여지기 직전에 호출
-	: 화면이 보여지기 전에 준비할 때 사용
-	: animated 파라미터는 뷰가 애니메이션을 동반하여 보여지게 되는지 시스템에서 전달해주는 불리언 값
+- (void)viewWillAppear:(BOOL)animated
+: view가 화면에 보여지기 직전에 호출
+: 화면이 보여지기 전에 준비할 때 사용
+: animated 파라미터는 뷰가 애니메이션을 동반하여 보여지게 되는지 시스템에서 전달해주는 불리언 값
 	
-	- (void)viewWillLayoutSubviews
-	: view의 하위뷰들의 레이아웃이 결정되기 직전 호출
+- (void)viewWillLayoutSubviews
+: view의 하위뷰들의 레이아웃이 결정되기 직전 호출
 	
-	- (void)viewDidLayoutSubviews
-	: view의 하위뷰들이 레이아웃이 결정된 후 호출
-	: 주로 view의 하위뷰들이 사이즈 조정이 필요할 때 호출
+- (void)viewDidLayoutSubviews
+: view의 하위뷰들이 레이아웃이 결정된 후 호출
+: 주로 view의 하위뷰들이 사이즈 조정이 필요할 때 호출
 	
-	- (void)viewDidAppear:(BOOL)animated
-	: view가 화면에 보여진 직후에 호출
-	: 화면이 표시된 이후 애니메이션 등을 보여주고 싶을 때 유용
+- (void)viewDidAppear:(BOOL)animated
+: view가 화면에 보여진 직후에 호출
+: 화면이 표시된 이후 애니메이션 등을 보여주고 싶을 때 유용
 	
-	- (void)viewWillDisappear:(BOOL)animated
-	: view가 화면에서 사라지기 직전에 호출
+- (void)viewWillDisappear:(BOOL)animated
+: view가 화면에서 사라지기 직전에 호출
 	
-	- (void)viewDidDisappear:(BOOL)animated
-	: view가 화면에서 사라진 직후에 호출
+- (void)viewDidDisappear:(BOOL)animated
+: view가 화면에서 사라진 직후에 호출
+	
+```
