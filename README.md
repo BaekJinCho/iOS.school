@@ -25,7 +25,7 @@
 
 <br><br>
 
-## 2. iOS School🍎
+## 2. iOS School 🍎
 
 ### - 컴퓨터 개론
 
