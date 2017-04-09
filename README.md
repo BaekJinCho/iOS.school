@@ -5,7 +5,7 @@
 
 - About Me
 
-- iOS School
+- ios School
 
 - Study
 
@@ -54,7 +54,7 @@
 	>
 	>- [매개변수 / 데이터 타입 / self](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/17011819)
 	>
-	>- [재정의(Override) / super / 은닉화](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170119)
+	>- [재정의 (Override) / super / 은닉화](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170119)
 	>
 	>- [초기화 메서드](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170120)
 
@@ -62,7 +62,7 @@
 
 	>- [Objective-C 특징 / 클래스 / 객체 / 메소드(클래스, 인스턴스)](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170123)
 	>
-	>- [조건문(if / else if) / 비교연산자 / 논리연산자](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170124) 
+	>- [조건문 (if / else if) / 비교연산자 / 논리연산자](https://github.com/BaekJinCho/iOS.school/tree/master/ConceptProject/170124) 
 	>
 	>- [계산기 알고리즘](https://github.com/BaekJinCho/iOS.school/tree/master/Study/Study5)  
 
@@ -70,9 +70,9 @@
 
 	>- [기억 끄집어 내기 / 조건문(Switch)](ConceptProject/170131)
 	>
-	>- [반복문(While문 / for문)](ConceptProject/170201)
+	>- [반복문 (While문 / for문)](ConceptProject/170201)
 	>
-	>- [반복문(While문 / for문)을 활용하여 구구단 / 팩토리얼 / 삼각수 만들어보기](ConceptProject/170201(Exam))
+	>- [반복문 (While문 / for문)을 활용하여 구구단 / 팩토리얼 / 삼각수 만들어보기](ConceptProject/170201(Exam))
 	>
 	>- [for문을 이용하여 *로 트리 만들기](ConceptProject/170202(StarTree))
 	>
@@ -120,7 +120,7 @@
 	>
 	>- [Singleton / NSUserDefault (실습 코드 : 170222 폴더)](ConceptProject/170223)
 	>
-	>- [NSNotification(addObserver / Post Notification / Remove Observer) (실습 코드 : 170207(login) 폴더)](ConceptProject/170224)
+	>- [NSNotification (addObserver / Post Notification / Remove Observer) (실습 코드 : 170207(login) 폴더)](ConceptProject/170224)
 
 - **[8 week]**
 
@@ -140,7 +140,7 @@
 	>
 	>- [기기 테스트 / MapView / Add Annotation](ConceptProject/170307(MapView))
 	>
-	>- [해커톤(Hackathon)](https://github.com/BaekJinCho/PetmeApp)
+	>- [해커톤 (Hackathon)](https://github.com/BaekJinCho/PetmeApp)
 	>
 	>- [Block](ConceptProject/170310(BlockPractice)) / 해커톤 기술 공유
 
@@ -148,7 +148,7 @@
 
 	>- [Thread / GCD](ConceptProject/170313(Thread))
 	>
-	>- [Network(api를 참조하며 회원가입, 로그인, Multipart Form 해보기)](ConceptProject/170315)
+	>- [Network (api를 참조하며 회원가입, 로그인, Multipart Form 해보기)](ConceptProject/170315)
 	>
 	>- [Multipart Form](ConceptProject/170317)
 
