@@ -15,7 +15,7 @@
 
 ## 1. About Me
 
->- [프로젝트]()
+>- [프로젝트](https://github.com/BaekJinCho/HaruApp)
 >
 >- [해커톤](https://github.com/BaekJinCho/PetmeApp)
 >
@@ -148,7 +148,7 @@
 
 	>- [Thread / GCD](ConceptProject/170313(Thread))
 	>
-	>- [Network (api를 참조하며 회원가입, 로그인, Multipart Form 해보기)](ConceptProject/170315)
+	>- [Network (API를 참조하며 회원가입, 로그인, Multipart Form 해보기)](ConceptProject/170315)
 	>
 	>- [Multipart Form](ConceptProject/170317)
 
